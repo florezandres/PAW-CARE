@@ -1,0 +1,34 @@
+div{
+    padding: 20px;
+    background: #006157;
+    width: 50%;
+}
+#formulario{
+    padding: 20px;
+    height: 100%;
+    width: 50%;
+    float: right;
+    border: #000 3px solid;
+    background: aliceblue;
+}
+html, body, form, main {
+    height: 100%;
+}
+main{
+    display: flex;
+}
+body{
+    background: #cacaca;
+    align-items: center;
+}
+h2{
+    color: aliceblue;
+}
+p{
+    color: aliceblue;
+}
+#imagen{
+    object-fit: contain;
+    width: 40%;
+    float: right;
+}
