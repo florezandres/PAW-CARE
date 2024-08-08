@@ -1,0 +1,263 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background-color: #006157;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra todo el contenido del header */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra el contenido dentro del header-content */
+  width: 100%;
+  max-width: 1200px; /* Ajusta el ancho máximo según sea necesario */
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 20px; /* Espacio entre el logo y la navegación */
+}
+
+.logoHeader {
+  width: 150px;
+  height: 150px;
+  margin: 0;
+}
+
+.logo h1 {
+  margin: 0;
+  padding-left: 20px; /* Espacio entre el logo y el texto */
+  color: white;
+  font-size: 40px;
+}
+
+nav {
+  display: flex;
+  justify-content: center; /* Centra los enlaces dentro del nav */
+  align-items: center;
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+}
+
+.content {
+  margin-top: 125px; /* Igual a la altura del header */
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.hero {
+  text-align: center;
+  padding: 20px;
+  background-color: #e0f7fa;
+}
+
+.servicios {
+  text-align: center;
+}
+
+/* Aumentar el espaciado entre las cajas de servicios */
+.servicios-container {
+  display: flex;
+  justify-content: center;
+  gap: 100px; /* Espacio entre las cajas */
+}
+
+/* Reducir el tamaño de los íconos en las cajas de servicios */
+.servicios-box img {
+  width: 100px; /* Tamaño reducido de las imágenes */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.servicios-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Alinea el contenido a la izquierda */
+  padding: 0; /* Elimina padding si es necesario */
+}
+
+.intro-image {
+  display: flex;
+  width: 100%; /* Ajusta la imagen al ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+  margin-left: 0; /* Alinea la imagen a la izquierda del contenedor */
+}
+
+.intro-text {
+  text-align: center;
+}
+
+html,
+body {
+  margin: 0; /* Elimina el margen por defecto */
+  padding: 0; /* Elimina el padding por defecto */
+}
+
+footer {
+  background-color: #006157; /* Color de fondo */
+  color: #ffffff; /* Color del texto */
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.gallery {
+  padding: 20px;
+  background-color: #e0e0e0; /* Color de fondo opcional */
+  text-align: center;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centra las imágenes horizontalmente */
+  gap: 10px; /* Espacio entre las imágenes */
+}
+
+.gallery-container img {
+  width: 100%;
+  max-width: 300px; /* Tamaño máximo de las imágenes */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 8px; /* Bordes redondeados opcionales */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Sombra opcional */
+}
+
+.clinic {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.clinic h1 {
+  font-size: 2.5rem;
+  color: #d52c27; /* Rojo */
+  margin-bottom: 20px;
+}
+
+.clinic-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.clinic-info div {
+  background-color: #ffffff; /* Blanco */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  max-width: 600px;
+  width: 100%;
+}
+
+.clinic-info h2 {
+  font-size: 30px;
+  color: #006157; /* Verde azulado */
+  margin-bottom: 10px;
+}
+
+.clinic-info p {
+  font-size: 20px;
+  color: #000000; /* Negro */
+}
+
+/* Sección de Contacto */
+.contact {
+  background-color: #e0e0e0; /* Gris Claro */
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact h1 {
+  font-size: 40px;
+  color: #d52c27; /* Rojo Oscuro */
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto; /* Centra el formulario */
+}
+
+.contact-form label {
+  font-size: 20px;
+  color: #006157; /* Verde */
+  text-align: left;
+  width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black; /* Verde */
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.contact-form button {
+  background-color: #006157; /* Verde */
+  color: #ffffff; /* Blanco */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.contact-form button:hover {
+  background-color: #004d40; /* Verde oscuro */
+}
+
+.iconoFooter {
+  margin: 15px; /* Margen de 15px */
+  text-decoration: none; /* Quita el subrayado del texto */
+}
+
+*{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
