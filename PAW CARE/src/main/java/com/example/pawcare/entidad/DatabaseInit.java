@@ -42,7 +42,6 @@ public class DatabaseInit implements ApplicationRunner {
         clienteRepository.save(new Cliente("Lucía Sánchez", "lucia.sanchez@example.com", 89012345, 65432198));
         clienteRepository.save(new Cliente("Miguel Torres", "miguel.torres@example.com", 90123456, 76543219));
         clienteRepository.save(new Cliente("Andrea Morales", "andrea.morales@example.com", 12345679, 87654320));
-
         clienteRepository.save(new Cliente("Santiago Ortiz", "santiago.ortiz@example.com", 23456780, 98765421));
         clienteRepository.save(new Cliente("Isabella Herrera", "isabella.herrera@example.com", 34567891, 19876542));
         clienteRepository.save(new Cliente("Daniel Vargas", "daniel.vargas@example.com", 45678902, 21987653));
@@ -53,7 +52,6 @@ public class DatabaseInit implements ApplicationRunner {
         clienteRepository.save(new Cliente("Sofía Romero", "sofia.romero@example.com", 90123457, 76543210));
         clienteRepository.save(new Cliente("Nicolás Vargas", "nicolas.vargas@example.com", 12345680, 87654322));
         clienteRepository.save(new Cliente("Gabriela Pineda", "gabriela.pineda@example.com", 23456781, 98765433));
-
         clienteRepository.save(new Cliente("Diego Suárez", "diego.suarez@example.com", 34567892, 19876544));
         clienteRepository.save(new Cliente("Valeria Rivera", "valeria.rivera@example.com", 45678903, 21987655));
         clienteRepository.save(new Cliente("Martín Gutiérrez", "martin.gutierrez@example.com", 56789014, 32198766));
@@ -64,7 +62,6 @@ public class DatabaseInit implements ApplicationRunner {
         clienteRepository.save(new Cliente("Julieta Reyes", "julieta.reyes@example.com", 12345681, 87654323));
         clienteRepository.save(new Cliente("David Moreno", "david.moreno@example.com", 23456782, 98765434));
         clienteRepository.save(new Cliente("Paula Soto", "paula.soto@example.com", 34567893, 19876545));
-
         clienteRepository.save(new Cliente("Joaquín Rojas", "joaquin.rojas@example.com", 45678904, 21987656));
         clienteRepository.save(new Cliente("Catalina Álvarez", "catalina.alvarez@example.com", 56789015, 32198767));
         clienteRepository.save(new Cliente("Emiliano Ruiz", "emiliano.ruiz@example.com", 67890126, 43219878));
@@ -75,7 +72,6 @@ public class DatabaseInit implements ApplicationRunner {
         clienteRepository.save(new Cliente("Mía Gómez", "mia.gomez@example.com", 23456783, 98765435));
         clienteRepository.save(new Cliente("Alejandro Torres", "alejandro.torres@example.com", 34567894, 19876546));
         clienteRepository.save(new Cliente("Victoria Ortiz", "victoria.ortiz@example.com", 45678905, 21987657));
-
         clienteRepository.save(new Cliente("Iván Gutiérrez", "ivan.gutierrez@example.com", 56789016, 32198768));
         clienteRepository.save(new Cliente("Renata Vargas", "renata.vargas@example.com", 67890127, 43219879));
         clienteRepository.save(new Cliente("Bruno Morales", "bruno.morales@example.com", 78901238, 54321990));
@@ -86,11 +82,12 @@ public class DatabaseInit implements ApplicationRunner {
         clienteRepository.save(new Cliente("Florencia Pineda", "florencia.pineda@example.com", 34567895, 19876547));
         clienteRepository.save(new Cliente("Luciano Jiménez", "luciano.jimenez@example.com", 45678906, 21987658));
         clienteRepository.save(new Cliente("Martina Castillo", "martina.castillo@example.com", 56789017, 32198769));
-        mascotaRepository.save(new Mascota("Luna", "15kg", "Labrador", "Displasia de cadera", "En tratamiento", 5, "/img/lucas.jpg"));
+        
+        mascotaRepository.save(new Mascota("Lucas", "15kg", "Labrador", "Displasia de cadera", "En tratamiento", 5, "/img/lucas.jpg"));
         mascotaRepository.save(new Mascota("Pablo", "1kg", "Desconocida", "Otitis", "Recuperado", 3, "/img/pablo.jpg"));
-        mascotaRepository.save(new Mascota("Bella", "25kg", "Criollo", "Artritis", "En tratamiento", 7, "/img/jhony.jpg"));
-        mascotaRepository.save(new Mascota("Rocky", "30kg", "Husky", "Alergia alimentaria", "En tratamiento", 4, "/img/miguel.jpg"));
-        mascotaRepository.save(new Mascota("Coco", "4kg", "Pastor Aleman", "Problemas dentales", "Recuperado", 2, "/img/Zeus.jpg"));
+        mascotaRepository.save(new Mascota("Jhony", "25kg", "Criollo", "Artritis", "En tratamiento", 7, "/img/jhony.jpg"));
+        mascotaRepository.save(new Mascota("Miguel", "30kg", "Husky", "Alergia alimentaria", "En tratamiento", 4, "/img/miguel.jpg"));
+        mascotaRepository.save(new Mascota("Zeus", "4kg", "Pastor Aleman", "Problemas dentales", "Recuperado", 2, "/img/Zeus.jpg"));
         mascotaRepository.save(new Mascota("Coco", "4kg", "Pastor Aleman", "Problemas dentales", "Recuperado", 2, "/img/perroGenerico.png"));
         mascotaRepository.save(new Mascota("Max", "5kg", "Labrador", "Corte de orejas", "Recuperado", 3, "/img/perroGenerico.png"));
         mascotaRepository.save(new Mascota("Bella", "6kg", "Beagle", "Raspaduras", "En tratamiento", 1, "/img/perroGenerico.png"));
@@ -186,8 +183,6 @@ public class DatabaseInit implements ApplicationRunner {
         mascotaRepository.save(new Mascota("Roxy", "8kg", "Cocker Spaniel", "Fiebre baja", "En observación", 3, "/img/perroGenerico.png"));
         mascotaRepository.save(new Mascota("Nina", "4kg", "Pug", "Infección en el ojo", "En tratamiento", 2, "/img/perroGenerico.png"));
         mascotaRepository.save(new Mascota("Daisy", "5kg", "Dachshund", "Problemas dentales", "Recuperado", 4, "/img/perroGenerico.png"));
-                
-
         
         //Asociar cliente con mascota
         Cliente asociar = clienteRepository.findById(1L).get();
@@ -196,22 +191,6 @@ public class DatabaseInit implements ApplicationRunner {
             mascotaRepository.save(mascota); 
         }
 
-        /*
-        int CANTIDAD_MASCOTAS = 5;
-        int CANTIDAD_MASCOTAS_ASIGNAR = 1;
-
-        for(Cliente cliente : clienteRepository.findAll()){
-            System.out.println("ID CLIENTE REVISADO: " + cliente.getId());
-            for (int i = 0; i < CANTIDAD_MASCOTAS_ASIGNAR; i++) {
-                int random = ThreadLocalRandom.current().nextInt(1, CANTIDAD_MASCOTAS+1);
-                System.out.println("NUMERO RANDOM: " + random + "DE: " + cliente.getId());
-                Long search = Long.valueOf(random);
-                System.out.println("SEARCH: " + search);
-                Mascota mascota = mascotaRepository.findById(search).get();
-                mascota.setCliente(cliente);
-                mascotaRepository.save(mascota);
-            }
-        }*/
         int CANTIDAD_CLIENTES = 50;
         int CANTIDAD_CLIENTES_ASIGNAR = 2;
 

@@ -48,18 +48,6 @@ public class Mascota {
         this.imagen = imagen;
     }
 
-/* public Mascota(String nombre, String peso, String raza, String enfermedad, String estado, int edad, String imagen, Cliente cliente){
-        this.nombre = nombre;
-        this.peso = peso;
-        this.raza = raza;
-        this.enfermedad = enfermedad;
-        this.estado = estado;
-        this.edad = edad;
-        this.imagen = imagen;
-        this.cliente = cliente;
-    }*/
-    
-
     // Getters y Setters
     public Long getId() {
         return id;
@@ -118,11 +106,11 @@ public class Mascota {
     }
 
     public String getImagen() {
-        return imagen; // Getter para el nuevo atributo
+        return imagen;
     }
 
     public void setImagen(String imagen) {
-        this.imagen = imagen; // Setter para el nuevo atributo
+        this.imagen = imagen;
     }
 
     public Cliente getCliente() {
