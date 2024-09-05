@@ -566,6 +566,7 @@ position: absolute;
   max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
   margin-left: 0; /* Alinea la imagen a la izquierda del contenedor */
   filter: brightness(50%);
+  flex: 1;
 }
 
 .intro-text {

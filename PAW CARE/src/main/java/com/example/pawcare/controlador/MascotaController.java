@@ -51,17 +51,7 @@ public class MascotaController {
         model.addAttribute("mascota", mascota);
         return "registro_mascotas";
     }
-
-    /*
-     @PostMapping("/registrar")
-    public String registroMascota(@ModelAttribute("mascota") Mascota mascota) {
-        // Buscar cliente por cédula
-        Cliente cliente = clienteService.SearchByCedula(mascota.getCedulaDueno());
-
-        mascotaService.add(mascota);
-        return "redirect:/mascota/all";
-    } 
-     */
+    
     @PostMapping("/registrar")
 public String registroMascota(@ModelAttribute("mascota") Mascota mascota,
                               @RequestParam("cedula") int cedula) {

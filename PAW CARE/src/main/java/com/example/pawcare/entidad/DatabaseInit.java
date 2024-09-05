@@ -8,6 +8,7 @@ import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Controller;
 
+import com.example.pawcare.repositorio.AdministradorRepository;
 import com.example.pawcare.repositorio.ClienteRepository;
 import com.example.pawcare.repositorio.MascotaRepository;
 
@@ -23,10 +24,14 @@ public class DatabaseInit implements ApplicationRunner {
     @Autowired
     MascotaRepository mascotaRepository;
 
+    @Autowired
+    AdministradorRepository administradorRepository;
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-                // TODO Auto-generated method stub
+            
+        administradorRepository.save(new Administrador(777, 100, 0, 0));
+
         clienteRepository.save(new Cliente("Juan Pérez", "juan.perez@example.com", 12345678, 87654321));
         clienteRepository.save(new Cliente("María Gómez", "maria.gomez@example.com", 23456789, 98765432));
         clienteRepository.save(new Cliente("Carlos López", "carlos.lopez@example.com", 34567890, 19876543));

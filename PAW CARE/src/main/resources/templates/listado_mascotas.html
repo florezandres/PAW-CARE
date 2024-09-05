@@ -21,12 +21,8 @@
             <h1>PAW CARE</h1>
           </div>
           <nav>
-            <a href="/index">INICIO</a>
-            <a href="/servicios">SERVICIOS</a>
-            <a href="/galeria">GALERIA DE PERROS</a>
-            <a href="/contacto">CONTACTANOS</a>
-            <a href="/mascota/all">LISTA DE MASCOTAS</a>
-            <a href="/cliente/all">USUARIOS</a>
+            <a th:href="@{/admin/mascotas}" >MASCOTAS</a>
+            <a th:href="@{/admin/clientes}">CLIENTES</a>
             <div class="btn-container">
               <a class="btnlogin" href="/clinica">Iniciar Sesión</button></a>
               <a class="btnsignup" th:href="@{/cliente/registro}">Registrarse</button></a>

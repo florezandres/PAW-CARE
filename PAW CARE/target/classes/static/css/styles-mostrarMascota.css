@@ -48,3 +48,10 @@
   border-color: black;
   border-radius: -5px;
 }
+
+.btnCerrar{
+  background-color: #ffffff;
+  color: #004d40;
+  font-weight: bold;
+  border-radius: 20px;
+}

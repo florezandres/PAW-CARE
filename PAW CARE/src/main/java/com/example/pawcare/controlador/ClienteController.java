@@ -8,11 +8,8 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import com.example.pawcare.entidad.Cliente;
-import com.example.pawcare.entidad.Mascota;
-import com.example.pawcare.errorHandling.NotFoundException;
 import com.example.pawcare.errorHandling.UserAlreadyExistsException;
 import com.example.pawcare.servicio.ClienteService;
 
@@ -43,7 +40,7 @@ public class ClienteController {
             throw new UserAlreadyExistsException(cliente.getCedula());
         }
         clienteService.add(cliente);
-        return "redirect:/cliente/all";
+        return "redirect:/clinica";
     }
 
     @GetMapping("/all")
@@ -74,18 +71,4 @@ public class ClienteController {
         clienteService.deleteById(id);
         return "redirect:/cliente/all";
     }
-    @PostMapping("/login")
-    public String login(@RequestParam("cedula") int cedula, Model model) {
-        Cliente cliente = clienteService.SearchByCedula(cedula);
-        if (cliente != null) {
-            System.out.println("Mascotas del cliente:");
-            for (Mascota mascota : cliente.getMascotas()) {
-                System.out.println(mascota.getNombre());  // Imprime el nombre de cada mascota
-            }
-            model.addAttribute("cliente", cliente);
-            return "clientePerfil";
-        } else {
-            throw new NotFoundException (cedula);
-        }
-}
 }

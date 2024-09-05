@@ -26,8 +26,6 @@
               <a href="/servicios">SERVICIOS</a>
               <a href="/galeria">GALERIA DE PERROS</a>
               <a href="/contacto">CONTACTANOS</a>
-              <a href="/mascota/all">LISTA DE MASCOTAS</a>
-              <a href="/cliente/all">USUARIOS</a>
               <div class="btn-container">
                 <a class="btnlogin" href="/clinica">Iniciar Sesión</button></a>
                 <a class="btnsignup" th:href="@{/cliente/registro}">Registrarse</button></a>
@@ -49,7 +47,7 @@
           </div>
           <div class="right-section">
             <h1 class="txtIniciarSesion">Inicio de Sesión</h1>
-            <form action="/cliente/login" method="POST">
+            <form action="/login" method="POST">
               <input type="text" id="cedula" name="cedula" placeholder="Cédula" maxlength="10" pattern="\d*" title="Ingrese solo numeros" required />
               <button type="submit">Ingresar</button>
               <div th:if="${param.error}" style="color: red;">Cédula incorrecta, intente de nuevo.</div>
