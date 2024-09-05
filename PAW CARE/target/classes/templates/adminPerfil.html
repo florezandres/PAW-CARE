@@ -23,9 +23,11 @@
                 <h1>PAW CARE</h1>
             </div>
             <nav>
+              <a th:href="@{/admin/mascotas}" >MASCOTAS</a>
+              <a th:href="@{/admin/clientes}">CLIENTES</a>
                 <div class="btn-container">
-                    <a class="btnlogin" href="/clinica">Perfil</button></a>
-                <a class="btnCerrar" href="/clinica"
+                    <a class="btnlogin" href="/admin/login">Perfil</a>
+                    <a class="btnCerrar" href="/clinica"
                   onclick="return confirm('¿Estás seguro de que deseas cerrar sesion?');">
                   Cerrar Sesion
               </a>
@@ -37,8 +39,16 @@
         <div class="info">
             <h1>Vista de Administrador</span></h1>
         </div>
-            <a th:href="@{/admin/mascotas}" >MASCOTAS</a>
-            <a th:href="@{/admin/clientes}">CLIENTES</a>
+        <div class="dashboard">
+          <div class="dashboard-container">
+            <a th:href="@{/admin/mascotas}"> <img class="imagenDashboard" src="../img/iconoPerro.png" alt="Mascotas">MASCOTAS</a>
+          </div>
+
+          <div class="dashboard-container">
+            <a th:href="@{/admin/clientes}"> <img class="imagenDashboard" src="../img/iconoCliente.png" alt="Clientes"> CLIENTES</a>
+          </div>
+
+        </div>
     </main>
     
     <footer>

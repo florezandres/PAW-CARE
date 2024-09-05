@@ -7,8 +7,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.example.pawcare.entidad.Cliente;
+import com.example.pawcare.entidad.Mascota;
+import com.example.pawcare.errorHandling.NotFoundException;
 import com.example.pawcare.errorHandling.UserAlreadyExistsException;
 import com.example.pawcare.servicio.AdministradorService;
 import com.example.pawcare.servicio.ClienteService;
@@ -42,7 +45,29 @@ public class AdminController {
             throw new UserAlreadyExistsException(cliente.getCedula());
         }
         clienteService.add(cliente);
-        return "redirect:/clinica";
+        return "redirect:/admin/clientes";
+    }
+
+    @GetMapping("/registroMascota")
+    public String mostrarFormularioRegistroMascota(Model model) {
+        Mascota mascota = new Mascota("","","","","",1,"");
+        model.addAttribute("mascota", mascota);
+        return "registro_mascotas";
+    }
+
+    @PostMapping("/registrarMascota")
+    public String registroMascota(@ModelAttribute("mascota") Mascota mascota,
+                              @RequestParam("cedula") int cedula) {
+    Cliente cliente = clienteService.SearchByCedula(cedula);
+    if (cliente != null) {
+        mascota.setCliente(cliente);
+        mascotaService.add(mascota);
+        return "redirect:/admin/mascotas";
+    } else {
+        // Manejo de error si el cliente no existe
+        throw new NotFoundException (cedula);
+    }
+    
     }
 
     @GetMapping("/clientes")
@@ -57,4 +82,8 @@ public class AdminController {
         return "listado_mascotas";
     }
 
+    @GetMapping("/login")
+    public String redirectToLogin() {
+        return "/adminPerfil";
+    }
 }

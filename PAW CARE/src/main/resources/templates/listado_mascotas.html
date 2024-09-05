@@ -24,9 +24,12 @@
             <a th:href="@{/admin/mascotas}" >MASCOTAS</a>
             <a th:href="@{/admin/clientes}">CLIENTES</a>
             <div class="btn-container">
-              <a class="btnlogin" href="/clinica">Iniciar Sesión</button></a>
-              <a class="btnsignup" th:href="@{/cliente/registro}">Registrarse</button></a>
-            </div>
+                <a class="btnlogin" href="/admin/login">Perfil</button></a>
+                <a class="btnCerrar" href="/clinica"
+              onclick="return confirm('¿Estás seguro de que deseas cerrar sesion?');">
+              Cerrar Sesion
+          </a>
+        </div>
         </nav>
         </div>
     </header>
@@ -58,7 +61,7 @@
                         <td th:text="${mascota.estado}"></td>
                         <td th:text="${mascota.edad}"></td>
                         <td class="tdBotones">
-                            <a class="btnDetalles" th:href="@{/mascota/find/{id}(id=${mascota.id})}">Ver detalles</a>
+                            <a class="btnDetalles" th:href="@{/mascota/adminfind/{id}(id=${mascota.id})}">Ver detalles</a>
                             <a class="btnEditar" th:href="@{/mascota/modificar/{id}(id=${mascota.id})}">Modificar</a>
                             <a class="btnEliminar" th:href="@{/mascota/eliminar/{id}(id=${mascota.id})}"
                                onclick="return confirm('¿Estás seguro de que deseas eliminar esta mascota?');">

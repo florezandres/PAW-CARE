@@ -63,7 +63,7 @@ public class MainController {
             System.out.println("Mascotas del cliente:");
             model.addAttribute("cliente", cliente);
             return "clientePerfil";
-        }else if (admin != null) { //cedula especial especifica temporal para vista de administrador
+        }else if (admin != null) { 
             return "adminPerfil";
         }
         else {

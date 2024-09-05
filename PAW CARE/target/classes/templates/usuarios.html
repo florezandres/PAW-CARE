@@ -24,9 +24,12 @@
             <a th:href="@{/admin/mascotas}" >MASCOTAS</a>
             <a th:href="@{/admin/clientes}">CLIENTES</a>
             <div class="btn-container">
-              <a class="btnlogin" href="/clinica">Iniciar Sesión</button></a>
-              <a class="btnsignup" th:href="@{/cliente/registro}">Registrarse</button></a>
-            </div>
+                <a class="btnlogin" href="/admin/login">Perfil</button></a>
+                <a class="btnCerrar" href="/clinica"
+              onclick="return confirm('¿Estás seguro de que deseas cerrar sesion?');">
+              Cerrar Sesion
+          </a>
+        </div>
         </nav>
         </div>
     </header>
@@ -36,7 +39,7 @@
             <div class="intro-text">
                 <h1>Usuarios registrados</h1>
             </div>
-            <a class="btnAgregar" th:href="@{/admin/registroAdmin}">Agregar usuario</a>
+            <a class="btnAgregar" th:href="@{/admin/registro}">Agregar usuario</a>
             <table class="tabla">
                 <thead>
                     <tr>

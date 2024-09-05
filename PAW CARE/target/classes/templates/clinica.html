@@ -48,9 +48,8 @@
           <div class="right-section">
             <h1 class="txtIniciarSesion">Inicio de Sesión</h1>
             <form action="/login" method="POST">
-              <input type="text" id="cedula" name="cedula" placeholder="Cédula" maxlength="10" pattern="\d*" title="Ingrese solo numeros" required />
+              <input type="text" id="cedula" name="cedula" placeholder="Cédula" maxlength="9" pattern="\d*" title="Ingrese solo numeros" required />
               <button type="submit">Ingresar</button>
-              <div th:if="${param.error}" style="color: red;">Cédula incorrecta, intente de nuevo.</div>
             </form>
             <span
               >

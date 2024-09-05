@@ -23,20 +23,23 @@
           <h1>PAW CARE</h1>
         </div>
         <nav>
-            <a th:href="@{/admin/mascotas}" >MASCOTAS</a>
-            <a th:href="@{/admin/clientes}">CLIENTES</a>
-          <div class="btn-container">
-            <a class="btnlogin" href="/clinica">Iniciar Sesión</button></a>
-            <a class="btnsignup" th:href="@{/cliente/registro}">Registrarse</button></a>
-          </div>
-      </nav>
+          <a th:href="@{/admin/mascotas}" >MASCOTAS</a>
+          <a th:href="@{/admin/clientes}">CLIENTES</a>
+            <div class="btn-container">
+                <a class="btnlogin" href="/admin/login">Perfil</a>
+                <a class="btnCerrar" href="/clinica"
+              onclick="return confirm('¿Estás seguro de que deseas cerrar sesion?');">
+              Cerrar Sesion
+          </a>
+        </div>
+        </nav>
       </div>
     </header>
 
     <main class="content">
       <div class="formulario">
       <section class="modificarUsuario">
-        <h1 class="titulo">Modifique sus datos</h1>
+        <h1 class="titulo">Modificar cliente</h1>
                   <form th:object="${cliente}" th:action="@{/cliente/modificar/{id}(id=${cliente.id})}" method="POST">
                     <label for="nombre">Nombre</label>
                     <input th:field="*{nombre}" type="text" id="nombre" name="nombre" required />
@@ -45,11 +48,11 @@
                     <input th:field="*{correo}" type="email" id="correo" name="correo" required />
                 
                     <label for="cedula">Cédula</label>
-                    <input th:field="*{cedula}" type="text" id="cedula" name="cedula" maxlength="10" pattern="\d*" disabled required />
+                    <input th:field="*{cedula}" type="text" id="cedula" name="cedula" maxlength="9" pattern="\d*" disabled required />
                     <input type="hidden" name="cedula" th:value="${cliente.cedula}" />
 
                     <label for="celular">Celular</label>
-                    <input th:field="*{celular}" type="text" id="celular" name="celular" maxlength="10" pattern="\d*" title="Por favor, ingrese solo números." required />
+                    <input th:field="*{celular}" type="text" id="celular" name="celular" maxlength="9" pattern="\d*" title="Por favor, ingrese solo números." required />
                       
 
                     <button type="submit">Guardar cambios</button>

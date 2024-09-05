@@ -1,6 +1,12 @@
 /* Estilos generales del contenido */
-
+  .content{
+    min-height: 80vh;
+  }
   
+  .info h1{
+    padding-top: 40px;
+  }
+
   .info p {
     font-size: 18px;
     margin-bottom: 10px;
@@ -59,4 +65,68 @@
     color: #004d40;
     font-weight: bold;
     border-radius: 20px;
+}
+
+
+/* Estilos del dashboard */
+.dashboard {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  flex: 1;
+  justify-content: center;
+  padding: 40px;
+}
+
+.dashboard-container {
+  width: 300px;
+  height: 300px;
+  margin: 0 20px 0 20px;
+  background-color: white;
+  box-shadow: 0 4px 50px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+  text-decoration: none;
+  align-content:center;
+  border-radius: 10px;
+
+}
+
+.dashboard-container:hover {
+  transform: translateY(-5px); /* Elevar ligeramente al hacer hover */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Sombra más grande al hacer hover */
+}
+
+.dashboard-container a{
+  display: flex;
+  flex-direction: column;
+  color: #2a2a2a;
+  text-decoration: none;
+}
+
+.dashboard-container a:hover{
+  color: #007f73;
+  text-decoration: none;
+}
+
+.imagenDashboard {
+  width: 50%;
+  height: 50%;
+  border-radius: 10px;
+  align-self: center;
+}
+
+.btnCerrar{
+  background-color: #ffffff;
+  color: #004d40;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+.btnlogin{
+  width: 40px;
+  padding-left: 20px;
+}
+
+.btnlogin a{
+  padding-left: 20px;
 }

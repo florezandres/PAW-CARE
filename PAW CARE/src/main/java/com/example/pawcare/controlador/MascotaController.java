@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.example.pawcare.entidad.Cliente;
 import com.example.pawcare.entidad.Mascota;
-import com.example.pawcare.errorHandling.NotFoundException;
 import com.example.pawcare.servicio.ClienteService;
 import com.example.pawcare.servicio.MascotaService;
 
@@ -35,8 +34,23 @@ public class MascotaController {
 
     @GetMapping("/find/{id}")
     public String mostrarinfoMascota(Model model, @PathVariable("id") Long id) {
-        model.addAttribute("mascota", mascotaService.SearchById(id));
+        Mascota mascota = mascotaService.SearchById(id);
+        if (mascota != null) {
+            Cliente cliente = clienteService.SearchByCedula(mascota.getCliente().getCedula());
+            model.addAttribute("mascota", mascota);
+            model.addAttribute("cliente", cliente);
+        } else {
+            // Maneja el caso en que la mascota no sea encontrada, si es necesario
+            model.addAttribute("error", "Mascota no encontrada");
+        }
         return "mostrar_mascota";
+    }
+
+
+    @GetMapping("/adminfind/{id}")
+    public String mostrarinfoMascotaAdmin(Model model, @PathVariable("id") Long id) {
+        model.addAttribute("mascota", mascotaService.SearchById(id));
+        return "mostrar_mascota_admin";
     }
     
     @GetMapping("path")
@@ -51,21 +65,6 @@ public class MascotaController {
         model.addAttribute("mascota", mascota);
         return "registro_mascotas";
     }
-    
-    @PostMapping("/registrar")
-public String registroMascota(@ModelAttribute("mascota") Mascota mascota,
-                              @RequestParam("cedula") int cedula) {
-    Cliente cliente = clienteService.SearchByCedula(cedula);
-    if (cliente != null) {
-        mascota.setCliente(cliente);
-        mascotaService.add(mascota);
-        return "redirect:/mascota/all";
-    } else {
-        // Manejo de error si el cliente no existe
-        throw new NotFoundException (cedula);
-    }
-} 
-
 
     @GetMapping("/eliminar/{id}")
     public String borrarMascota(@PathVariable("id") Long id) {
@@ -84,7 +83,7 @@ public String registroMascota(@ModelAttribute("mascota") Mascota mascota,
         //mascota.setId(id);
         
         mascotaService.update(mascota);
-        return "redirect:/mascota/all";
+        return "redirect:/admin/mascotas";
     }
 
 }

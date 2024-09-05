@@ -79,3 +79,17 @@ th {
     display: inline-block;
     border-radius: 5px;
 }
+.btnlogin{
+  width: 40px;
+  padding-left: 20px;
+}
+
+.btnlogin a{
+  padding-left: 20px;
+}
+.btnCerrar{
+  background-color: #ffffff;
+  color: #004d40;
+  font-weight: bold;
+  border-radius: 20px;
+}

@@ -34,8 +34,14 @@
             <a class="btnsignup" th:href="@{/cliente/registro}">Registrarse</button></a>
           </div>-->
           <nav>
-            <a class="btnCerrar" href="/clinica">Cerrar Sesion</button></a>
-        </nav>
+            <div class="btn-container">
+              <a class="btnlogin" th:href="@{/cliente/login(cedula=${cliente.cedula})}">Perfil</a>
+              <a class="btnCerrar" href="/clinica"
+                  onclick="return confirm('¿Estás seguro de que deseas salir de tu cuenta?');">
+                  Cerrar Sesion
+              </a>
+            </div>
+          </nav>                              
       </nav>
       </div>
     </header>

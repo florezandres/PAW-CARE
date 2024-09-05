@@ -24,8 +24,8 @@
           <h1>PAW CARE</h1>
         </div>
         <nav>
-            <a href="/mascota/all">LISTA DE MASCOTAS</a>
-            <a href="/cliente/all">USUARIOS</a>
+            <a href="/admin/mascotas">MASCOTAS</a>
+            <a href="/admin/clientes">CLIENTES</a>
             <div class="btn-container">
               <a class="btnlogin" href="/clinica">Iniciar Sesión</a>
               <a class="btnsignup" th:href="@{/admin/registro}">Registrarse</a>
@@ -37,17 +37,17 @@
     <main class="content">
       <div class="formulario">
       <section class="registroUsuario">
-                  <h1 class="titulo">Registro Usuario</h1>
+                  <h1 class="titulo">Registro Dueño</h1>
 
                   <form th:object="${cliente}" th:action="@{/admin/registrar}" method="POST">
 
-                    <input th:field="*{cedula}" type="text" id="cedula" placeholder="Cédula" name="cedula" required />
+                    <input th:field="*{cedula}" type="text" id="cedula" maxlength="9" placeholder="Cédula" pattern="\d*" title="Por favor, ingrese solo números." name="cedula"  required />
 
                     <input th:field="*{nombre}" type="text" id="nombre" placeholder="Nombre" name="nombre" required />
                 
                     <input th:field="*{correo}" type="email" id="correo" placeholder="Correo" name="correo" required />
                 
-                    <input th:field="*{celular}" type="text" id="celular" placeholder="Celular" name="celular" required />                
+                    <input th:field="*{celular}" type="text" id="celular" maxlength="9" placeholder="Celular" pattern="\d*" title="Por favor, ingrese solo números." name="celular" required />                   
 
                     <button type="submit">Registrarse</button>
 

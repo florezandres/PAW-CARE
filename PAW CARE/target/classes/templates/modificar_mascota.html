@@ -14,6 +14,7 @@
     <link rel="stylesheet" th:href="@{/css/styles-general.css}" />
     <link rel="stylesheet" th:href="@{/css/styles-modificar.css}" />
 
+
     <script src="../js/form-validation.js"></script>
   </head>
   <body>
@@ -24,13 +25,16 @@
           <h1>PAW CARE</h1>
         </div>
         <nav>
-            <a th:href="@{/admin/mascotas}" >MASCOTAS</a>
-            <a th:href="@{/admin/clientes}">CLIENTES</a>
-          <div class="btn-container">
-            <a class="btnlogin" href="/clinica">Iniciar Sesión</button></a>
-            <a class="btnsignup" th:href="@{/cliente/registro}">Registrarse</button></a>
-          </div>
-      </nav>
+          <a th:href="@{/admin/mascotas}" >MASCOTAS</a>
+          <a th:href="@{/admin/clientes}">CLIENTES</a>
+            <div class="btn-container">
+                <a class="btnlogin" href="/admin/login">Perfil</a>
+                <a class="btnCerrar" href="/clinica"
+              onclick="return confirm('¿Estás seguro de que deseas cerrar sesion?');">
+              Cerrar Sesion
+          </a>
+        </div>
+        </nav>
       </div>
     </header>
 

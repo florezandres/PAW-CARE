@@ -22,8 +22,8 @@
           <h1>PAW CARE</h1>
         </div>
         <nav>
-          <a href="/mascota/all">LISTA DE MASCOTAS</a>
-          <a href="/cliente/all">USUARIOS</a>
+          <a href="/admin/mascotas">MASCOTAS</a>
+          <a href="/admin/clientes">CLIENTES</a>
           <div class="btn-container">
             <a class="btnlogin" href="/clinica">Iniciar Sesión</a>
             <a class="btnsignup" th:href="@{/cliente/registro}">Registrarse</a>
@@ -37,7 +37,7 @@
         <section class="registroMascota">
           <h1 class="titulo">Registro de mascota</h1>
           <form
-            th:action="@{/mascota/registrar}"
+            th:action="@{/admin/registrarMascota}"
             th:object="${mascota}"
             method="post"
           >

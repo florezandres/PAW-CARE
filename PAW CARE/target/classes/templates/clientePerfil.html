@@ -23,10 +23,13 @@
                 <h1>PAW CARE</h1>
             </div>
             <nav>
-              <a class="btnCerrar" href="/clinica"
-                  onclick="return confirm('¿Estás seguro de que deseas salir de tu cuenta?');">
-                  Cerrar Sesion
-              </a>
+              <div class="btn-container">
+                <a class="btnlogin" th:href="@{/cliente/login(cedula=${cliente.cedula})}">Perfil</a>
+                <a class="btnCerrar" href="/clinica"
+                    onclick="return confirm('¿Estás seguro de que deseas salir de tu cuenta?');">
+                    Cerrar Sesion
+                </a>
+              </div>
             </nav>
         </div>
     </header>
