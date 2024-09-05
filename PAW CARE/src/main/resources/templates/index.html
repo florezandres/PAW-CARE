@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paw Care</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script src="../js/form-validation.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <div class="logo">
+          <img src="../img/LogoClaro.png" class="logoHeader" />
+          <h1>PAW CARE</h1>
+        </div>
+        <nav>
+          <a href="/index">INICIO</a>
+          <a href="/servicios">SERVICIOS</a>
+          <a href="/galeria">GALERIA DE PERROS</a>
+          <a href="/contacto">CONTACTANOS</a>
+          <a href="/mascota/all">LISTA DE MASCOTAS</a>
+          <a href="/cliente/all">USUARIOS</a>
+          <div class="btn-container">
+            <a class="btnlogin" href="/clinica">Iniciar Sesión</a>
+            <a class="btnsignup" th:href="@{/cliente/registro}">Registrarse</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="content">
+      <section class="intro">
+        <div class="intro-text">
+          <div class="overlay">
+            <h1 class="textoBienvenidaPC">PAW CARE</h1>
+            <h1 class="textoBienvenida">La mejor apuesta para tu mascota</h1>
+            <p>🐾 Con los mejores veterinarios especialistas a tu servicio 🐾</p>
+          </div>
+          <img
+            src="../img/imagen-intro.jpg"
+            class="intro-image"
+            alt="Mascota"
+          />
+        </div>
+      </section>
+      <section class="servicios">
+        <h1>SERVICIOS QUE OFRECEMOS</h1>
+      <!--<h4>Servicios de calidad con los mejores especialistas</h4>-->  
+        <img src="../img/pica.png" class="overlayPica">
+        <img src="../img/diamante.png" class="overlayDiamante">
+        <img src="../img/corazon.png" class="overlayCorazon">
+        <img src="../img/trebol.png" class="overlayTrebol">
+
+
+        <div class="servicios-container">
+          <div class="servicios-box">
+            <img src="../img/iconoCollar.jpg" alt="Adopción" />
+            <h2>ADOPCION</h2>
+            <p>
+              Encontramos hogares amorosos para mascotas en busca de una nueva
+              familia. Nuestro equipo te ayudará a encontrar la mascota perfecta
+              para ti.
+            </p>
+            <a href="/servicios">Más Informacion</a>
+          </div>
+          <div class="servicios-box">
+            <img src="../img/vacuna.png" alt="VACUNACION" />
+            <h2>VACUNACION</h2>
+            <p>
+              Ofrecemos un completo servicio de vacunación para mantener a tus
+              mascotas saludables y protegidas contra enfermedades comunes.
+            </p>
+            <a href="/servicios">Más Informacion</a>
+          </div>
+          <div class="servicios-box">
+            <img src="../img/corazonPerro.png" alt="Cuidado de Mascota" />
+            <h2>CUIDADO</h2>
+            <p>
+              Brindamos atención especializada y cuidado integral para tus
+              mascotas, asegurándonos de que reciban el mejor tratamiento
+              posible.
+            </p>
+            <a href="/servicios">Más Informacion</a>
+          </div>
+        </div>
+      </section>
+      <section class="gallery">
+        <h1>GALERIA DE NUESTROS AMIGOS PELUDOS</h1>
+        <section id="slider">
+          <input type="radio" name="slider" id="s1" />
+          <input type="radio" name="slider" id="s2" />
+          <input type="radio" name="slider" id="s3" checked />
+          <input type="radio" name="slider" id="s4" />
+          <input type="radio" name="slider" id="s5" />
+          <label for="s1" id="slide1"></label>
+          <label for="s2" id="slide2"></label>
+          <label for="s3" id="slide3"></label>
+          <label for="s4" id="slide4"></label>
+          <label for="s5" id="slide5"></label>
+        </section>
+      </section>
+      <section class="contentContacto">
+        <section class="clinic">
+            <h1>ENCUENTRANOS</h1>
+            <div class="clinic-info">
+                <div class="clinic-contact">
+                    <h2>Informacion de contacto</h2>
+                    <p>Si necesitas información adicional o tienes dudas:</p>
+                    <div class="contact-details">
+                        <img src="../img/iconoCorreo.png" alt="Email Icon" class="icon">
+                        <a href="mailto:contacto@pawcare.com">contacto@pawcare.com</a>
+                    </div>
+                    <div class="contact-details">
+                        <img src="../img/iconoTelefono.png" alt="Phone Icon" class="icon">
+                        <a href="tel:+5712345678">+57 1 234 5678</a>
+                    </div>
+                </div>
+                <div class="clinic-location">
+                    <h2>Ubicacion y Horarios</h2>
+                    <div class="location-details">
+                        <img src="../img/iconoUbicacion.png" alt="Location Icon" class="icon">
+                        <p>Estamos ubicados en la Calle Ejemplo 123 en Bogotá, Colombia.</p>
+                    </div>
+                    <div class="location-details">
+                        <img src="../img/iconoReloj.png" alt="Clock Icon" class="icon">
+                        <p>Abiertos de 9 a.m a 6 p.m entre semana, 9 a.m a 2 p.m los sabados, los domingos no prestamos servicio al publico.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="contact">
+            <h1>CONTACTANOS</h1>
+            <form id="contact-form" class="contact-form">
+                <input type="text" id="name" name="name" placeholder="Nombre" required />
+                <input type="email" id="email" name="email" placeholder="Correo" required />
+                <input type="text" id="subject" name="subject" placeholder="Asunto" required />
+                <textarea id="message" name="message" rows="5" placeholder="Mensaje" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-info">
+          <p class="foorterPC">PAW CARE</p>
+          <p>Dirección: Calle Ejemplo #123, Bogotá, Colombia</p>
+          <p>Teléfono: +57 123 456 789</p>
+          <p>Email: contacto@pawcare.com</p>
+        </div>
+        <div class="footer-social">
+          <a
+            class="iconoFooter"
+            href="https://www.facebook.com/tuempresa"
+            target="_blank"
+            title="Facebook"
+          >
+            <img class="iconoFooter" src="../img/facebookIcon.png" height="50" />
+          </a>
+          <a
+            class="iconoFooter"
+            href="https://www.instagram.com/tuempresa"
+            target="_blank"
+            title="Instagram"
+          >
+            <img class="iconoFooter" src="../img/instagramIcon.png" height="50" />
+          </a>
+          <a
+            class="iconoFooter"
+            href="https://www.twitter.com/tuempresa"
+            target="_blank"
+            title="X"
+          >
+            <img class="iconoFooter" src="../img/twitterIcon.png" height="50" />
+          </a>
+        </div>
+        <div class="footer-credits">
+          <p>&copy; 2024 PAW CARE. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

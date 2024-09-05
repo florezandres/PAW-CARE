@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paw Care</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles-general.css" />
+    <link rel="stylesheet" href="../css/styles-listados.css" />
+    <link rel="stylesheet" href="../css/styles-perfil.css" />
+    <script src="../js/form-validation.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="../img/LogoClaro.png" class="logoHeader" />
+                <h1>PAW CARE</h1>
+            </div>
+            <nav>
+                <a class="btnCerrar" href="/clinica">Cerrar Sesion</button></a>
+            </nav>
+        </div>
+    </header>
+    <main class="content">
+        <div class="info">
+            <h1>Bienvenid@, <span th:text="${cliente.nombre}">Nombre del Cliente</span></h1>
+            <p>Cédula: <span th:text="${cliente.cedula}">Cédula</span></p>
+            <p>Correo: <span th:text="${cliente.correo}">Correo</span></p>
+            <p>Celular: <span th:text="${cliente.celular}">Celular</span></p>
+        </div>
+        <div class="tabla-container">
+            <h2>Mis mascotas:</h2>
+            <table class="tabla">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Peso</th>
+                        <th>Raza</th>
+                        <th>Enfermedad</th>
+                        <th>Estado</th>
+                        <th>Edad</th>
+                        <th>Acciones</th> 
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="mascota : ${cliente.mascotas}">
+                        <td th:text="${mascota.nombre}"></td>
+                        <td th:text="${mascota.peso}"></td>
+                        <td th:text="${mascota.raza}"></td>
+                        <td th:text="${mascota.enfermedad}"></td>
+                        <td th:text="${mascota.estado}"></td>
+                        <td th:text="${mascota.edad}"></td>
+                        <td>
+                            <a class="btnDetalles" th:href="@{/mascota/find/{id}(id=${mascota.id})}">Ver detalles</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    
+    <footer>
+      <div class="footer-content">
+        <div class="footer-info">
+          <p class="foorterPC">PAW CARE</p>
+          <p>Dirección: Calle Ejemplo #123, Bogotá, Colombia</p>
+          <p>Teléfono: +57 123 456 789</p>
+          <p>Email: contacto@pawcare.com</p>
+        </div>
+        <div class="footer-social">
+          <a
+            class="iconoFooter"
+            href="https://www.facebook.com/tuempresa"
+            target="_blank"
+            title="Facebook"
+          >
+            <img class="iconoFooter" src="../img/facebookIcon.png" height="50" />
+          </a>
+          <a
+            class="iconoFooter"
+            href="https://www.instagram.com/tuempresa"
+            target="_blank"
+            title="Instagram"
+          >
+            <img class="iconoFooter" src="../img/instagramIcon.png" height="50" />
+          </a>
+          <a
+            class="iconoFooter"
+            href="https://www.twitter.com/tuempresa"
+            target="_blank"
+            title="X"
+          >
+            <img class="iconoFooter" src="../img/twitterIcon.png" height="50" />
+          </a>
+        </div>
+        <div class="footer-credits">
+          <p>&copy; 2024 PAW CARE. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
