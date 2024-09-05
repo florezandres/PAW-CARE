@@ -33,15 +33,18 @@
             </nav>
         </div>
     </header>
-    <main class="content">
-        <div class="info">
-            <h1>Bienvenid@, <span th:text="${cliente.nombre}">Nombre del Cliente</span></h1>
-            <p>Cédula: <span th:text="${cliente.cedula}">Cédula</span></p>
-            <p>Correo: <span th:text="${cliente.correo}">Correo</span></p>
-            <p>Celular: <span th:text="${cliente.celular}">Celular</span></p>
+    <main class="contentUsuario">
+        <div class="info-usuario">
+            <h1 class="username"><span th:text="${cliente.nombre}">Nombre del Cliente</span></h1>
+            <img src="../img/iconoCliente.png" alt="Foto de Perfil">
+            <div class="info-container">
+              <p>Cédula: <span th:text="${cliente.cedula}">Cédula</span></p>
+              <p>Correo: <span th:text="${cliente.correo}">Correo</span></p>
+              <p>Celular: <span th:text="${cliente.celular}">Celular</span></p>
+            </div>
         </div>
         <div class="tabla-container">
-            <h2>Mis mascotas:</h2>
+            <h2>MIS MASCOTAS</h2>
             <table class="tabla">
                 <thead>
                     <tr>
