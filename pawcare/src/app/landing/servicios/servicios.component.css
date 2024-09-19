@@ -1,0 +1,158 @@
+.servicios {
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Aumentar el espaciado entre las cajas de servicios */
+  .servicios-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Espacio entre las cajas */
+    background-color: white;
+    padding: 10px;
+    padding-bottom: 100px;
+  }
+  
+  .servicios-container h2 {
+    font-weight: 500;
+    padding-top: 31px;
+    font-size: 17px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+  .servicios-container p {
+    margin-top: 21px;
+    padding-top: 0;
+    margin-left: 10px ;
+    margin-right: 10px;
+  }
+  
+  /* Reducir el tamaño de los íconos en las cajas de servicios */
+  .servicios-box img {
+    width: 100px; /* Tamaño reducido de las imágenes */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }
+  
+  .servicios-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    background-color: #ffffff; /* Fondo blanco para la tarjeta */
+    padding: 20px; /* Espacio interno de la tarjeta */
+    padding-top: 70px;
+    padding-bottom: 70px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 50px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+  }
+  
+  .servicios-box:hover {
+    transform: translateY(-10px); /* Elevar ligeramente al hacer hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más grande al hacer hover */
+  }
+  
+  .servicios-box a{
+    color: #2a2a2a;
+    text-decoration: none;
+  }
+  
+  .servicios-box a:hover{
+    color: #006157;
+    text-decoration: none;
+  }
+  
+  .servicios h1 {
+    padding-top: 50px;
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #2a2a2a;
+    text-transform: uppercase;
+  }
+  
+  .servicios h4{
+    font-size: 10px;
+    font-weight: bold;
+    color: #2a2a2a;
+  }
+  
+  .overlayPica{
+    position: absolute;
+    opacity: 50%;
+    top: 0%;
+    left: 2%;
+    height: 50px;
+    width: 50px;
+  }
+  
+  .overlayDiamante{
+    position: absolute;
+    opacity: 50%;
+    bottom: 5%;
+    left: 2%;
+    height: 50px;
+    width: 50px;
+  }
+  
+  .overlayCorazon{
+    position: absolute;
+    opacity: 50%;
+    top: 0%;
+    right: 2%;
+    height: 50px;
+    width: 50px;
+  }
+  
+  .overlayTrebol{
+  position: absolute;
+    opacity: 50%;
+    bottom: 5%;
+    right: 2%;
+    height: 50px;
+    width: 50px;
+  }
+  
+  .overlayCartaD{
+    position: absolute;
+    opacity: 60%;
+    bottom: 10%;
+    right: 2%;
+    max-width: 30px;
+    max-height: 30px;
+    transform: rotate(180deg);
+  }
+  
+  .overlayCartaI{
+    position: absolute;
+    opacity: 60%;
+    top: 10%;
+    left: 2%;
+    max-width: 30px;
+    max-height: 30px;
+  }
+  
+  .overlayLetraCartaI{
+    position: absolute;
+    opacity: 60%;
+    top: 0%;
+    left: 2%;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+  }
+  
+  .overlayLetraCartaD{
+    position: absolute;
+    opacity: 60%;
+    bottom: 0%;
+    right: 2%;
+    height: 5px;
+    width: 5px;
+    transform: rotate(180deg);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+  }

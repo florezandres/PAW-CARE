@@ -1,0 +1,59 @@
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alinea el contenido a la izquierda */
+    padding: 0; /* Elimina padding si es necesario */
+    width: 100%;
+  }
+  
+  .intro-image {
+    display: flex;
+    width: max-content; /* Ajusta la imagen al ancho del contenedor */
+    height: max-content; /* Mantiene la proporción de la imagen */
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    margin-left: 0; /* Alinea la imagen a la izquierda del contenedor */
+    filter: brightness(40%);
+    flex: 1;
+  }
+  
+  .overlay{
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    transform: translate(-10%, -20%);
+    color: white;
+    text-align: center;
+    z-index: 2;
+    width: max-content;
+    justify-content: left;
+  }
+  
+  h1{
+    margin: 0px;
+    justify-content: left;
+    font-size: 50px;
+    font-weight: 400;
+  }
+  
+  p{
+    margin-left: 2px;
+    color: white;
+    justify-content: left;
+    text-align: left;
+    font-size: 20px;
+  }
+  
+  .textoBienvenida{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    color: white;
+    font-weight: 200;
+    text-align:start;
+  }
+  
+  .textoBienvenidaPC{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    color: white;
+    font-weight: bold;
+    text-align: left;
+  }
+  
