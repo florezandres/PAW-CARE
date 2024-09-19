@@ -9,6 +9,7 @@ import { IntroComponent } from './landing/intro/intro.component';
 import { ServiciosComponent } from './landing/servicios/servicios.component';
 import { GaleriaComponent } from './landing/galeria/galeria.component';
 import { ContactoComponent } from './landing/contacto/contacto.component';
+import { ErrorPageComponent } from './error/error-page/error-page.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ContactoComponent } from './landing/contacto/contacto.component';
     IntroComponent,
     ServiciosComponent,
     GaleriaComponent,
-    ContactoComponent
+    ContactoComponent,
+    ErrorPageComponent
   ],
   imports: [
     BrowserModule,
