@@ -1,5 +1,5 @@
 export interface mascota {
-    id: string;
+    id: number;
     nombre: string;
     peso: number;
     raza: string;
