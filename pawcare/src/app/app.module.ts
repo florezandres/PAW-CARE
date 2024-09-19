@@ -10,6 +10,7 @@ import { ServiciosComponent } from './landing/servicios/servicios.component';
 import { GaleriaComponent } from './landing/galeria/galeria.component';
 import { ContactoComponent } from './landing/contacto/contacto.component';
 import { ErrorPageComponent } from './error/error-page/error-page.component';
+import { LandingPageComponent } from './landing/landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ErrorPageComponent } from './error/error-page/error-page.component';
     ServiciosComponent,
     GaleriaComponent,
     ContactoComponent,
-    ErrorPageComponent
+    ErrorPageComponent,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,
