@@ -6,6 +6,7 @@ import { LandingPageComponent } from './landing/landing-page/landing-page.compon
 
 const routes: Routes = [
   { path: 'home', component: LandingPageComponent},
+//  { path: 'mascotas', component: RegistroComponent},
 //  { path: 'InicioSesion', component: InicioSesionComponent},
   { path: '', pathMatch: 'full', redirectTo: 'home'},
   { path: '**', component: ErrorPageComponent}

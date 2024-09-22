@@ -2,3 +2,9 @@
 body{
     margin: 0;
 }
+
+.content{
+    margin-top: 90px; /* Igual a la altura del header */
+  }
+
+  
