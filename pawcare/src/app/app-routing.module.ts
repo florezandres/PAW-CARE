@@ -3,10 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { ErrorPageComponent } from './error/error-page/error-page.component';
 import { LandingPageComponent } from './landing/landing-page/landing-page.component';
+import { MascotaTableComponent } from './model/mascota/mascota-table/mascota-table.component';
 
 const routes: Routes = [
   { path: 'home', component: LandingPageComponent},
-//  { path: 'mascotas', component: RegistroComponent},
+  { path: 'mascotas', component: MascotaTableComponent},
 //  { path: 'InicioSesion', component: InicioSesionComponent},
   { path: '', pathMatch: 'full', redirectTo: 'home'},
   { path: '**', component: ErrorPageComponent}

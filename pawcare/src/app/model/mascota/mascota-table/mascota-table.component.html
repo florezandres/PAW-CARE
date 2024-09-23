@@ -1,0 +1,37 @@
+<p>mascota-table works!</p>
+<table class="tabla">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Peso</th>
+            <th>Raza</th>
+            <th>Enfermedad</th>
+            <th>Estado</th>
+            <th>Edad</th>
+            <th>Acciones</th> 
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let mascota of mascotaList">
+            <ng-container>
+                <td>{{mascota.nombre}}</td>
+                <td>{{mascota.peso}}kg</td>
+                <td>{{mascota.raza}}</td>
+                <td>{{mascota.enfermedad}}</td>
+                <td [ngClass]="{
+                    'verde': mascota.estado === 'Recuperado',
+                    'amarillo': mascota.estado === 'En observación',
+                    'rojo': mascota.estado === 'En tratamiento'
+                  }">
+                  {{mascota.estado}}</td>
+                <td>{{mascota.edad}}</td>
+                <td class="botones">
+                    <button class="botonSeleccion" (click)="mostrarMascota(mascota)">Seleccionar</button>
+                    <button class="botonEliminar" (click)="eliminarMascota(mascota)">Eliminar</button>
+                </td>
+            </ng-container>
+        </tr>
+    </tbody>
+</table>
+<app-mascota-detail [mascota]="selectedMascota"></app-mascota-detail>
+<app-mascota-form (addMascotaEvent)="agregarMascota($event)"></app-mascota-form>

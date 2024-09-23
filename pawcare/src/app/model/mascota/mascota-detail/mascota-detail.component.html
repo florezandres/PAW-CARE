@@ -1,0 +1,15 @@
+<div>
+    <p>mascota-detail works!</p>
+    <ng-container *ngIf="mascota">
+        <li>Nombre: {{mascota.nombre}}</li>
+        <li>Peso: {{mascota.peso}}kg</li>
+        <li>Raza: {{mascota.raza}}</li>
+        <li>Enfermedad: {{mascota.enfermedad}}</li>
+        <li>Estado: {{mascota.estado}}</li>
+        <li>Edad: {{mascota.edad}}</li>
+        <li><img src="{{mascota.imagen}}" class="imagen"></li>
+    </ng-container>
+    
+    <ng-container *ngIf="!mascota">Seleccione una mascota de la tabla</ng-container>
+</div>
+

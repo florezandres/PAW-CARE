@@ -11,6 +11,10 @@ import { GaleriaComponent } from './landing/galeria/galeria.component';
 import { ContactoComponent } from './landing/contacto/contacto.component';
 import { ErrorPageComponent } from './error/error-page/error-page.component';
 import { LandingPageComponent } from './landing/landing-page/landing-page.component';
+import { MascotaTableComponent } from './model/mascota/mascota-table/mascota-table.component';
+import { MascotaDetailComponent } from './model/mascota/mascota-detail/mascota-detail.component';
+import { MascotaFormComponent } from './model/mascota/mascota-form/mascota-form.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,11 +26,15 @@ import { LandingPageComponent } from './landing/landing-page/landing-page.compon
     GaleriaComponent,
     ContactoComponent,
     ErrorPageComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    MascotaTableComponent,
+    MascotaDetailComponent,
+    MascotaFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
