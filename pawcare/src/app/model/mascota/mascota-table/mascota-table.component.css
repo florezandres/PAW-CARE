@@ -12,9 +12,11 @@
 
 .tabla{
     padding: 10px;
+    padding-bottom: 0px;
     width:98%;
     border-collapse: collapse;
     margin: 20px;
+    margin-bottom: 0px;
     font-size: 18px;
     text-align: left;
     border: 1px solid #ddd; 
@@ -70,3 +72,29 @@
     cursor: pointer;
     
 }
+
+.botonDetalle{
+  padding: 10px 20px;
+    font-size: 16px;
+    background-color: #008073;
+    border: 0px solid #000;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+.botonEditar{
+  padding: 10px 20px;
+    font-size: 16px;
+    background-color: #006680;
+    border: 0px solid #000;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+h1{
+    text-align: center;
+    padding-top: 20px;
+}
+

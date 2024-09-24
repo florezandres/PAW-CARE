@@ -4,11 +4,17 @@ import { AppComponent } from './app.component';
 import { ErrorPageComponent } from './error/error-page/error-page.component';
 import { LandingPageComponent } from './landing/landing-page/landing-page.component';
 import { MascotaTableComponent } from './model/mascota/mascota-table/mascota-table.component';
+import { MascotaDetailComponent } from './model/mascota/mascota-detail/mascota-detail.component';
+import { LoginComponent } from './model/login/login.component';
+import { MascotaEditComponent } from './model/mascota/mascota-edit/mascota-edit.component';
 
 const routes: Routes = [
   { path: 'home', component: LandingPageComponent},
   { path: 'mascotas', component: MascotaTableComponent},
 //  { path: 'InicioSesion', component: InicioSesionComponent},
+  { path: 'mascota/detail/:id', component: MascotaDetailComponent},
+  { path: 'mascota/edit/:id', component: MascotaEditComponent},
+  { path: 'login', component: LoginComponent},
   { path: '', pathMatch: 'full', redirectTo: 'home'},
   { path: '**', component: ErrorPageComponent}
 ];

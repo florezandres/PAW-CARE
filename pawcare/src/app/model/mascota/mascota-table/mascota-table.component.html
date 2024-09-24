@@ -1,4 +1,4 @@
-<p>mascota-table works!</p>
+<h1>LISTA DE MASCOTAS</h1>
 <table class="tabla">
     <thead>
         <tr>
@@ -28,10 +28,15 @@
                 <td class="botones">
                     <button class="botonSeleccion" (click)="mostrarMascota(mascota)">Seleccionar</button>
                     <button class="botonEliminar" (click)="eliminarMascota(mascota)">Eliminar</button>
+                    <a routerLink="/mascota/detail/{{mascota.id}}"><button class="botonDetalle">Ver Detalles</button></a>
+                    <a routerLink="/mascota/edit/{{mascota.id}}"><button class="botonEditar">Editar</button></a>
                 </td>
             </ng-container>
         </tr>
     </tbody>
 </table>
+
 <app-mascota-detail [mascota]="selectedMascota"></app-mascota-detail>
-<app-mascota-form (addMascotaEvent)="agregarMascota($event)"></app-mascota-form>
+<ng-container>
+    <app-mascota-form (addMascotaEvent)="agregarMascota($event)"></app-mascota-form>
+</ng-container>

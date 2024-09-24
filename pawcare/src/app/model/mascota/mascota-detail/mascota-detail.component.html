@@ -1,15 +1,19 @@
-<div>
-    <p>mascota-detail works!</p>
-    <ng-container *ngIf="mascota">
-        <li>Nombre: {{mascota.nombre}}</li>
-        <li>Peso: {{mascota.peso}}kg</li>
-        <li>Raza: {{mascota.raza}}</li>
-        <li>Enfermedad: {{mascota.enfermedad}}</li>
-        <li>Estado: {{mascota.estado}}</li>
-        <li>Edad: {{mascota.edad}}</li>
-        <li><img src="{{mascota.imagen}}" class="imagen"></li>
-    </ng-container>
-    
-    <ng-container *ngIf="!mascota">Seleccione una mascota de la tabla</ng-container>
-</div>
-
+    <main class="content">
+        <ng-container *ngIf="mascota">
+            <section class="macotaCLASS">
+                <div class="mascota-info">
+                    <div>
+                        <h1>Detalles de mascota</h1>
+                        <img src="{{mascota.imagen}}" class="imagenMascota">
+                        <p>Nombre: {{mascota.nombre}}</p>
+                        <p>Peso: {{mascota.peso}}kg</p>
+                        <p>Raza: {{mascota.raza}}</p>
+                        <p>Enfermedad: {{mascota.enfermedad}}</p>
+                        <p>Estado: {{mascota.estado}}</p>
+                        <p>Edad: {{mascota.edad}}</p>
+                        <button class="botonSiguiente" (click)="siguiente()">Siguiente</button>
+                    </div>
+                </div>
+              </section>
+            </ng-container>
+      </main>

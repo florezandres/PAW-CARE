@@ -1,0 +1,96 @@
+<main class="content">
+  <ng-container *ngIf="mascota">
+    <section class="mascota-edit-container">
+      <!-- Formulario de edición de mascota -->
+      <div class="mascota-info-edit">
+        <h1>Editar Detalles de Mascota</h1>
+        <form (ngSubmit)="guardarCambios()">
+          <div>
+            <label for="nombre">Nombre:</label>
+            <input
+              id="nombre"
+              type="text"
+              [(ngModel)]="mascota.nombre"
+              name="nombre"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="peso">Peso (kg):</label>
+            <input
+              id="peso"
+              type="number"
+              [(ngModel)]="mascota.peso"
+              name="peso"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="raza">Raza:</label>
+            <input
+              id="raza"
+              type="text"
+              [(ngModel)]="mascota.raza"
+              name="raza"
+              pattern="[A-Za-z]+"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="enfermedad">Enfermedad:</label>
+            <input
+              id="enfermedad"
+              type="text"
+              [(ngModel)]="mascota.enfermedad"
+              name="enfermedad"
+            />
+          </div>
+
+          <div>
+            <label for="estado">Estado*</label>
+            <select
+              [(ngModel)]="mascota.estado"
+              id="estado"
+              name="estado"
+              type="text"
+              required
+            >
+              <option value="En tratamiento">En tratamiento</option>
+              <option value="En observación">En observación</option>
+              <option value="Recuperado">Recuperado</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="edad">Edad:</label>
+            <input
+              id="edad"
+              type="number"
+              [(ngModel)]="mascota.edad"
+              name="edad"
+              required
+            />
+          </div>
+          <div>
+            <label for="imagen">Imagen (URL)</label><br />
+            <input type="text" name="imagen" id="imagen" [(ngModel)] = "mascota.imagen">
+          </div>
+          <div class="botones">
+            <button type="submit" class="botonGuardar">Guardar Cambios</button>
+            <button type="button" (click)="cancelar()" class="botonCancelar">
+              Cancelar
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Detalles de la mascota -->
+      <div class="mascota-detail">
+        <app-mascota-detail></app-mascota-detail>
+      </div>
+    </section>
+  </ng-container>
+</main>

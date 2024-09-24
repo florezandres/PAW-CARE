@@ -16,7 +16,7 @@ export class MascotaFormComponent {
   sendMascota!: mascota;
 
   formMascota: mascota = {
-    id: 999,
+    id: this.mascotaService.mascotaList.length + 1,
     nombre: '',
     peso: 0,
     raza: '',
@@ -25,6 +25,8 @@ export class MascotaFormComponent {
     edad: 0,
     imagen: ''
   }
+
+  constructor(private mascotaService: MascotaService) { }
 
   addMascota() {
     console.log(this.formMascota);

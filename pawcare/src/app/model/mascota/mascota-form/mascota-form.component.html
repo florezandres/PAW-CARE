@@ -1,5 +1,6 @@
-<p>mascota-form works!</p>
 <form>
+    <h1>Agregar mascota</h1>
+    <br>
     <label for="nombre">Nombre*</label><br>
     <input type="text" name="nombre" id="nombre" [(ngModel)] = "formMascota.nombre">
     <br>
@@ -28,9 +29,10 @@
     <label for="edad">Edad*</label><br>
     <input type="text" name="edad" id="edad" [(ngModel)] = "formMascota.edad">
     <br>
-    <label for="imagen">Imagen</label><br>
+    <label for="imagen">Imagen (URL)</label><br>
     <input type="text" name="imagen" id="imagen" [(ngModel)] = "formMascota.imagen">
     <br>
-    <button type="submit" (click)="addMascota()">Agregar Mascota</button>
+    <button class="botonAgregar" type="submit" (click)="addMascota()">Agregar</button>
+    <br>
+    {{formMascota.nombre}}
 </form>
-{{formMascota.nombre}}

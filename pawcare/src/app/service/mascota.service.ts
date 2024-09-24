@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { mascota } from '../model/mascota/mascota';
+import { Observable, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -70,5 +71,14 @@ findAll(): mascota[] {
         throw new Error(`Mascota con id ${id} no encontrada`);
     }
     return mascotaEncontrada;
+  }
+
+  updateMascota(updatedMascota: mascota): Observable<mascota> {
+    const index = this.mascotaList.findIndex(m => m.id === updatedMascota.id);
+    if (index !== -1) {
+      this.mascotaList[index] = updatedMascota;
+      return of(this.mascotaList[index]);
+    }
+    return of(undefined as any);
   }
 }

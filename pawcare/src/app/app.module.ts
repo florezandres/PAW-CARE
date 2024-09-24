@@ -15,6 +15,8 @@ import { MascotaTableComponent } from './model/mascota/mascota-table/mascota-tab
 import { MascotaDetailComponent } from './model/mascota/mascota-detail/mascota-detail.component';
 import { MascotaFormComponent } from './model/mascota/mascota-form/mascota-form.component';
 import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './model/login/login.component';
+import { MascotaEditComponent } from './model/mascota/mascota-edit/mascota-edit.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { FormsModule } from '@angular/forms';
     LandingPageComponent,
     MascotaTableComponent,
     MascotaDetailComponent,
-    MascotaFormComponent
+    MascotaFormComponent,
+    LoginComponent,
+    MascotaEditComponent
   ],
   imports: [
     BrowserModule,
