@@ -29,6 +29,36 @@ export class MascotaFormComponent {
   constructor(private mascotaService: MascotaService) { }
 
   addMascota() {
+    if (!this.formMascota.nombre) {
+      alert('El campo nombre es obligatorio');
+      return;
+    }
+
+    if (!this.formMascota.peso) {
+      alert('El campo peso es obligatorio');
+      return;
+    }
+
+    if (!this.formMascota.raza) {
+      alert('El campo raza es obligatorio');
+      return;
+    }
+
+    if (!this.formMascota.enfermedad) {
+      alert('El campo enfermedad es obligatorio');
+      return;
+    }
+
+    if (!this.formMascota.estado) {
+      alert('Seleccione un estado de la mascota');
+      return;
+    }
+
+    if (!this.formMascota.edad) {
+      alert('El campo edad es obligatorio');
+      return;
+    }
+
     console.log(this.formMascota);
     this.sendMascota = Object.assign({}, this.formMascota);
     this.addMascotaEvent.emit(this.sendMascota); 

@@ -31,6 +31,36 @@ export class MascotaEditComponent {
   }
 
   guardarCambios() {
+    if (!this.mascota.nombre) {
+      alert('El campo nombre es obligatorio');
+      return;
+    }
+
+    if (!this.mascota.peso) {
+      alert('El campo peso es obligatorio');
+      return;
+    }
+
+    if (!this.mascota.raza) {
+      alert('El campo raza es obligatorio');
+      return;
+    }
+
+    if (!this.mascota.enfermedad) {
+      alert('El campo enfermedad es obligatorio');
+      return;
+    }
+
+    if (!this.mascota.estado) {
+      alert('Seleccione un estado de la mascota');
+      return;
+    }
+
+    if (!this.mascota.edad) {
+      alert('El campo edad es obligatorio');
+      return;
+    }
+
     this.mascotaService.updateMascota(this.mascota).subscribe(() => {
       console.log("Cambios guardados");
       this.router.navigate(['/mascotas']);

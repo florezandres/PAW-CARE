@@ -27,12 +27,11 @@
         </select>
     <br>
     <label for="edad">Edad*</label><br>
-    <input type="text" name="edad" id="edad" [(ngModel)] = "formMascota.edad">
+    <input type="number" name="edad" id="edad" [(ngModel)] = "formMascota.edad">
     <br>
     <label for="imagen">Imagen (URL)</label><br>
     <input type="text" name="imagen" id="imagen" [(ngModel)] = "formMascota.imagen">
     <br>
     <button class="botonAgregar" type="submit" (click)="addMascota()">Agregar</button>
     <br>
-    {{formMascota.nombre}}
 </form>
