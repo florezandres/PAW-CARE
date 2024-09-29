@@ -7,11 +7,14 @@ import { MascotaTableComponent } from './model/mascota/mascota-table/mascota-tab
 import { MascotaDetailComponent } from './model/mascota/mascota-detail/mascota-detail.component';
 import { LoginComponent } from './model/login/login.component';
 import { MascotaEditComponent } from './model/mascota/mascota-edit/mascota-edit.component';
+import { MascotaFormComponent } from './model/mascota/mascota-form/mascota-form.component';
+
 
 const routes: Routes = [
   { path: 'home', component: LandingPageComponent},
   { path: 'mascotas', component: MascotaTableComponent},
 //  { path: 'InicioSesion', component: InicioSesionComponent},
+  { path: 'mascota/form', component: MascotaFormComponent},
   { path: 'mascota/detail/:id', component: MascotaDetailComponent},
   { path: 'mascota/edit/:id', component: MascotaEditComponent},
   { path: 'login', component: LoginComponent},

@@ -1,4 +1,5 @@
 <h1>LISTA DE MASCOTAS</h1>
+<a routerLink="/mascota/form"><button class="botonDetalle">Ver Detalles</button></a>
 <table class="tabla">
     <thead>
         <tr>
@@ -26,7 +27,6 @@
                   {{mascota.estado}}</td>
                 <td>{{mascota.edad}}</td>
                 <td class="botones">
-                    <button class="botonSeleccion" (click)="mostrarMascota(mascota)">Seleccionar</button>
                     <button class="botonEliminar" (click)="eliminarMascota(mascota)">Eliminar</button>
                     <a routerLink="/mascota/detail/{{mascota.id}}"><button class="botonDetalle">Ver Detalles</button></a>
                     <a routerLink="/mascota/edit/{{mascota.id}}"><button class="botonEditar">Editar</button></a>
@@ -37,6 +37,3 @@
 </table>
 
 <app-mascota-detail [mascota]="selectedMascota"></app-mascota-detail>
-<ng-container>
-    <app-mascota-form (addMascotaEvent)="agregarMascota($event)"></app-mascota-form>
-</ng-container>

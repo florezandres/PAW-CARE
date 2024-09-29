@@ -81,4 +81,8 @@ findAll(): mascota[] {
     }
     return of(undefined as any);
   }
+
+  addMascota(nuevaMascota: mascota) {
+    this.mascotaList.push(nuevaMascota);
+  }
 }

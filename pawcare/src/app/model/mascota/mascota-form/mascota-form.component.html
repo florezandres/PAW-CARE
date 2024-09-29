@@ -32,6 +32,6 @@
     <label for="imagen">Imagen (URL)</label><br>
     <input type="text" name="imagen" id="imagen" [(ngModel)] = "formMascota.imagen">
     <br>
-    <button class="botonAgregar" type="submit" (click)="addMascota()">Agregar</button>
+    <a routerLink="/mascotas"></a><button class="botonAgregar" (click)="addMascota()">Agregar</button>
     <br>
 </form>

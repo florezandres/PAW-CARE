@@ -17,7 +17,6 @@ export class MascotaTableComponent {
   constructor(private mascotaService: MascotaService) { }
 
   //Metodos
-
   ngOnInit(): void {
     this.cargarMascotas();
   }

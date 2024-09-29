@@ -2,6 +2,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
 import { mascota } from '../mascota';
 import { lastValueFrom } from 'rxjs';
 import { MascotaService } from 'src/app/service/mascota.service';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-mascota-form',
@@ -18,51 +19,32 @@ export class MascotaFormComponent {
   formMascota: mascota = {
     id: this.mascotaService.mascotaList.length + 1,
     nombre: '',
-    peso: 0,
+    peso: 1,
     raza: '',
     enfermedad: '',
     estado: '',
-    edad: 0,
+    edad: 1,
     imagen: ''
   }
 
   constructor(private mascotaService: MascotaService) { }
 
   addMascota() {
-    if (!this.formMascota.nombre) {
-      alert('El campo nombre es obligatorio');
-      return;
+    if (this.validarFormulario()) {
+      this.mascotaService.addMascota(this.formMascota);
+      
     }
-
-    if (!this.formMascota.peso) {
-      alert('El campo peso es obligatorio');
-      return;
-    }
-
-    if (!this.formMascota.raza) {
-      alert('El campo raza es obligatorio');
-      return;
-    }
-
-    if (!this.formMascota.enfermedad) {
-      alert('El campo enfermedad es obligatorio');
-      return;
-    }
-
-    if (!this.formMascota.estado) {
-      alert('Seleccione un estado de la mascota');
-      return;
-    }
-
-    if (!this.formMascota.edad) {
-      alert('El campo edad es obligatorio');
-      return;
-    }
-
-    console.log(this.formMascota);
-    this.sendMascota = Object.assign({}, this.formMascota);
-    this.addMascotaEvent.emit(this.sendMascota); 
   }
+  
+  validarFormulario() {
+    if (!this.formMascota.nombre || !this.formMascota.peso || !this.formMascota.raza || 
+        !this.formMascota.enfermedad || !this.formMascota.estado || !this.formMascota.edad) {
+      alert('Todos los campos marcados con * son obligatorios');
+      return false;
+    }
+    return true;
+  }
+  
 
   addMasc(form:any) {
     console.log(this.formMascota);
