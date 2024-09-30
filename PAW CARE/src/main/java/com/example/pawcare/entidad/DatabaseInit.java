@@ -10,7 +10,10 @@ import org.springframework.stereotype.Controller;
 
 import com.example.pawcare.repositorio.AdministradorRepository;
 import com.example.pawcare.repositorio.ClienteRepository;
+import com.example.pawcare.repositorio.DrogaRepository;
 import com.example.pawcare.repositorio.MascotaRepository;
+import com.example.pawcare.repositorio.TratamientoRepository;
+import com.example.pawcare.repositorio.VeterinarioRepository;
 
 import jakarta.transaction.Transactional;
 
@@ -27,11 +30,23 @@ public class DatabaseInit implements ApplicationRunner {
     @Autowired
     AdministradorRepository administradorRepository;
 
+    @Autowired
+    VeterinarioRepository veterinarioRepository;
+
+    @Autowired
+    DrogaRepository drogaRepository;
+
+    @Autowired
+    TratamientoRepository tratamientoRepository;
+
+
     @Override
     public void run(ApplicationArguments args) throws Exception {
-            
-        administradorRepository.save(new Administrador(777, 100, 0, 0));
+        
+        //Admin
+        administradorRepository.save(new Administrador(777));
 
+        //Clientes
         clienteRepository.save(new Cliente("Juan Pérez", "juan.perez@example.com", 12345678, 87654321));
         clienteRepository.save(new Cliente("María Gómez", "maria.gomez@example.com", 23456789, 98765432));
         clienteRepository.save(new Cliente("Carlos López", "carlos.lopez@example.com", 34567890, 19876543));
@@ -83,6 +98,7 @@ public class DatabaseInit implements ApplicationRunner {
         clienteRepository.save(new Cliente("Luciano Jiménez", "luciano.jimenez@example.com", 45678906, 21987658));
         clienteRepository.save(new Cliente("Martina Castillo", "martina.castillo@example.com", 56789017, 32198769));
         
+        //Mascotas
         mascotaRepository.save(new Mascota("Lucas", "15kg", "Labrador", "Displasia de cadera", "En tratamiento", 5, "/img/lucas.jpg"));
         mascotaRepository.save(new Mascota("Pablo", "1kg", "Desconocida", "Otitis", "Recuperado", 3, "/img/pablo.jpg"));
         mascotaRepository.save(new Mascota("Jhony", "25kg", "Criollo", "Artritis", "En tratamiento", 7, "/img/jhony.jpg"));
@@ -183,7 +199,80 @@ public class DatabaseInit implements ApplicationRunner {
         mascotaRepository.save(new Mascota("Roxy", "8kg", "Cocker Spaniel", "Fiebre baja", "En observación", 3, "/img/perroGenerico.png"));
         mascotaRepository.save(new Mascota("Nina", "4kg", "Pug", "Infección en el ojo", "En tratamiento", 2, "/img/perroGenerico.png"));
         mascotaRepository.save(new Mascota("Daisy", "5kg", "Dachshund", "Problemas dentales", "Recuperado", 4, "/img/perroGenerico.png"));
+
+        //Veterinarios
+        veterinarioRepository.save(new Veterinario("Dr. House", 998888888, "Tratamientos Oculares", "/img/veterinarioGenerico.png", 3));
+        veterinarioRepository.save(new Veterinario("Dra. Lisa Cuddy", 998888889, "Medicina Interna", "/img/veterinarioGenerico.png", 5));
+        veterinarioRepository.save(new Veterinario("Dr. James Wilson", 998888890, "Oncología", "/img/veterinarioGenerico.png", 4));
+        veterinarioRepository.save(new Veterinario("Dr. Robert Chase", 998888891, "Cirugía", "/img/veterinarioGenerico.png", 7));
+        veterinarioRepository.save(new Veterinario("Dra. Allison Cameron", 998888892, "Diagnóstico General", "/img/veterinarioGenerico.png", 6));
+        veterinarioRepository.save(new Veterinario("Dr. Eric Foreman", 998888893, "Neurología", "/img/veterinarioGenerico.png", 8));
+        veterinarioRepository.save(new Veterinario("Dr. Chris Taub", 998888894, "Cardiología", "/img/veterinarioGenerico.png", 5));
+        veterinarioRepository.save(new Veterinario("Dra. Remy Hadley", 998888895, "Genética", "/img/veterinarioGenerico.png", 3));
+        veterinarioRepository.save(new Veterinario("Dr. Lawrence Kutner", 998888896, "Psiquiatría", "/img/veterinarioGenerico.png", 4));
+        veterinarioRepository.save(new Veterinario("Dr. Jeffrey Cole", 998888897, "Medicina General", "/img/veterinarioGenerico.png", 2));
+        veterinarioRepository.save(new Veterinario("Dr. Henry Dobson", 998888898, "Dermatología", "/img/veterinarioGenerico.png", 6));
+        veterinarioRepository.save(new Veterinario("Dra. Amber Volakis", 998888899, "Anestesiología", "/img/veterinarioGenerico.png", 3));
+        veterinarioRepository.save(new Veterinario("Dra. Jessica Adams", 998888900, "Medicina de Urgencias", "/img/veterinarioGenerico.png", 4));
+        veterinarioRepository.save(new Veterinario("Dra. Chi Park", 998888901, "Neurocirugía", "/img/veterinarioGenerico.png", 5));
+        veterinarioRepository.save(new Veterinario("Dr. Gregory House", 998888902, "Nefrología", "/img/veterinarioGenerico.png", 9));
+        veterinarioRepository.save(new Veterinario("Dr. John Carter", 998888903, "Infectología", "/img/veterinarioGenerico.png", 7));
+        veterinarioRepository.save(new Veterinario("Dr. Peter Benton", 998888904, "Gastroenterología", "/img/veterinarioGenerico.png", 8));
+        veterinarioRepository.save(new Veterinario("Dra. Susan Lewis", 998888905, "Reumatología", "/img/veterinarioGenerico.png", 3));
+        veterinarioRepository.save(new Veterinario("Dr. Mark Greene", 998888906, "Pediatría", "/img/veterinarioGenerico.png", 6));
+        veterinarioRepository.save(new Veterinario("Dr. James Johnson", 998888907, "Cirugía Plastica", "/img/veterinarioGenerico.png", 7));        
         
+        //Tratamientos
+        tratamientoRepository.save(new Tratamiento("10/20/2024", "Desparasitación interna y externa"));
+        tratamientoRepository.save(new Tratamiento("10/21/2024", "Vacunación contra la rabia"));
+        tratamientoRepository.save(new Tratamiento("10/22/2024", "Limpieza dental y pulido"));
+        tratamientoRepository.save(new Tratamiento("10/23/2024", "Aplicación de antipulgas y garrapatas"));
+        tratamientoRepository.save(new Tratamiento("10/20/2024", "Tratamiento para infecciones oculares"));
+        tratamientoRepository.save(new Tratamiento("10/24/2024", "Tratamiento para problemas de piel"));
+        tratamientoRepository.save(new Tratamiento("10/21/2024", "Control de peso y dieta"));
+        tratamientoRepository.save(new Tratamiento("10/22/2024", "Cirugía de esterilización"));
+        tratamientoRepository.save(new Tratamiento("10/23/2024", "Tratamiento para artritis"));
+        tratamientoRepository.save(new Tratamiento("10/24/2024", "Control de enfermedades cardíacas"));
+
+
+        //Drogas
+        drogaRepository.save(new Droga("Paracetamol", 2,2,2,5));
+
+
+
+        //Asociar veterinario con tratamiento
+        
+        int CANTIDAD_VETERINARIOS = 20;
+        int CANTIDAD_VETERINARIOS_ASIGNAR = 1;
+        for (Tratamiento tratamiento : tratamientoRepository.findAll()) {
+            for (int i = 0; i < CANTIDAD_VETERINARIOS_ASIGNAR; i++) {
+                int random = ThreadLocalRandom.current().nextInt(1, CANTIDAD_VETERINARIOS+1);
+                System.out.println("NUMERO RANDOM: " + random + "DE: " + tratamiento.getId());
+                Long search = Long.valueOf(random);
+                System.out.println("SEARCH: " + search);
+                Veterinario veterinario = veterinarioRepository.findById(search).get();
+                tratamiento.setVeterinario(veterinario);
+                tratamientoRepository.save(tratamiento);
+            }
+        }
+        
+
+        //Asociar tratamiento con Mascota
+        
+        int CANTIDAD_TRATAMIENTOS = 10;
+        int CANTIDAD_TRATAMIENTOS_ASIGNAR = 1;
+        for (Mascota mascota : mascotaRepository.findAll()) {
+            for (int i = 0; i < CANTIDAD_TRATAMIENTOS_ASIGNAR; i++) {
+                int random = ThreadLocalRandom.current().nextInt(1, CANTIDAD_TRATAMIENTOS+1);
+                System.out.println("NUMERO RANDOM: " + random + "DE: " + mascota.getId());
+                Long search = Long.valueOf(random);
+                System.out.println("SEARCH: " + search);
+                Tratamiento tratamiento = tratamientoRepository.findById(search).get();
+                mascota.setTratamiento(tratamiento);
+                mascotaRepository.save(mascota);
+            }
+        }
+
         //Asociar cliente con mascota
         Cliente asociar = clienteRepository.findById(1L).get();
         for (Mascota mascota : mascotaRepository.findAll()) {

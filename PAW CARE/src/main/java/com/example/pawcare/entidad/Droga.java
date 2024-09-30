@@ -1,11 +1,41 @@
 package com.example.pawcare.entidad;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import jakarta.persistence.CascadeType;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
+
+@Entity
 public class Droga {
+
+    @Id
+    @GeneratedValue
+    private Long id;
+
     private String nombre;
     private float precioCompra;
     private float precioVenta;
     private int unidadesDisp;
     private int unidadesVendidas;
+
+    @OneToMany(mappedBy = "droga", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Tratamiento> tratamientos = new ArrayList<>();
+
+    public Droga(Long id, String nombre, float precioCompra, float precioVenta, int unidadesDisp, int unidadesVendidas) {
+        this.id = id;
+        this.nombre = nombre;
+        this.precioCompra = precioCompra;
+        this.precioVenta = precioVenta;
+        this.unidadesDisp = unidadesDisp;
+        this.unidadesVendidas = unidadesVendidas;
+    }
+
+    public Droga() {
+    }
 
     public Droga(String nombre, float precioCompra, float precioVenta, int unidadesDisp, int unidadesVendidas) {
         this.nombre = nombre;
@@ -13,6 +43,14 @@ public class Droga {
         this.precioVenta = precioVenta;
         this.unidadesDisp = unidadesDisp;
         this.unidadesVendidas = unidadesVendidas;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getNombre() {
@@ -53,5 +91,13 @@ public class Droga {
 
     public void setUnidadesVendidas(int unidadesVendidas) {
         this.unidadesVendidas = unidadesVendidas;
+    }
+
+    public List<Tratamiento> getTratamientos() {
+        return tratamientos;
+    }
+
+    public void setTratamientos(List<Tratamiento> tratamientos) {
+        this.tratamientos = tratamientos;
     }
 }

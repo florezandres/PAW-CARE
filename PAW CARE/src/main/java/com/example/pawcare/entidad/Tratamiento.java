@@ -1,15 +1,61 @@
 package com.example.pawcare.entidad;
-import java.util.Date;
+import java.util.ArrayList;
+import java.util.List;
 
+import jakarta.persistence.CascadeType;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
+
+@Entity
 public class Tratamiento {
-    private Droga droga;
-    private Date fecha;
-    private Mascota mascota;
+    @Id
+    @GeneratedValue
+    private Long id;
 
-    public Tratamiento(Droga droga, Date fecha, Mascota mascota) {
-        this.droga = droga;
+    private String descripcion;
+    private String fecha;
+
+    @ManyToOne
+    private Droga droga;
+
+    @ManyToOne
+    private Veterinario veterinario;
+
+    @OneToMany(mappedBy = "tratamiento", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Mascota> mascotas = new ArrayList<>();
+
+    public Tratamiento(Long id, String fecha, Droga droga, Veterinario veterinario) {
+        this.id = id;
         this.fecha = fecha;
-        this.mascota = mascota;
+        this.droga = droga;
+        this.veterinario = veterinario;
+    }
+
+    public Tratamiento() {
+    }
+
+    public Tratamiento(String fecha, String descripcion) {
+        this.fecha = fecha;
+        this.descripcion = descripcion;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {    
+        this.id = id;
+    }
+
+    public String getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(String fecha) {
+        this.fecha = fecha;
     }
 
     public Droga getDroga() {
@@ -20,20 +66,27 @@ public class Tratamiento {
         this.droga = droga;
     }
 
-    public Date getFecha() {
-        return fecha;
+    public Veterinario getVeterinario() {
+        return veterinario;
     }
 
-    public void setFecha(Date fecha) {
-        this.fecha = fecha;
+    public void setVeterinario(Veterinario veterinario) {
+        this.veterinario = veterinario;
     }
 
-    public Mascota getMascota() {
-        return mascota;
+    public List<Mascota> getMascotas() {
+        return mascotas;
     }
 
-    public void setMascota(Mascota mascota) {
-        this.mascota = mascota;
-    }  
+    public void setMascotas(List<Mascota> mascotas) {
+        this.mascotas = mascotas;
+    }
 
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
 }

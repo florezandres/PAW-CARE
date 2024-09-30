@@ -23,6 +23,9 @@ public class Mascota {
     @ManyToOne
     private Cliente cliente;
 
+    @ManyToOne
+    private Tratamiento tratamiento;
+
     // Constructor actualizado para incluir el nuevo atributo
     public Mascota(Long id, String nombre, String peso, String raza, String enfermedad, String estado, int edad, String imagen) {
         this.id = id;
@@ -119,5 +122,13 @@ public class Mascota {
 
     public void setCliente(Cliente cliente) {    
         this.cliente = cliente;
+    }
+
+    public Tratamiento getTratamiento() {
+        return tratamiento;
+    }
+
+    public void setTratamiento(Tratamiento tratamiento) {
+        this.tratamiento = tratamiento;
     }
 }
