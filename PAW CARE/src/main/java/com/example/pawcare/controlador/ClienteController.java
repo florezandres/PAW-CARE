@@ -1,22 +1,29 @@
 package com.example.pawcare.controlador;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.example.pawcare.entidad.Cliente;
 import com.example.pawcare.errorHandling.UserAlreadyExistsException;
 import com.example.pawcare.servicio.AdministradorService;
 import com.example.pawcare.servicio.ClienteService;
 
-@Controller
+import io.swagger.v3.oas.annotations.parameters.RequestBody;
+
+@RestController
 @RequestMapping("/cliente")
+@CrossOrigin(origins = "http://localhost:4200")
 public class ClienteController {
 
     @Autowired
@@ -25,21 +32,30 @@ public class ClienteController {
     @Autowired
     AdministradorService adminService;
 
-    @GetMapping("/find/{id}")
-    public String mostrarinfoCliente(Model model, @PathVariable("id") Long id) {
-        model.addAttribute("cliente", clienteService.SearchById(id));
-        return "";
+    @GetMapping("/all")
+        public List<Cliente> allClientes(Model model) {
+            //model.addAttribute("clientes", clienteService.SearchAll());
+            //return "usuarios";}
+            return clienteService.SearchAll();
+        }
+        
+    @GetMapping("/{id}")
+    public Cliente mostrarinfoCliente(@PathVariable("id") Long id) {
+        //model.addAttribute("cliente", clienteService.SearchById(id));
+        //return "";
+        Cliente cliente = clienteService.SearchById(id);
+        return cliente;
     }
 
-    @GetMapping("/registro")
+    @GetMapping("/add")
     public String mostrarFormularioRegistro(Model model) {
         Cliente cliente = new Cliente("","",1,1);
         model.addAttribute("cliente", cliente);
         return "registro";
     }
 
-    @PostMapping("/registrar")
-    public String registroCliente(@ModelAttribute("cliente") Cliente cliente) {
+    @PostMapping("/add")
+    public void registroCliente(@RequestBody Cliente cliente) {
         
         if (clienteService.SearchByCedula(cliente.getCedula()) != null) {
             throw new UserAlreadyExistsException(cliente.getCedula());
@@ -48,19 +64,9 @@ public class ClienteController {
             throw new UserAlreadyExistsException(cliente.getCedula());
         }
         clienteService.add(cliente);
-        return "redirect:/clinica";
     }
-
-    @GetMapping("/all")
-    public String allClientes(Model model) {
-        model.addAttribute("clientes", clienteService.SearchAll());
-        return "usuarios";
-    }
-
-    @GetMapping("/{id}")
-    public Cliente clientePorId(@PathVariable Long id) {
-        return clienteService.SearchById(id);
-    }
+    
+    
 
     @GetMapping("/modificar/{id}")
     public String mostrarFormularioModificar(@PathVariable("id") Long id, Model model) {
@@ -68,16 +74,16 @@ public class ClienteController {
         return "modificar";
     }
 
-    @PostMapping("/modificar/{id}")
-    public String actualizarCliente(@PathVariable("id") Long id, @ModelAttribute("cliente") Cliente cliente) {
+    @PutMapping("/modificar/{id}")
+    public void actualizarCliente(@RequestBody Cliente cliente) {
         clienteService.update(cliente);
-        return "redirect:/admin/clientes";
+        //return "redirect:/admin/clientes";
     }
 
-    @GetMapping("/eliminar/{id}")
-    public String borrarCliente(@PathVariable("id") Long id) {
+    @DeleteMapping("/eliminar/{id}")
+    public void borrarCliente(@PathVariable("id") Long id) {
         clienteService.deleteById(id);
-        return "redirect:/admin/clientes";
+        //return "redirect:/admin/clientes";
     }
 
     @GetMapping("/login")

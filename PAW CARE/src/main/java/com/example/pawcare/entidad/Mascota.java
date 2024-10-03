@@ -1,8 +1,11 @@
 package com.example.pawcare.entidad;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 
 @Entity
@@ -11,7 +14,6 @@ public class Mascota {
     @Id
     @GeneratedValue
     private Long id; // Añadir id
-    
     private String nombre;
     private String peso;
     private String raza;
@@ -20,10 +22,13 @@ public class Mascota {
     private int edad;
     private String imagen; // Nuevo atributo para la URL de la imagen
 
+    @JsonIgnore
     @ManyToOne
+    @JoinColumn(name = "cliente_id")
     private Cliente cliente;
 
     @ManyToOne
+    @JsonIgnore
     private Tratamiento tratamiento;
 
     // Constructor actualizado para incluir el nuevo atributo
@@ -120,7 +125,7 @@ public class Mascota {
         return cliente;
     }
 
-    public void setCliente(Cliente cliente) {    
+    public void setCliente(Cliente cliente) {
         this.cliente = cliente;
     }
 

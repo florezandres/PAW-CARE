@@ -1,6 +1,6 @@
 package com.example.pawcare.servicio;
 
-import java.util.Collection;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -14,13 +14,18 @@ public class DrogaServiceImpl implements DrogaService {
     DrogaRepository drogaRepository;
 
     @Override
-    public Collection<Droga> SearchAll() {
+    public Droga SearchById(Long id) {
+        return drogaRepository.findById(id).get();
+    }
+
+    @Override
+    public List <Droga> SearchAll() {
         return drogaRepository.findAll();
     }
 
     @Override
-    public Droga SearchById(Long id) {
-        return drogaRepository.findById(id).get();
+    public List <Droga> SearchByMascotaId(Long id) {
+        return drogaRepository.findByMascotaId(id);
     }
 
     @Override

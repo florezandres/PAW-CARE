@@ -1,13 +1,16 @@
 package com.example.pawcare.controlador;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.example.pawcare.entidad.Cliente;
 import com.example.pawcare.entidad.Mascota;
@@ -16,10 +19,13 @@ import com.example.pawcare.errorHandling.UserAlreadyExistsException;
 import com.example.pawcare.servicio.AdministradorService;
 import com.example.pawcare.servicio.ClienteService;
 import com.example.pawcare.servicio.MascotaService;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 
-@Controller
+@RestController
 @RequestMapping("/admin")
+@CrossOrigin(origins = "http://localhost:4200")
+
 public class AdminController {
 
     @Autowired
@@ -57,7 +63,7 @@ public class AdminController {
 
     @PostMapping("/registrarMascota")
     public String registroMascota(@ModelAttribute("mascota") Mascota mascota,
-                              @RequestParam("cedula") int cedula) {
+                        @RequestParam("cedula") int cedula) {
     Cliente cliente = clienteService.SearchByCedula(cedula);
     if (cliente != null) {
         mascota.setCliente(cliente);
@@ -70,16 +76,21 @@ public class AdminController {
     
     }
 
+    @JsonIgnore
     @GetMapping("/clientes")
-    public String allClientes(Model model) {
-        model.addAttribute("clientes", clienteService.SearchAll());
-        return "usuarios";
+    public List<Cliente> allClientes(Model model) {
+        //model.addAttribute("clientes", clienteService.SearchAll());
+        //return "usuarios";
+
+        return clienteService.SearchAll();
     }
 
-    @GetMapping("/mascotas")	
-    public String mostrarMascotas(Model model) {
-        model.addAttribute("mascotas", mascotaService.SearchAll());        
-        return "listado_mascotas";
+    @JsonIgnore
+    @GetMapping("/mascotas")
+    public List<Mascota> mostrarMascotas(Model model) {
+        //model.addAttribute("mascotas", mascotaService.SearchAll());
+        //return "listado_mascotas";
+        return mascotaService.SearchAll();
     }
 
     @GetMapping("/login")

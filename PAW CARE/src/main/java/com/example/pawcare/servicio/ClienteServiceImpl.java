@@ -1,6 +1,6 @@
 package com.example.pawcare.servicio;
 
-import java.util.Collection;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,16 +11,16 @@ import com.example.pawcare.repositorio.ClienteRepository;
 @Service
 public class ClienteServiceImpl implements ClienteService {
 
-    @Autowired 
+    @Autowired
     ClienteRepository clienteRepository;
 
     @Override
     public Cliente SearchById(Long id) {
         return clienteRepository.findById(id).get();
-    }    
+    }
 
     @Override
-    public Collection<Cliente> SearchAll() {
+    public List<Cliente> SearchAll() {
         return clienteRepository.findAll();
     }
 

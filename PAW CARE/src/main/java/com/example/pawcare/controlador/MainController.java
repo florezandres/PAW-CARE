@@ -55,6 +55,9 @@ public class MainController {
     @Autowired
     AdministradorService adminService ;
 
+
+
+
     @PostMapping("/login")
     public String login(@RequestParam("cedula") int cedula, Model model) {
         Cliente cliente = clienteService.SearchByCedula(cedula);

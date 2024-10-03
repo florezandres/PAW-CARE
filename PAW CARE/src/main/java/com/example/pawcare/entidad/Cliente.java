@@ -3,6 +3,8 @@ package com.example.pawcare.entidad;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -14,12 +16,12 @@ public class Cliente {
     @Id
     @GeneratedValue
     private Long id;
-
     private String nombre;
     private String correo;
     private int cedula;
     private int celular;
 
+    @JsonIgnore
     @OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Mascota> mascotas = new ArrayList<>();
 

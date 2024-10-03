@@ -1,6 +1,6 @@
 package com.example.pawcare.servicio;
 
-import java.util.Collection;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -19,9 +19,15 @@ public class MascotaServiceImpl implements MascotaService {
         return mascotaRepository.findById(id).get();
     }
     @Override
-    public Collection<Mascota> SearchAll() {
+    public List<Mascota> SearchAll() {
         // TODO Auto-generated method stub
         return mascotaRepository.findAll();
+    }
+
+    @Override
+    public List<Mascota> SearchByClienteId(Long id) {
+        // TODO Auto-generated method stub
+        return mascotaRepository.findByClienteId(id);
     }
 
     @Override
