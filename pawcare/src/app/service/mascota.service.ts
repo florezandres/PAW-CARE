@@ -63,6 +63,7 @@ export class MascotaService {
 ];
 
 findAll(): mascota[] {
+  //return this.http.get<mascota[]>('http://localhost:8080/mascotas/all');
     return this.mascotaList;}
 
   findById(id: number): mascota {
@@ -71,6 +72,10 @@ findAll(): mascota[] {
         throw new Error(`Mascota con id ${id} no encontrada`);
     }
     return mascotaEncontrada;
+  }
+
+  findClienteMascota(id: number): Observable<mascota[]> {
+    return of(this.mascotaList.filter(mascota => mascota.id === id));
   }
 
   updateMascota(updatedMascota: mascota): Observable<mascota> {

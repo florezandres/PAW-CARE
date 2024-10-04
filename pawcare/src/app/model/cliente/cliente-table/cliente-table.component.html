@@ -1,0 +1,26 @@
+<h1>LISTA DE CLIENTES</h1>
+<table class="tabla">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Correo</th>
+            <th>Cedula</th>
+            <th>Celular</th>
+            <th>+</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let cliente of clienteList">
+            <ng-container>
+                <td>{{cliente.nombre}}</td>
+                <td>{{cliente.correo}}</td>
+                <td>{{cliente.cedula}}</td>
+                <td>{{cliente.celular}}</td>
+                <td class="botones">
+                    <a routerLink="/cliente/detail/{{cliente.id}}"><button class="botonDetalle">Ver Detalles</button></a>
+                </td>
+            </ng-container>
+        </tr>
+    </tbody>
+</table>
+
