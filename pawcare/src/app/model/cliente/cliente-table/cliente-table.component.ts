@@ -17,20 +17,26 @@ export class ClienteTableComponent {
 
   //Metodos
   ngOnInit(): void {
-    this.cargarClientes();
-  }
-
-  cargarClientes(): void {
-    this.clienteList = this.clienteService.findAll();
+    this.clienteService.findAll().subscribe(
+      (clientes) => {
+        this.clienteList = clientes;
+      }
+    )
   }
 
   mostrarCliente(cliente: cliente) {
     this.selectedCliente = cliente;
   }
 
+  agregarCliente(cliente: cliente) {
+    this.clienteList.push(cliente);
+    this.clienteService.addCliente(cliente); 
+  }
+
   eliminarCliente(cliente: cliente) {
     var index = this.clienteList.indexOf(cliente);
     this.clienteList.splice(index, 1);
+    this.clienteService.deleteCliente(cliente.id); 
   }
 
 }

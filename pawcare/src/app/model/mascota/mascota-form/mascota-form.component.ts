@@ -16,8 +16,10 @@ export class MascotaFormComponent {
 
   sendMascota!: mascota;
 
+  mascotaList: mascota[] = [];
+
   formMascota: mascota = {
-    id: this.mascotaService.mascotaList.length + 1,
+    id: this.mascotaList.length + 1,
     nombre: '',
     peso: 1,
     raza: '',
@@ -27,8 +29,16 @@ export class MascotaFormComponent {
     imagen: ''
   }
 
-  constructor(private mascotaService: MascotaService) { }
+  constructor(private mascotaService: MascotaService)
+   {}
 
+   ngOnInit(): void {
+    this.mascotaService.findAll().subscribe(
+      (mascotas) => {
+        this.mascotaList = mascotas;
+      }
+    );
+  }
   addMascota() {
     if (this.validarFormulario()) {
       this.mascotaService.addMascota(this.formMascota);

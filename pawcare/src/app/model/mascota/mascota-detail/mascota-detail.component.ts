@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import { mascota } from '../mascota';
 import { MascotaService } from 'src/app/service/mascota.service';
 import { ActivatedRoute, Router } from '@angular/router';
-import { find } from 'rxjs';
+import { find, mergeMap } from 'rxjs';
 
 @Component({
   selector: 'app-mascota-detail',
@@ -20,15 +20,16 @@ export class MascotaDetailComponent {
   ) {
     this.route.paramMap.subscribe(params => {
       const id = Number(params.get('id'));
-      this.mascota = this.mascotaService.findById(id);
-      if (!this.mascota) {
-        this.router.navigate(['/mascotas']);
-      }
+      this.mascotaService.findById(id).subscribe(
+        (mascota) => this.mascota = mascota
+      );
     })
   }
 
   ngOnInit(): void {
-    console.log("ngOnInit de Detail");
+    this.mascotaService.findById(this.mascota.id).subscribe(
+      (mascota) => this.mascota = mascota
+    );
   }
 
   ngOnChanges(): void {

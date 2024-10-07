@@ -19,11 +19,10 @@ export class MascotaEditComponent {
   ) {
     this.route.paramMap.subscribe(params => {
       const id = Number(params.get('id'));
-      this.mascota = this.mascotaService.findById(id);
-      if (!this.mascota) {
-        this.router.navigate(['/mascotas']);
-      }
-    });
+      this.mascotaService.findById(id).subscribe(
+        (mascota) => this.mascota = mascota
+      );
+    })
   }
 
   ngOnInit(): void {

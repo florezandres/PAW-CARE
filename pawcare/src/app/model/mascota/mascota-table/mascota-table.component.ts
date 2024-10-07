@@ -18,11 +18,11 @@ export class MascotaTableComponent {
 
   //Metodos
   ngOnInit(): void {
-    this.cargarMascotas();
-  }
-
-  cargarMascotas(): void {
-    this.mascotaList = this.mascotaService.findAll();
+    this.mascotaService.findAll().subscribe(
+      (mascotas) => {
+        this.mascotaList = mascotas;
+      }
+    );
   }
 
   mostrarMascota(mascota: mascota) {
@@ -32,9 +32,11 @@ export class MascotaTableComponent {
   eliminarMascota(mascota: mascota) {
     var index = this.mascotaList.indexOf(mascota);
     this.mascotaList.splice(index, 1);
+    this.mascotaService.deleteMascota(mascota.id);
   }
 
   agregarMascota(mascota: mascota) {
     this.mascotaList.push(mascota);
+    this.mascotaService.addMascota(mascota);
   }
 }

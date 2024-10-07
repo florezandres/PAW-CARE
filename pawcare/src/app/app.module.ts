@@ -19,6 +19,7 @@ import { LoginComponent } from './model/login/login.component';
 import { MascotaEditComponent } from './model/mascota/mascota-edit/mascota-edit.component';
 import { ClienteTableComponent } from './model/cliente/cliente-table/cliente-table.component';
 import { ClienteDetailComponent } from './model/cliente/cliente-detail/cliente-detail.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { ClienteDetailComponent } from './model/cliente/cliente-detail/cliente-d
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
