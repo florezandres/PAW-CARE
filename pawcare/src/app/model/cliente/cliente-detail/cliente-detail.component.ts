@@ -19,7 +19,7 @@ export class ClienteDetailComponent {
   cliente!: cliente;
 
   @Input()
-  mascotas!: mascota[];
+  mascotas: mascota[] = [];
 
   constructor(private clienteService: ClienteService,
               private route: ActivatedRoute,
@@ -38,7 +38,7 @@ export class ClienteDetailComponent {
         )
       ).subscribe(
         (mascotas) => {
-          this.cliente.mascotas = mascotas;
+          this.mascotas = mascotas;
         }
       )
     })
@@ -48,7 +48,7 @@ export class ClienteDetailComponent {
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
-      /*
+      
       const id = Number(params.get('id'));
       this.clienteService.findById(id).pipe(
         mergeMap(
@@ -58,7 +58,7 @@ export class ClienteDetailComponent {
         (mascotas) => {
           this.cliente.mascotas = mascotas;
         }
-      )*/
+      )
     })
       
   }
