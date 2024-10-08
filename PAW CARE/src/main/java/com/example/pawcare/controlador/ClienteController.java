@@ -47,6 +47,12 @@ public class ClienteController {
         return cliente;
     }
 
+    @GetMapping("/cedula/{cedula}")
+    public Cliente mostrarinfoClienteCedula(@PathVariable("cedula") int cedula) {
+        Cliente cliente = clienteService.SearchByCedula(cedula);
+        return cliente;
+    }
+
     @GetMapping("/add")
     public String mostrarFormularioRegistro(Model model) {
         Cliente cliente = new Cliente("","",1,1);

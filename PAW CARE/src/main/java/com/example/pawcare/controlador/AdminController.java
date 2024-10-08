@@ -7,11 +7,13 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.pawcare.entidad.Administrador;
 import com.example.pawcare.entidad.Cliente;
 import com.example.pawcare.entidad.Mascota;
 import com.example.pawcare.errorHandling.NotFoundException;
@@ -91,6 +93,12 @@ public class AdminController {
         //model.addAttribute("mascotas", mascotaService.SearchAll());
         //return "listado_mascotas";
         return mascotaService.SearchAll();
+    }
+
+    @GetMapping("/{cedula}")
+    public Administrador mostrarinfoAdministradorCedula(@PathVariable("cedula") int cedula) {
+        Administrador admin = AdminService.SearchByCedula(cedula);
+        return admin;
     }
 
     @GetMapping("/login")
