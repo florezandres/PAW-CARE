@@ -1,5 +1,9 @@
 <h1>LISTA DE MASCOTAS</h1>
-<a routerLink="/mascota/form"><button class="botonDetalle">Ver Detalles</button></a>
+<div class="boton-agregar">
+    <a routerLink="/mascota/form">
+        <button class="botonAgregar">Agregar Mascota</button>
+    </a>
+</div>
 <table class="tabla">
     <thead>
         <tr>
@@ -27,9 +31,9 @@
                   {{mascota.estado}}</td>
                 <td>{{mascota.edad}}</td>
                 <td class="botones">
-                    <button class="botonEliminar" (click)="eliminarMascota(mascota)">Eliminar</button>
                     <a routerLink="/mascota/detail/{{mascota.id}}"><button class="botonDetalle">Ver Detalles</button></a>
                     <a routerLink="/mascota/edit/{{mascota.id}}"><button class="botonEditar">Editar</button></a>
+                    <button class="botonEliminar" (click)="eliminarMascota(mascota)">Eliminar</button>
                 </td>
             </ng-container>
         </tr>

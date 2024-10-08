@@ -2,7 +2,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
 import { mascota } from '../mascota';
 import { lastValueFrom } from 'rxjs';
 import { MascotaService } from 'src/app/service/mascota.service';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-mascota-form',
@@ -21,7 +21,7 @@ export class MascotaFormComponent {
   formMascota: mascota = {
     id: this.mascotaList.length + 1,
     nombre: '',
-    peso: 1,
+    peso: '',
     raza: '',
     enfermedad: '',
     estado: '',
@@ -29,8 +29,11 @@ export class MascotaFormComponent {
     imagen: ''
   }
 
-  constructor(private mascotaService: MascotaService)
-   {}
+  constructor(private mascotaService: MascotaService,
+              private router: Router
+  )
+   {
+   }
 
    ngOnInit(): void {
     this.mascotaService.findAll().subscribe(
@@ -41,8 +44,12 @@ export class MascotaFormComponent {
   }
   addMascota() {
     if (this.validarFormulario()) {
+      this.mascotaList.push(this.formMascota);
       this.mascotaService.addMascota(this.formMascota);
-      
+      this.router.navigate(['/mascotas']);
+    }
+    else {
+      alert('Todos los campos marcados con * son obligatorios');
     }
   }
   

@@ -20,6 +20,10 @@ import { MascotaEditComponent } from './model/mascota/mascota-edit/mascota-edit.
 import { ClienteTableComponent } from './model/cliente/cliente-table/cliente-table.component';
 import { ClienteDetailComponent } from './model/cliente/cliente-detail/cliente-detail.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AdministradorDashboardComponent } from './model/administrador/administrador-dashboard/administrador-dashboard.component';
+import { ClienteFormComponent } from './model/cliente/cliente-form/cliente-form.component';
+import { ClienteEditComponent } from './model/cliente/cliente-edit/cliente-edit.component';
+import { VeterinarioTableComponent } from './model/veterinario/veterinario-table/veterinario-table.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +42,11 @@ import { HttpClientModule } from '@angular/common/http';
     LoginComponent,
     MascotaEditComponent,
     ClienteTableComponent,
-    ClienteDetailComponent
+    ClienteDetailComponent,
+    AdministradorDashboardComponent,
+    ClienteFormComponent,
+    ClienteEditComponent,
+    VeterinarioTableComponent
   ],
   imports: [
     BrowserModule,

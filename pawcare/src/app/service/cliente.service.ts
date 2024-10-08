@@ -21,6 +21,10 @@ export class ClienteService {
     return this.http.get<cliente>('http://localhost:8080/cliente/'+id);
   }
 
+  findByCedula(cedula: number): Observable<cliente> {
+    return this.http.get<cliente>('http://localhost:8080/cliente/cedula/'+cedula);
+  }
+
   deleteCliente(id: number) {
     this.http.delete('http://localhost:8080/cliente/eliminar/'+id).subscribe();
   }
@@ -28,4 +32,10 @@ export class ClienteService {
   addCliente(cliente: cliente) {
     this.http.post('http://localhost:8080/cliente/add', cliente).subscribe();
   }
+
+  updateCliente(updatedCliente: cliente): Observable<cliente> {
+    console.log('Datos enviados para actualización:', updatedCliente);
+    return this.http.put<cliente>('http://localhost:8080/cliente/modificar/' + updatedCliente.id, updatedCliente);
+  }
+  
 }

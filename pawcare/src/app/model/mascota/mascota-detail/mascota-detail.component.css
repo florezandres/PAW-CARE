@@ -46,6 +46,7 @@ main{
     margin-right: 40px;
     border-color: black;
     border-radius: -5px;
+    border: 2.5px solid lightgray; 
   }
   
   .botonSiguiente {

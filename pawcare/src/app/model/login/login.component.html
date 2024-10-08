@@ -1,27 +1,26 @@
-<div class="left-section">
-  <img
-    src="assets/img/husky.jpg"
-    alt="Imagen de Mascota"
-    class="mascot-image"
-  />
-</div>
-<div class="right-section">
-  <h1 class="txtIniciarSesion">Inicio de Sesión</h1>
-  <form action="/login" method="POST">
-    <input
-      type="text"
-      id="cedula"
-      name="cedula"
-      placeholder="Cédula"
-      maxlength="9"
-      pattern="\d*"
-      title="Ingrese solo numeros"
-      required
-    />
-    <button type="submit">Ingresar</button>
-  </form>
-  <span>
-    No tienes cuenta?
-    <a>Regístrate</a></span
-  >
+<div class="container">
+  <div class="left-section">
+    <img src="assets/img/husky.jpg" alt="Imagen de Mascota" class="mascot-image" />
+  </div>
+  <div class="right-section">
+    <h1 class="txtIniciarSesion">Inicio de Sesión</h1>
+    <form (ngSubmit)="iniciarSesion()" #loginForm="ngForm">
+      <input
+        type="text"
+        id="cedula"
+        name="cedula"
+        [(ngModel)]="cedula" 
+        placeholder="Cédula"
+        maxlength="9"
+        pattern="\d*"
+        title="Ingrese solo números"
+        required
+      />
+      <button type="submit">Ingresar</button>
+    </form>
+    <span>
+      No tienes cuenta?
+      <a routerLink="/registro">Regístrate</a>
+    </span>
+  </div>
 </div>

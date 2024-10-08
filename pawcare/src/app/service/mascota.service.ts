@@ -36,4 +36,8 @@ findAll(): Observable<mascota[]> {
   addMascota(nuevaMascota: mascota) {
     this.http.post('http://localhost:8080/mascota/registro', nuevaMascota).subscribe();
   }
+
+  addMascotaForm(mascota: mascota) {
+    this.http.get('http://localhost:8080/mascota/registro').subscribe();
+  }
 }
