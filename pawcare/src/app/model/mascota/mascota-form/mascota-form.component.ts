@@ -19,7 +19,7 @@ export class MascotaFormComponent {
   mascotaList: mascota[] = [];
 
   formMascota: mascota = {
-    id: this.mascotaList.length + 1,
+    id: 0,
     nombre: '',
     peso: '',
     raza: '',
@@ -46,6 +46,7 @@ export class MascotaFormComponent {
     if (this.validarFormulario()) {
       this.mascotaList.push(this.formMascota);
       this.mascotaService.addMascota(this.formMascota);
+      this.formMascota.id = this.mascotaList.length + 1;
       this.router.navigate(['/mascotas']);
     }
     else {

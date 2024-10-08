@@ -17,16 +17,17 @@ export class MascotaEditComponent {
               private route: ActivatedRoute,
               private router: Router
   ) {
+   
+  }
+
+  ngOnInit(): void {
+    console.log("ngOnInit de Edit");
     this.route.paramMap.subscribe(params => {
       const id = Number(params.get('id'));
       this.mascotaService.findById(id).subscribe(
         (mascota) => this.mascota = mascota
       );
     })
-  }
-
-  ngOnInit(): void {
-    console.log("ngOnInit de Edit");
   }
 
   guardarCambios() {

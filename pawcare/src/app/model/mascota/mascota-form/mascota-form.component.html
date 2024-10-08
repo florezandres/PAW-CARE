@@ -1,39 +1,50 @@
-<form>
-    <h1>Agregar mascota</h1>
-    <br>
-    <input type="number" name="id" id="id" [(ngModel)] = "formMascota.id"	hidden>
+<form (ngSubmit)="addMascota()" #mascotaForm="ngForm">
+  <h1>Agregar mascota</h1>
+  <br>
 
-    <label for="nombre">Nombre*</label><br>
-    <input type="text" name="nombre" id="nombre" [(ngModel)]="formMascota.nombre">
-    <br>
-    <label for="peso">Peso (kg)*</label><br>
-    <input type="number" name="peso" id="peso" min="1" max="99" [(ngModel)] = "formMascota.peso">
-    <br>
-    <label for="raza">Raza*</label><br>
-    <input type="text" name="raza" id="raza" [(ngModel)] = "formMascota.raza">
-    <br>
-    <label for="enfermedad">Enfermedad*</label><br>
-    <input type="text" name="enfermedad" id="enfermedad" [(ngModel)] = "formMascota.enfermedad">
-    <br>
-    <label for="estado">Estado*</label><br>
-        <select
-        [(ngModel)]="formMascota.estado"
-        type="text"
-        id="estado"
-        name="estado"
-        required
-        >
-        <option value="En tratamiento">En tratamiento</option>
-        <option value="En observación">En observación</option>
-        <option value="Recuperado">Recuperado</option>
-        </select>
-    <br>
-    <label for="edad">Edad*</label><br>
-    <input type="number" name="edad" id="edad" [(ngModel)] = "formMascota.edad">
-    <br>
-    <label for="imagen">Imagen (URL)</label><br>
-    <input type="text" name="imagen" id="imagen" [(ngModel)] = "formMascota.imagen">
-    <br>
-    <a routerLink="/mascotas"></a><button class="botonAgregar" (click)="addMascota()">Agregar</button>
-    <br>
+  <!-- Campo oculto para el ID -->
+  <input type="number" name="id" id="id" [(ngModel)]="formMascota.id" hidden>
+
+  <!-- Nombre -->
+  <label for="nombre">Nombre*</label><br>
+  <input type="text" name="nombre" id="nombre" [(ngModel)]="formMascota.nombre" required>
+  <br>
+
+  <!-- Peso -->
+  <label for="peso">Peso (kg)*</label><br>
+  <input type="number" name="peso" id="peso" min="1" max="99" [(ngModel)]="formMascota.peso" required>
+  <br>
+
+  <!-- Raza -->
+  <label for="raza">Raza*</label><br>
+  <input type="text" name="raza" id="raza" [(ngModel)]="formMascota.raza" required>
+  <br>
+
+  <!-- Enfermedad -->
+  <label for="enfermedad">Enfermedad*</label><br>
+  <input type="text" name="enfermedad" id="enfermedad" [(ngModel)]="formMascota.enfermedad" required>
+  <br>
+
+  <!-- Estado -->
+  <label for="estado">Estado*</label><br>
+  <select [(ngModel)]="formMascota.estado" type="text" id="estado" name="estado" required>
+    <option value="En tratamiento">En tratamiento</option>
+    <option value="En observación">En observación</option>
+    <option value="Recuperado">Recuperado</option>
+  </select>
+  <br>
+
+  <!-- Edad -->
+  <label for="edad">Edad*</label><br>
+  <input type="number" name="edad" id="edad" [(ngModel)]="formMascota.edad" required>
+  <br>
+
+  <!-- Imagen -->
+  <label for="imagen">Imagen (URL)</label><br>
+  <input type="text" name="imagen" id="imagen" [(ngModel)]="formMascota.imagen">
+  <br>
+
+  <!-- Botón para agregar mascota -->
+  <button type="submit" class="botonAgregar">Agregar</button>
+  <br>
 </form>
