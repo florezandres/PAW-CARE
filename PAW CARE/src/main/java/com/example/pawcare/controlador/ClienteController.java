@@ -82,6 +82,7 @@ public class ClienteController {
 
     @PutMapping("/modificar/{id}")
     public void actualizarCliente(@RequestBody Cliente cliente) {
+        System.out.println(cliente.getCedula());
         clienteService.update(cliente);
         //return "redirect:/admin/clientes";
     }

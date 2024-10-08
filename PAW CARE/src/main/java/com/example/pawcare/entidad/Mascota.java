@@ -13,7 +13,7 @@ public class Mascota {
 
     @Id
     @GeneratedValue
-    private Long id; // Añadir id
+    private Long id; // Añadir id   
     private String nombre;
     private String peso;
     private String raza;

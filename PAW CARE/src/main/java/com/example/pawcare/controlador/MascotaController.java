@@ -10,13 +10,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.pawcare.entidad.Mascota;
 import com.example.pawcare.servicio.MascotaService;
 
-import io.swagger.v3.oas.annotations.parameters.RequestBody;
 
 
 @RestController
@@ -90,9 +90,23 @@ public class MascotaController {
         return "modificar_mascota";
     }
 
+    /*
+     * 
     @PutMapping("/modificar/{id}")
     public void actualizarMascota(@RequestBody Mascota mascota) {
         mascotaService.update(mascota);
     }
+     */
+    @PutMapping("/modificar/{id}")
+public void actualizarMascota(@RequestBody Mascota mascota, @PathVariable("id") Long id) {
+    // Recupera la mascota existente para obtener su relación con el cliente
+    Mascota existingMascota = mascotaService.SearchById(id);
+    if (existingMascota != null) {
+        mascota.setCliente(existingMascota.getCliente());
+        mascota.setId(id);
+        mascotaService.update(mascota);
+    }
+}
+
 
 }
