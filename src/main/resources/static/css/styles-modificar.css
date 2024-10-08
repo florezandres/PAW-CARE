@@ -1,0 +1,122 @@
+/*----------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* ESPECIFICO DE INICIO DE SESIÓN */
+form {
+display: flex;
+flex-direction: column;
+gap: 15px; /* Espacio entre los elementos del formulario */
+margin: 0 auto; /* Centra el formulario en la página */
+width: 350px;
+padding-bottom: 10px;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="image"],
+input[type="number"],
+select[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder,
+input[type="email"]::placeholder {
+color: #888; /* Color del texto del placeholder */
+font-style: italic; /* Estilo del texto del placeholder */
+}
+
+button {
+padding: 10px;
+border: none;
+border-radius: 4px;
+background-color: #006157;
+color: #fff;
+font-size: 16px;
+cursor: pointer;
+border-radius: 100px;
+width: 350px;
+margin: 0 auto;
+margin-bottom: 10px;
+}
+
+button:hover {
+background-color: #004d40; /* Color de fondo al pasar el mouse */
+}
+
+span {
+margin: 0 auto;
+}
+
+span a {
+color: #379ae6;
+text-decoration: underline;
+}
+
+.mascot-image {
+max-width: 1000px; /* Ajusta la imagen al contenedor */
+height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.right-section {
+flex: 2; /* Ocupa 2/3 del ancho */
+padding: 2rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.left-section {
+flex: 1; /* Ocupa 1/3 del ancho */
+background-color: #f0f0f0; /* Fondo claro opcional */
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.txtIniciarSesion {
+display: flex;
+flex-direction: column;
+padding-bottom: 40px;
+margin: 0 auto; /* Centra el formulario en la página */
+}
+.titulo{
+text-align: center;
+padding-top: 1px;
+}
+
+.formulario {
+  width: 550px;
+  align-self: center;
+  margin: 0 auto;
+  margin-top: 110px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0px 15px rgba(0, 0, 0, 0.05);
+}
+
+.intro-image {
+  display: flex;
+  width: max-content; /* Ajusta la imagen al ancho del contenedor */
+  height: max-content; /* Mantiene la proporción de la imagen */
+  max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+  margin-left: 0; /* Alinea la imagen a la izquierda del contenedor */
+  filter: brightness(50%);
+}
+
+.btnCerrar{
+  background-color: #ffffff;
+  color: #004d40;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+.btnlogin{
+  width: 40px;
+  padding-left: 20px;
+}
+
+.btnlogin a{
+  padding-left: 20px;
+}

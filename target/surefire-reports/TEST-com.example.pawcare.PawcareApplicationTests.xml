@@ -1,0 +1,1360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.pawcare.PawcareApplicationTests" time="7.929" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\quiro\OneDrive\Documentos\PAWCARE-WEB\PAW-CARE-JAVA-REST\PAW CARE\target\test-classes;C:\Users\quiro\OneDrive\Documentos\PAWCARE-WEB\PAW-CARE-JAVA-REST\PAW CARE\target\classes;C:\Users\quiro\.m2\repository\org\apache\poi\poi-ooxml\5.2.3\poi-ooxml-5.2.3.jar;C:\Users\quiro\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.3\poi-ooxml-lite-5.2.3.jar;C:\Users\quiro\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\quiro\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\quiro\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;C:\Users\quiro\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;C:\Users\quiro\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\quiro\.m2\repository\org\apache\poi\poi\5.2.3\poi-5.2.3.jar;C:\Users\quiro\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\quiro\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\quiro\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\quiro\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\quiro\.m2\repository\org\springframework\boot\spring-boot-starter-actuator\3.3.2\spring-boot-starter-actuator-3.3.2.jar;C:\Users\quiro\.m2\repository\org\springframework\boot\spring-boot-starter\3.3.2\spring-boot-starter-3.3.2.jar;C:\Users\quiro\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.3.2\spring-boot-starter-logging-3.3.2.jar;C:\Users\quiro\.m2\repository\ch\qos\logback\logback-classic\1.5.6\logback-classic-1.5.6.jar;C:\Users\quiro\.m2\repository\ch\qos\logback\logback-core\1.5.6\logback-core-1.5.6.jar;C:\Users\quiro\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.23.1\log4j-to-slf4j-2.23.1.jar;C:\Users\quiro\.m2\repository\org\slf4j\jul-to-slf4j\2.0.13\jul-to-slf4j-2.0.13.jar;C:\Users\quiro\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\quiro\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\quiro\.m2\repository\org\springframework\boot\spring-boot-actuator-autoconfigure\3.3.2\spring-boot-actuator-autoconfigure-3.3.2.jar;C:\Users\quiro\.m2\repository\org\springframework\boot\spring-boot-actuator\3.3.2\spring-boot-actuator-3.3.2.jar;C:\Users\quiro\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.2\jackson-databind-2.17.2.jar;C:\Users\quiro\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.2\jackson-annotations-2.17.2.jar;C:\Users\quiro\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.2\jackson-core-2.17.2.jar;C:\Users\quiro\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.2\jackson-datatype-jsr310-2.17.2.jar;C:\Users\quiro\.m2\repository\io\micrometer\micrometer-observation\1.13.2\micrometer-observation-1.13.2.jar;C:\Users\quiro\.m2\repository\io\micrometer\micrometer-commons\1.13.2\micrometer-commons-1.13.2.jar;C:\Users\quiro\.m2\repository\io\micrometer\micrometer-jakarta9\1.13.2\micrometer-jakarta9-1.13.2.jar;C:\Users\quiro\.m2\repository\io\micrometer\micrometer-core\1.13.2\micrometer-core-1.13.2.jar;C:\Users\quiro\.m2\repository\org\hdrhistogram\HdrHistogram\2.2.2\HdrHistogram-2.2.2.jar;C:\Users\quiro\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\quiro\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.3.2\spring-boot-starter-web-3.3.2.jar;C:\Users\quiro\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.3.2\spring-boot-starter-json-3.3.2.jar;C:\Users\quiro\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.2\jackson-datatype-jdk8-2.17.2.jar;C:\Users\quiro\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.17.2\jackson-module-parameter-names-2.17.2.jar;C:\Users\quiro\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.3.2\spring-boot-starter-tomcat-3.3.2.jar;C:\Users\quiro\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.26\tomcat-embed-core-10.1.26.jar;C:\Users\quiro\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.26\tomcat-embed-el-10.1.26.jar;C:\Users\quiro\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.26\tomcat-embed-websocket-10.1.26.jar;C:\Users\quiro\.m2\repository\org\springframework\spring-web\6.1.11\spring-web-6.1.11.jar;C:\Users\quiro\.m2\repository\org\springframework\spring-beans\6.1.11\spring-beans-6.1.11.jar;C:\Users\quiro\.m2\repository\org\springframework\spring-webmvc\6.1.11\spring-webmvc-6.1.11.jar;C:\Users\quiro\.m2\repository\org\springframework\spring-aop\6.1.11\spring-aop-6.1.11.jar;C:\Users\quiro\.m2\repository\org\springframework\spring-context\6.1.11\spring-context-6.1.11.jar;C:\Users\quiro\.m2\repository\org\springframework\spring-expression\6.1.11\spring-expression-6.1.11.jar;C:\Users\quiro\.m2\repository\org\springframework\boot\spring-boot-devtools\3.3.2\spring-boot-devtools-3.3.2.jar;C:\Users\quiro\.m2\repository\org\springframework\boot\spring-boot\3.3.2\spring-boot-3.3.2.jar;C:\Users\quiro\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.3.2\spring-boot-autoconfigure-3.3.2.jar;C:\Users\quiro\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.3.2\spring-boot-starter-test-3.3.2.jar;C:\Users\quiro\.m2\repository\org\springframework\boot\spring-boot-test\3.3.2\spring-boot-test-3.3.2.jar;C:\Users\quiro\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.3.2\spring-boot-test-autoconfigure-3.3.2.jar;C:\Users\quiro\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\quiro\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\quiro\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\quiro\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\quiro\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\quiro\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\quiro\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\quiro\.m2\repository\org\assertj\assertj-core\3.25.3\assertj-core-3.25.3.jar;C:\Users\quiro\.m2\repository\net\bytebuddy\byte-buddy\1.14.18\byte-buddy-1.14.18.jar;C:\Users\quiro\.m2\repository\org\awaitility\awaitility\4.2.1\awaitility-4.2.1.jar;C:\Users\quiro\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\quiro\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.3\junit-jupiter-5.10.3.jar;C:\Users\quiro\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.3\junit-jupiter-api-5.10.3.jar;C:\Users\quiro\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\quiro\.m2\repository\org\junit\platform\junit-platform-commons\1.10.3\junit-platform-commons-1.10.3.jar;C:\Users\quiro\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\quiro\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.3\junit-jupiter-params-5.10.3.jar;C:\Users\quiro\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.3\junit-jupiter-engine-5.10.3.jar;C:\Users\quiro\.m2\repository\org\junit\platform\junit-platform-engine\1.10.3\junit-platform-engine-1.10.3.jar;C:\Users\quiro\.m2\repository\org\mockito\mockito-core\5.11.0\mockito-core-5.11.0.jar;C:\Users\quiro\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.18\byte-buddy-agent-1.14.18.jar;C:\Users\quiro\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\quiro\.m2\repository\org\mockito\mockito-junit-jupiter\5.11.0\mockito-junit-jupiter-5.11.0.jar;C:\Users\quiro\.m2\repository\org\skyscreamer\jsonassert\1.5.3\jsonassert-1.5.3.jar;C:\Users\quiro\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\quiro\.m2\repository\org\springframework\spring-core\6.1.11\spring-core-6.1.11.jar;C:\Users\quiro\.m2\repository\org\springframework\spring-jcl\6.1.11\spring-jcl-6.1.11.jar;C:\Users\quiro\.m2\repository\org\springframework\spring-test\6.1.11\spring-test-6.1.11.jar;C:\Users\quiro\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\quiro\.m2\repository\org\springframework\boot\spring-boot-starter-thymeleaf\3.3.2\spring-boot-starter-thymeleaf-3.3.2.jar;C:\Users\quiro\.m2\repository\org\thymeleaf\thymeleaf-spring6\3.1.2.RELEASE\thymeleaf-spring6-3.1.2.RELEASE.jar;C:\Users\quiro\.m2\repository\org\thymeleaf\thymeleaf\3.1.2.RELEASE\thymeleaf-3.1.2.RELEASE.jar;C:\Users\quiro\.m2\repository\org\attoparser\attoparser\2.0.7.RELEASE\attoparser-2.0.7.RELEASE.jar;C:\Users\quiro\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\quiro\.m2\repository\org\apache\commons\commons-lang3\3.9\commons-lang3-3.9.jar;C:\Users\quiro\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.3.0\spring-boot-starter-data-jpa-3.3.0.jar;C:\Users\quiro\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.3.2\spring-boot-starter-aop-3.3.2.jar;C:\Users\quiro\.m2\repository\org\aspectj\aspectjweaver\1.9.22.1\aspectjweaver-1.9.22.1.jar;C:\Users\quiro\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.3.2\spring-boot-starter-jdbc-3.3.2.jar;C:\Users\quiro\.m2\repository\com\zaxxer\HikariCP\5.1.0\HikariCP-5.1.0.jar;C:\Users\quiro\.m2\repository\org\springframework\spring-jdbc\6.1.11\spring-jdbc-6.1.11.jar;C:\Users\quiro\.m2\repository\org\hibernate\orm\hibernate-core\6.5.2.Final\hibernate-core-6.5.2.Final.jar;C:\Users\quiro\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\quiro\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\quiro\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\quiro\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\quiro\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\quiro\.m2\repository\com\fasterxml\classmate\1.7.0\classmate-1.7.0.jar;C:\Users\quiro\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;C:\Users\quiro\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;C:\Users\quiro\.m2\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;C:\Users\quiro\.m2\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;C:\Users\quiro\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\quiro\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\quiro\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\quiro\.m2\repository\org\springframework\data\spring-data-jpa\3.3.2\spring-data-jpa-3.3.2.jar;C:\Users\quiro\.m2\repository\org\springframework\data\spring-data-commons\3.3.2\spring-data-commons-3.3.2.jar;C:\Users\quiro\.m2\repository\org\springframework\spring-orm\6.1.11\spring-orm-6.1.11.jar;C:\Users\quiro\.m2\repository\org\springframework\spring-tx\6.1.11\spring-tx-6.1.11.jar;C:\Users\quiro\.m2\repository\org\springframework\spring-aspects\6.1.11\spring-aspects-6.1.11.jar;C:\Users\quiro\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-ui\2.1.0\springdoc-openapi-starter-webmvc-ui-2.1.0.jar;C:\Users\quiro\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-api\2.1.0\springdoc-openapi-starter-webmvc-api-2.1.0.jar;C:\Users\quiro\.m2\repository\org\springdoc\springdoc-openapi-starter-common\2.1.0\springdoc-openapi-starter-common-2.1.0.jar;C:\Users\quiro\.m2\repository\io\swagger\core\v3\swagger-core-jakarta\2.2.9\swagger-core-jakarta-2.2.9.jar;C:\Users\quiro\.m2\repository\io\swagger\core\v3\swagger-annotations-jakarta\2.2.9\swagger-annotations-jakarta-2.2.9.jar;C:\Users\quiro\.m2\repository\io\swagger\core\v3\swagger-models-jakarta\2.2.9\swagger-models-jakarta-2.2.9.jar;C:\Users\quiro\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\quiro\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.17.2\jackson-dataformat-yaml-2.17.2.jar;C:\Users\quiro\.m2\repository\org\webjars\swagger-ui\4.18.2\swagger-ui-4.18.2.jar;C:\Users\quiro\.m2\repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="user.timezone" value="America/Bogota"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="CO"/>
+    <property name="sun.boot.library.path" value="C:\Users\quiro\.jdks\corretto-21.0.2\bin"/>
+    <property name="sun.java.command" value="C:\Users\quiro\AppData\Local\Temp\surefire16204346524245841322\surefirebooter-20241008024124224_3.jar C:\Users\quiro\AppData\Local\Temp\surefire16204346524245841322 2024-10-08T02-41-23_381-jvmRun1 surefire-20241008024124224_1tmp surefire_0-20241008024124224_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\quiro\OneDrive\Documentos\PAWCARE-WEB\PAW-CARE-JAVA-REST\PAW CARE\target\test-classes;C:\Users\quiro\OneDrive\Documentos\PAWCARE-WEB\PAW-CARE-JAVA-REST\PAW CARE\target\classes;C:\Users\quiro\.m2\repository\org\apache\poi\poi-ooxml\5.2.3\poi-ooxml-5.2.3.jar;C:\Users\quiro\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.3\poi-ooxml-lite-5.2.3.jar;C:\Users\quiro\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\quiro\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\quiro\.m2\repository\com\github\virtuald\curvesapi\1.07\curvesapi-1.07.jar;C:\Users\quiro\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;C:\Users\quiro\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\quiro\.m2\repository\org\apache\poi\poi\5.2.3\poi-5.2.3.jar;C:\Users\quiro\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\quiro\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\quiro\.m2\repository\com\zaxxer\SparseBitSet\1.2\SparseBitSet-1.2.jar;C:\Users\quiro\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\quiro\.m2\repository\org\springframework\boot\spring-boot-starter-actuator\3.3.2\spring-boot-starter-actuator-3.3.2.jar;C:\Users\quiro\.m2\repository\org\springframework\boot\spring-boot-starter\3.3.2\spring-boot-starter-3.3.2.jar;C:\Users\quiro\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.3.2\spring-boot-starter-logging-3.3.2.jar;C:\Users\quiro\.m2\repository\ch\qos\logback\logback-classic\1.5.6\logback-classic-1.5.6.jar;C:\Users\quiro\.m2\repository\ch\qos\logback\logback-core\1.5.6\logback-core-1.5.6.jar;C:\Users\quiro\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.23.1\log4j-to-slf4j-2.23.1.jar;C:\Users\quiro\.m2\repository\org\slf4j\jul-to-slf4j\2.0.13\jul-to-slf4j-2.0.13.jar;C:\Users\quiro\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\quiro\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\quiro\.m2\repository\org\springframework\boot\spring-boot-actuator-autoconfigure\3.3.2\spring-boot-actuator-autoconfigure-3.3.2.jar;C:\Users\quiro\.m2\repository\org\springframework\boot\spring-boot-actuator\3.3.2\spring-boot-actuator-3.3.2.jar;C:\Users\quiro\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.2\jackson-databind-2.17.2.jar;C:\Users\quiro\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.2\jackson-annotations-2.17.2.jar;C:\Users\quiro\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.2\jackson-core-2.17.2.jar;C:\Users\quiro\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.2\jackson-datatype-jsr310-2.17.2.jar;C:\Users\quiro\.m2\repository\io\micrometer\micrometer-observation\1.13.2\micrometer-observation-1.13.2.jar;C:\Users\quiro\.m2\repository\io\micrometer\micrometer-commons\1.13.2\micrometer-commons-1.13.2.jar;C:\Users\quiro\.m2\repository\io\micrometer\micrometer-jakarta9\1.13.2\micrometer-jakarta9-1.13.2.jar;C:\Users\quiro\.m2\repository\io\micrometer\micrometer-core\1.13.2\micrometer-core-1.13.2.jar;C:\Users\quiro\.m2\repository\org\hdrhistogram\HdrHistogram\2.2.2\HdrHistogram-2.2.2.jar;C:\Users\quiro\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\quiro\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.3.2\spring-boot-starter-web-3.3.2.jar;C:\Users\quiro\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.3.2\spring-boot-starter-json-3.3.2.jar;C:\Users\quiro\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.2\jackson-datatype-jdk8-2.17.2.jar;C:\Users\quiro\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.17.2\jackson-module-parameter-names-2.17.2.jar;C:\Users\quiro\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.3.2\spring-boot-starter-tomcat-3.3.2.jar;C:\Users\quiro\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.26\tomcat-embed-core-10.1.26.jar;C:\Users\quiro\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.26\tomcat-embed-el-10.1.26.jar;C:\Users\quiro\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.26\tomcat-embed-websocket-10.1.26.jar;C:\Users\quiro\.m2\repository\org\springframework\spring-web\6.1.11\spring-web-6.1.11.jar;C:\Users\quiro\.m2\repository\org\springframework\spring-beans\6.1.11\spring-beans-6.1.11.jar;C:\Users\quiro\.m2\repository\org\springframework\spring-webmvc\6.1.11\spring-webmvc-6.1.11.jar;C:\Users\quiro\.m2\repository\org\springframework\spring-aop\6.1.11\spring-aop-6.1.11.jar;C:\Users\quiro\.m2\repository\org\springframework\spring-context\6.1.11\spring-context-6.1.11.jar;C:\Users\quiro\.m2\repository\org\springframework\spring-expression\6.1.11\spring-expression-6.1.11.jar;C:\Users\quiro\.m2\repository\org\springframework\boot\spring-boot-devtools\3.3.2\spring-boot-devtools-3.3.2.jar;C:\Users\quiro\.m2\repository\org\springframework\boot\spring-boot\3.3.2\spring-boot-3.3.2.jar;C:\Users\quiro\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.3.2\spring-boot-autoconfigure-3.3.2.jar;C:\Users\quiro\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.3.2\spring-boot-starter-test-3.3.2.jar;C:\Users\quiro\.m2\repository\org\springframework\boot\spring-boot-test\3.3.2\spring-boot-test-3.3.2.jar;C:\Users\quiro\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.3.2\spring-boot-test-autoconfigure-3.3.2.jar;C:\Users\quiro\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\quiro\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\quiro\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\quiro\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\quiro\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\quiro\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\quiro\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\quiro\.m2\repository\org\assertj\assertj-core\3.25.3\assertj-core-3.25.3.jar;C:\Users\quiro\.m2\repository\net\bytebuddy\byte-buddy\1.14.18\byte-buddy-1.14.18.jar;C:\Users\quiro\.m2\repository\org\awaitility\awaitility\4.2.1\awaitility-4.2.1.jar;C:\Users\quiro\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\quiro\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.3\junit-jupiter-5.10.3.jar;C:\Users\quiro\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.3\junit-jupiter-api-5.10.3.jar;C:\Users\quiro\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\quiro\.m2\repository\org\junit\platform\junit-platform-commons\1.10.3\junit-platform-commons-1.10.3.jar;C:\Users\quiro\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\quiro\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.3\junit-jupiter-params-5.10.3.jar;C:\Users\quiro\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.3\junit-jupiter-engine-5.10.3.jar;C:\Users\quiro\.m2\repository\org\junit\platform\junit-platform-engine\1.10.3\junit-platform-engine-1.10.3.jar;C:\Users\quiro\.m2\repository\org\mockito\mockito-core\5.11.0\mockito-core-5.11.0.jar;C:\Users\quiro\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.18\byte-buddy-agent-1.14.18.jar;C:\Users\quiro\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\quiro\.m2\repository\org\mockito\mockito-junit-jupiter\5.11.0\mockito-junit-jupiter-5.11.0.jar;C:\Users\quiro\.m2\repository\org\skyscreamer\jsonassert\1.5.3\jsonassert-1.5.3.jar;C:\Users\quiro\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\quiro\.m2\repository\org\springframework\spring-core\6.1.11\spring-core-6.1.11.jar;C:\Users\quiro\.m2\repository\org\springframework\spring-jcl\6.1.11\spring-jcl-6.1.11.jar;C:\Users\quiro\.m2\repository\org\springframework\spring-test\6.1.11\spring-test-6.1.11.jar;C:\Users\quiro\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\quiro\.m2\repository\org\springframework\boot\spring-boot-starter-thymeleaf\3.3.2\spring-boot-starter-thymeleaf-3.3.2.jar;C:\Users\quiro\.m2\repository\org\thymeleaf\thymeleaf-spring6\3.1.2.RELEASE\thymeleaf-spring6-3.1.2.RELEASE.jar;C:\Users\quiro\.m2\repository\org\thymeleaf\thymeleaf\3.1.2.RELEASE\thymeleaf-3.1.2.RELEASE.jar;C:\Users\quiro\.m2\repository\org\attoparser\attoparser\2.0.7.RELEASE\attoparser-2.0.7.RELEASE.jar;C:\Users\quiro\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\quiro\.m2\repository\org\apache\commons\commons-lang3\3.9\commons-lang3-3.9.jar;C:\Users\quiro\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.3.0\spring-boot-starter-data-jpa-3.3.0.jar;C:\Users\quiro\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.3.2\spring-boot-starter-aop-3.3.2.jar;C:\Users\quiro\.m2\repository\org\aspectj\aspectjweaver\1.9.22.1\aspectjweaver-1.9.22.1.jar;C:\Users\quiro\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.3.2\spring-boot-starter-jdbc-3.3.2.jar;C:\Users\quiro\.m2\repository\com\zaxxer\HikariCP\5.1.0\HikariCP-5.1.0.jar;C:\Users\quiro\.m2\repository\org\springframework\spring-jdbc\6.1.11\spring-jdbc-6.1.11.jar;C:\Users\quiro\.m2\repository\org\hibernate\orm\hibernate-core\6.5.2.Final\hibernate-core-6.5.2.Final.jar;C:\Users\quiro\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\quiro\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\quiro\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\quiro\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\quiro\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\quiro\.m2\repository\com\fasterxml\classmate\1.7.0\classmate-1.7.0.jar;C:\Users\quiro\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;C:\Users\quiro\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;C:\Users\quiro\.m2\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;C:\Users\quiro\.m2\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;C:\Users\quiro\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\quiro\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\quiro\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\quiro\.m2\repository\org\springframework\data\spring-data-jpa\3.3.2\spring-data-jpa-3.3.2.jar;C:\Users\quiro\.m2\repository\org\springframework\data\spring-data-commons\3.3.2\spring-data-commons-3.3.2.jar;C:\Users\quiro\.m2\repository\org\springframework\spring-orm\6.1.11\spring-orm-6.1.11.jar;C:\Users\quiro\.m2\repository\org\springframework\spring-tx\6.1.11\spring-tx-6.1.11.jar;C:\Users\quiro\.m2\repository\org\springframework\spring-aspects\6.1.11\spring-aspects-6.1.11.jar;C:\Users\quiro\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-ui\2.1.0\springdoc-openapi-starter-webmvc-ui-2.1.0.jar;C:\Users\quiro\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-api\2.1.0\springdoc-openapi-starter-webmvc-api-2.1.0.jar;C:\Users\quiro\.m2\repository\org\springdoc\springdoc-openapi-starter-common\2.1.0\springdoc-openapi-starter-common-2.1.0.jar;C:\Users\quiro\.m2\repository\io\swagger\core\v3\swagger-core-jakarta\2.2.9\swagger-core-jakarta-2.2.9.jar;C:\Users\quiro\.m2\repository\io\swagger\core\v3\swagger-annotations-jakarta\2.2.9\swagger-annotations-jakarta-2.2.9.jar;C:\Users\quiro\.m2\repository\io\swagger\core\v3\swagger-models-jakarta\2.2.9\swagger-models-jakarta-2.2.9.jar;C:\Users\quiro\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\quiro\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.17.2\jackson-dataformat-yaml-2.17.2.jar;C:\Users\quiro\.m2\repository\org\webjars\swagger-ui\4.18.2\swagger-ui-4.18.2.jar;C:\Users\quiro\.m2\repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\quiro"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-01-16"/>
+    <property name="java.home" value="C:\Users\quiro\.jdks\corretto-21.0.2"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\quiro\OneDrive\Documentos\PAWCARE-WEB\PAW-CARE-JAVA-REST\PAW CARE"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="C:\Users\quiro\AppData\Local\Temp\surefire16204346524245841322\surefirebooter-20241008024124224_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.2+13-LTS"/>
+    <property name="user.name" value="Andres"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Corretto-21.0.2.13.1"/>
+    <property name="localRepository" value="C:\Users\quiro\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-21/issues/"/>
+    <property name="java.io.tmpdir" value="C:\Users\quiro\AppData\Local\Temp\"/>
+    <property name="com.zaxxer.hikari.pool_number" value="1"/>
+    <property name="java.version" value="21.0.2"/>
+    <property name="user.dir" value="C:\Users\quiro\OneDrive\Documentos\PAWCARE-WEB\PAW-CARE-JAVA-REST\PAW CARE"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="20080"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\quiro\.jdks\corretto-21.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\quiro\AppData\Roaming\Code\User\globalStorage\pleiades.java-extension-pack-jdk\gradle\latest\bin;C:\Users\quiro\AppData\Roaming\Code\User\globalStorage\pleiades.java-extension-pack-jdk\maven\latest\bin;C:\Users\quiro\.jdks\corretto-21.0.2\bin;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.9\bin;C:\Users\quiro\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\quiro\AppData\Local\Programs\Python\Python312\;C:\Users\quiro\AppData\Local\Microsoft\WindowsApps;C:\Users\quiro\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\quiro\AppData\Roaming\npm;C:\Users\quiro\AppData\Local\Microsoft\WinGet\Packages\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.vm.version" value="21.0.2+13-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="contextLoads" classname="com.example.pawcare.PawcareApplicationTests" time="0.414">
+    <system-out><![CDATA[02:41:25.112 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.pawcare.PawcareApplicationTests]: PawcareApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+02:41:25.226 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.pawcare.PawcareApplication for test class com.example.pawcare.PawcareApplicationTests
+02:41:25.386 [main] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.2)
+
+2024-10-08T02:41:25.634-05:00  INFO 20080 --- [           main] c.e.pawcare.PawcareApplicationTests      : Starting PawcareApplicationTests using Java 21.0.2 with PID 20080 (started by Andres in C:\Users\quiro\OneDrive\Documentos\PAWCARE-WEB\PAW-CARE-JAVA-REST\PAW CARE)
+2024-10-08T02:41:25.636-05:00  INFO 20080 --- [           main] c.e.pawcare.PawcareApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2024-10-08T02:41:26.600-05:00  INFO 20080 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-08T02:41:26.670-05:00  INFO 20080 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 6 JPA repository interfaces.
+2024-10-08T02:41:27.405-05:00  INFO 20080 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-08T02:41:27.488-05:00  INFO 20080 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-10-08T02:41:27.525-05:00  INFO 20080 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-10-08T02:41:27.920-05:00  INFO 20080 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-08T02:41:27.954-05:00  INFO 20080 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-10-08T02:41:28.192-05:00  INFO 20080 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./PAW CARE/mydatabase user=SA
+2024-10-08T02:41:28.195-05:00  INFO 20080 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-10-08T02:41:28.218-05:00  WARN 20080 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-08T02:41:29.166-05:00  INFO 20080 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-08T02:41:29.182-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : drop table if exists administrador cascade 
+2024-10-08T02:41:29.186-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : drop table if exists cliente cascade 
+2024-10-08T02:41:29.187-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : drop table if exists droga cascade 
+2024-10-08T02:41:29.187-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : drop table if exists mascota cascade 
+2024-10-08T02:41:29.187-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : drop table if exists tratamiento cascade 
+2024-10-08T02:41:29.187-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : drop table if exists veterinario cascade 
+2024-10-08T02:41:29.188-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : drop sequence if exists administrador_seq
+2024-10-08T02:41:29.188-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : drop sequence if exists cliente_seq
+2024-10-08T02:41:29.188-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : drop sequence if exists droga_seq
+2024-10-08T02:41:29.188-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : drop sequence if exists mascota_seq
+2024-10-08T02:41:29.188-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : drop sequence if exists tratamiento_seq
+2024-10-08T02:41:29.189-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : drop sequence if exists veterinario_seq
+2024-10-08T02:41:29.194-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : create sequence administrador_seq start with 1 increment by 50
+2024-10-08T02:41:29.196-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : create sequence cliente_seq start with 1 increment by 50
+2024-10-08T02:41:29.197-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : create sequence droga_seq start with 1 increment by 50
+2024-10-08T02:41:29.197-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : create sequence mascota_seq start with 1 increment by 50
+2024-10-08T02:41:29.197-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : create sequence tratamiento_seq start with 1 increment by 50
+2024-10-08T02:41:29.198-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : create sequence veterinario_seq start with 1 increment by 50
+2024-10-08T02:41:29.201-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : create table administrador (cedula integer not null, id bigint not null, primary key (id))
+2024-10-08T02:41:29.206-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : create table cliente (cedula integer not null, celular integer not null, id bigint not null, correo varchar(255), nombre varchar(255), primary key (id))
+2024-10-08T02:41:29.207-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : create table droga (precio_compra float(24) not null, precio_venta float(24) not null, unidades_disp integer not null, unidades_vendidas integer not null, id bigint not null, mascota_id bigint, nombre varchar(255), primary key (id))
+2024-10-08T02:41:29.208-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : create table mascota (edad integer not null, cliente_id bigint, id bigint not null, tratamiento_id bigint, enfermedad varchar(255), estado varchar(255), imagen varchar(255), nombre varchar(255), peso varchar(255), raza varchar(255), primary key (id))
+2024-10-08T02:41:29.209-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : create table tratamiento (droga_id bigint, id bigint not null, veterinario_id bigint, descripcion varchar(255), fecha varchar(255), primary key (id))
+2024-10-08T02:41:29.210-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : create table veterinario (cedula integer not null, num_atenciones integer not null, id bigint not null, especialidad varchar(255), imagen varchar(255), nombre varchar(255), primary key (id))
+2024-10-08T02:41:29.211-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : alter table if exists droga add constraint FKnxnnw2nqvf3fon6053xjw0nld foreign key (mascota_id) references mascota
+2024-10-08T02:41:29.222-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : alter table if exists mascota add constraint FK43ghhb7i1g4240ndbx7m7a6ji foreign key (cliente_id) references cliente
+2024-10-08T02:41:29.223-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : alter table if exists mascota add constraint FK5mnxo8ejgdlr8nt3w5sosbe7h foreign key (tratamiento_id) references tratamiento
+2024-10-08T02:41:29.225-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : alter table if exists tratamiento add constraint FK1jim3e5ysk065eewm48clsu60 foreign key (droga_id) references droga
+2024-10-08T02:41:29.227-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : alter table if exists tratamiento add constraint FK7ghv5c0vgmitanspn5qt2g823 foreign key (veterinario_id) references veterinario
+2024-10-08T02:41:29.232-05:00  INFO 20080 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-08T02:41:30.389-05:00  WARN 20080 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-08T02:41:30.445-05:00  INFO 20080 --- [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-10-08T02:41:31.623-05:00  INFO 20080 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:file:./PAW CARE/mydatabase'
+2024-10-08T02:41:31.680-05:00  INFO 20080 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2024-10-08T02:41:31.769-05:00  INFO 20080 --- [           main] c.e.pawcare.PawcareApplicationTests      : Started PawcareApplicationTests in 6.397 seconds (process running for 7.45)
+2024-10-08T02:41:31.904-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : select next value for administrador_seq
+2024-10-08T02:41:31.946-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : select next value for cliente_seq
+2024-10-08T02:41:31.957-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : select next value for cliente_seq
+2024-10-08T02:41:31.970-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : select next value for mascota_seq
+2024-10-08T02:41:31.971-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : select next value for mascota_seq
+2024-10-08T02:41:31.980-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : select next value for mascota_seq
+2024-10-08T02:41:31.990-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : select next value for veterinario_seq
+2024-10-08T02:41:31.992-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : select next value for veterinario_seq
+2024-10-08T02:41:31.995-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : select next value for tratamiento_seq
+2024-10-08T02:41:31.997-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : select next value for tratamiento_seq
+2024-10-08T02:41:31.998-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : select next value for droga_seq
+2024-10-08T02:41:32.094-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into administrador (cedula,id) values (?,?)
+2024-10-08T02:41:32.098-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.099-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.100-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.100-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.101-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.101-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.101-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.101-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.102-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.102-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.102-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.103-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.103-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.103-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.103-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.104-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.104-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.104-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.104-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.105-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.105-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.105-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.105-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.106-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.106-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.106-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.107-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.107-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.107-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.108-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.108-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.108-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.108-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.109-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.109-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.109-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.109-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.109-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.110-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.110-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.110-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.110-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.111-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.111-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.111-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.111-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.112-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.112-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.112-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.112-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into cliente (cedula,celular,correo,nombre,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.113-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.113-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.114-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.114-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.114-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.115-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.115-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.115-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.116-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.116-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.116-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.117-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.117-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.117-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.118-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.118-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.118-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.119-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.119-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.119-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.120-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.121-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.121-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.121-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.122-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.122-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.123-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.123-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.123-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.124-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.124-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.124-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.125-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.125-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.126-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.126-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.126-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.127-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.127-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.127-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.127-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.127-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.128-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.128-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.128-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.129-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.129-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.129-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.129-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.130-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.130-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.131-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.131-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.131-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.132-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.132-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.132-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.133-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.133-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.134-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.134-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.134-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.134-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.135-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.135-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.135-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.136-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.136-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.136-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.136-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.137-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.137-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.137-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.138-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.138-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.138-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.138-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.139-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.139-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.140-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.140-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.140-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.140-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.141-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.141-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.141-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.141-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.141-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.142-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.142-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.142-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.142-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.142-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.142-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.143-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.143-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.143-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.143-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.144-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.144-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into mascota (cliente_id,edad,enfermedad,estado,imagen,nombre,peso,raza,tratamiento_id,id) values (?,?,?,?,?,?,?,?,?,?)
+2024-10-08T02:41:32.144-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into veterinario (cedula,especialidad,imagen,nombre,num_atenciones,id) values (?,?,?,?,?,?)
+2024-10-08T02:41:32.144-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into veterinario (cedula,especialidad,imagen,nombre,num_atenciones,id) values (?,?,?,?,?,?)
+2024-10-08T02:41:32.145-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into veterinario (cedula,especialidad,imagen,nombre,num_atenciones,id) values (?,?,?,?,?,?)
+2024-10-08T02:41:32.145-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into veterinario (cedula,especialidad,imagen,nombre,num_atenciones,id) values (?,?,?,?,?,?)
+2024-10-08T02:41:32.145-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into veterinario (cedula,especialidad,imagen,nombre,num_atenciones,id) values (?,?,?,?,?,?)
+2024-10-08T02:41:32.145-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into veterinario (cedula,especialidad,imagen,nombre,num_atenciones,id) values (?,?,?,?,?,?)
+2024-10-08T02:41:32.145-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into veterinario (cedula,especialidad,imagen,nombre,num_atenciones,id) values (?,?,?,?,?,?)
+2024-10-08T02:41:32.145-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into veterinario (cedula,especialidad,imagen,nombre,num_atenciones,id) values (?,?,?,?,?,?)
+2024-10-08T02:41:32.146-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into veterinario (cedula,especialidad,imagen,nombre,num_atenciones,id) values (?,?,?,?,?,?)
+2024-10-08T02:41:32.146-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into veterinario (cedula,especialidad,imagen,nombre,num_atenciones,id) values (?,?,?,?,?,?)
+2024-10-08T02:41:32.146-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into veterinario (cedula,especialidad,imagen,nombre,num_atenciones,id) values (?,?,?,?,?,?)
+2024-10-08T02:41:32.146-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into veterinario (cedula,especialidad,imagen,nombre,num_atenciones,id) values (?,?,?,?,?,?)
+2024-10-08T02:41:32.146-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into veterinario (cedula,especialidad,imagen,nombre,num_atenciones,id) values (?,?,?,?,?,?)
+2024-10-08T02:41:32.146-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into veterinario (cedula,especialidad,imagen,nombre,num_atenciones,id) values (?,?,?,?,?,?)
+2024-10-08T02:41:32.146-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into veterinario (cedula,especialidad,imagen,nombre,num_atenciones,id) values (?,?,?,?,?,?)
+2024-10-08T02:41:32.147-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into veterinario (cedula,especialidad,imagen,nombre,num_atenciones,id) values (?,?,?,?,?,?)
+2024-10-08T02:41:32.147-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into veterinario (cedula,especialidad,imagen,nombre,num_atenciones,id) values (?,?,?,?,?,?)
+2024-10-08T02:41:32.147-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into veterinario (cedula,especialidad,imagen,nombre,num_atenciones,id) values (?,?,?,?,?,?)
+2024-10-08T02:41:32.147-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into veterinario (cedula,especialidad,imagen,nombre,num_atenciones,id) values (?,?,?,?,?,?)
+2024-10-08T02:41:32.147-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into veterinario (cedula,especialidad,imagen,nombre,num_atenciones,id) values (?,?,?,?,?,?)
+2024-10-08T02:41:32.147-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into tratamiento (descripcion,droga_id,fecha,veterinario_id,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.147-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into tratamiento (descripcion,droga_id,fecha,veterinario_id,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.148-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into tratamiento (descripcion,droga_id,fecha,veterinario_id,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.148-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into tratamiento (descripcion,droga_id,fecha,veterinario_id,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.148-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into tratamiento (descripcion,droga_id,fecha,veterinario_id,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.148-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into tratamiento (descripcion,droga_id,fecha,veterinario_id,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.148-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into tratamiento (descripcion,droga_id,fecha,veterinario_id,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.149-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into tratamiento (descripcion,droga_id,fecha,veterinario_id,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.149-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into tratamiento (descripcion,droga_id,fecha,veterinario_id,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.149-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into tratamiento (descripcion,droga_id,fecha,veterinario_id,id) values (?,?,?,?,?)
+2024-10-08T02:41:32.149-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : insert into droga (mascota_id,nombre,precio_compra,precio_venta,unidades_disp,unidades_vendidas,id) values (?,?,?,?,?,?,?)
+2024-10-08T02:41:32.177-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : select t1_0.id,t1_0.descripcion,t1_0.droga_id,t1_0.fecha,t1_0.veterinario_id from tratamiento t1_0
+NUMERO RANDOM: 5DE: 1
+SEARCH: 5
+NUMERO RANDOM: 17DE: 2
+SEARCH: 17
+NUMERO RANDOM: 9DE: 3
+SEARCH: 9
+NUMERO RANDOM: 6DE: 4
+SEARCH: 6
+NUMERO RANDOM: 15DE: 5
+SEARCH: 15
+NUMERO RANDOM: 3DE: 6
+SEARCH: 3
+NUMERO RANDOM: 10DE: 7
+SEARCH: 10
+NUMERO RANDOM: 11DE: 8
+SEARCH: 11
+NUMERO RANDOM: 14DE: 9
+SEARCH: 14
+NUMERO RANDOM: 14DE: 10
+SEARCH: 14
+2024-10-08T02:41:32.199-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : select m1_0.id,m1_0.cliente_id,m1_0.edad,m1_0.enfermedad,m1_0.estado,m1_0.imagen,m1_0.nombre,m1_0.peso,m1_0.raza,m1_0.tratamiento_id from mascota m1_0
+NUMERO RANDOM: 8DE: 1
+SEARCH: 8
+NUMERO RANDOM: 1DE: 2
+SEARCH: 1
+NUMERO RANDOM: 10DE: 3
+SEARCH: 10
+NUMERO RANDOM: 1DE: 4
+SEARCH: 1
+NUMERO RANDOM: 6DE: 5
+SEARCH: 6
+NUMERO RANDOM: 4DE: 6
+SEARCH: 4
+NUMERO RANDOM: 1DE: 7
+SEARCH: 1
+NUMERO RANDOM: 8DE: 8
+SEARCH: 8
+NUMERO RANDOM: 7DE: 9
+SEARCH: 7
+NUMERO RANDOM: 2DE: 10
+SEARCH: 2
+NUMERO RANDOM: 10DE: 11
+SEARCH: 10
+NUMERO RANDOM: 9DE: 12
+SEARCH: 9
+NUMERO RANDOM: 8DE: 13
+SEARCH: 8
+NUMERO RANDOM: 4DE: 14
+SEARCH: 4
+NUMERO RANDOM: 9DE: 15
+SEARCH: 9
+NUMERO RANDOM: 5DE: 16
+SEARCH: 5
+NUMERO RANDOM: 8DE: 17
+SEARCH: 8
+NUMERO RANDOM: 1DE: 18
+SEARCH: 1
+NUMERO RANDOM: 2DE: 19
+SEARCH: 2
+NUMERO RANDOM: 6DE: 20
+SEARCH: 6
+NUMERO RANDOM: 4DE: 21
+SEARCH: 4
+NUMERO RANDOM: 9DE: 22
+SEARCH: 9
+NUMERO RANDOM: 5DE: 23
+SEARCH: 5
+NUMERO RANDOM: 6DE: 24
+SEARCH: 6
+NUMERO RANDOM: 2DE: 25
+SEARCH: 2
+NUMERO RANDOM: 6DE: 26
+SEARCH: 6
+NUMERO RANDOM: 6DE: 27
+SEARCH: 6
+NUMERO RANDOM: 9DE: 28
+SEARCH: 9
+NUMERO RANDOM: 10DE: 29
+SEARCH: 10
+NUMERO RANDOM: 7DE: 30
+SEARCH: 7
+NUMERO RANDOM: 6DE: 31
+SEARCH: 6
+NUMERO RANDOM: 10DE: 32
+SEARCH: 10
+NUMERO RANDOM: 10DE: 33
+SEARCH: 10
+NUMERO RANDOM: 4DE: 34
+SEARCH: 4
+NUMERO RANDOM: 1DE: 35
+SEARCH: 1
+NUMERO RANDOM: 3DE: 36
+SEARCH: 3
+NUMERO RANDOM: 10DE: 37
+SEARCH: 10
+NUMERO RANDOM: 4DE: 38
+SEARCH: 4
+NUMERO RANDOM: 6DE: 39
+SEARCH: 6
+NUMERO RANDOM: 5DE: 40
+SEARCH: 5
+NUMERO RANDOM: 5DE: 41
+SEARCH: 5
+NUMERO RANDOM: 3DE: 42
+SEARCH: 3
+NUMERO RANDOM: 6DE: 43
+SEARCH: 6
+NUMERO RANDOM: 7DE: 44
+SEARCH: 7
+NUMERO RANDOM: 3DE: 45
+SEARCH: 3
+NUMERO RANDOM: 8DE: 46
+SEARCH: 8
+NUMERO RANDOM: 7DE: 47
+SEARCH: 7
+NUMERO RANDOM: 3DE: 48
+SEARCH: 3
+NUMERO RANDOM: 2DE: 49
+SEARCH: 2
+NUMERO RANDOM: 3DE: 50
+SEARCH: 3
+NUMERO RANDOM: 5DE: 51
+SEARCH: 5
+NUMERO RANDOM: 3DE: 52
+SEARCH: 3
+NUMERO RANDOM: 3DE: 53
+SEARCH: 3
+NUMERO RANDOM: 3DE: 54
+SEARCH: 3
+NUMERO RANDOM: 2DE: 55
+SEARCH: 2
+NUMERO RANDOM: 7DE: 56
+SEARCH: 7
+NUMERO RANDOM: 4DE: 57
+SEARCH: 4
+NUMERO RANDOM: 5DE: 58
+SEARCH: 5
+NUMERO RANDOM: 6DE: 59
+SEARCH: 6
+NUMERO RANDOM: 8DE: 60
+SEARCH: 8
+NUMERO RANDOM: 1DE: 61
+SEARCH: 1
+NUMERO RANDOM: 3DE: 62
+SEARCH: 3
+NUMERO RANDOM: 10DE: 63
+SEARCH: 10
+NUMERO RANDOM: 8DE: 64
+SEARCH: 8
+NUMERO RANDOM: 10DE: 65
+SEARCH: 10
+NUMERO RANDOM: 1DE: 66
+SEARCH: 1
+NUMERO RANDOM: 5DE: 67
+SEARCH: 5
+NUMERO RANDOM: 9DE: 68
+SEARCH: 9
+NUMERO RANDOM: 9DE: 69
+SEARCH: 9
+NUMERO RANDOM: 9DE: 70
+SEARCH: 9
+NUMERO RANDOM: 7DE: 71
+SEARCH: 7
+NUMERO RANDOM: 4DE: 72
+SEARCH: 4
+NUMERO RANDOM: 10DE: 73
+SEARCH: 10
+NUMERO RANDOM: 1DE: 74
+SEARCH: 1
+NUMERO RANDOM: 6DE: 75
+SEARCH: 6
+NUMERO RANDOM: 10DE: 76
+SEARCH: 10
+NUMERO RANDOM: 4DE: 77
+SEARCH: 4
+NUMERO RANDOM: 7DE: 78
+SEARCH: 7
+NUMERO RANDOM: 3DE: 79
+SEARCH: 3
+NUMERO RANDOM: 10DE: 80
+SEARCH: 10
+NUMERO RANDOM: 5DE: 81
+SEARCH: 5
+NUMERO RANDOM: 10DE: 82
+SEARCH: 10
+NUMERO RANDOM: 7DE: 83
+SEARCH: 7
+NUMERO RANDOM: 9DE: 84
+SEARCH: 9
+NUMERO RANDOM: 9DE: 85
+SEARCH: 9
+NUMERO RANDOM: 8DE: 86
+SEARCH: 8
+NUMERO RANDOM: 1DE: 87
+SEARCH: 1
+NUMERO RANDOM: 8DE: 88
+SEARCH: 8
+NUMERO RANDOM: 7DE: 89
+SEARCH: 7
+NUMERO RANDOM: 1DE: 90
+SEARCH: 1
+NUMERO RANDOM: 3DE: 91
+SEARCH: 3
+NUMERO RANDOM: 2DE: 92
+SEARCH: 2
+NUMERO RANDOM: 3DE: 93
+SEARCH: 3
+NUMERO RANDOM: 9DE: 94
+SEARCH: 9
+NUMERO RANDOM: 7DE: 95
+SEARCH: 7
+NUMERO RANDOM: 4DE: 96
+SEARCH: 4
+NUMERO RANDOM: 9DE: 97
+SEARCH: 9
+NUMERO RANDOM: 2DE: 98
+SEARCH: 2
+NUMERO RANDOM: 3DE: 99
+SEARCH: 3
+NUMERO RANDOM: 6DE: 100
+SEARCH: 6
+2024-10-08T02:41:32.235-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.241-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.242-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.242-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.243-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.243-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.244-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.245-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.246-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.246-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.247-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.247-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.248-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.248-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.250-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.251-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.251-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.252-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.253-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.254-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.254-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.255-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.256-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.257-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.258-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.258-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.258-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.259-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.259-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.260-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.261-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.262-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.262-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.263-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.263-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.264-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.264-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.265-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.265-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.266-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.267-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.267-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.268-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.268-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.269-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.269-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.269-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.270-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.270-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.270-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.271-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.271-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.271-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.271-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.272-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.272-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.272-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.272-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.273-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.274-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.274-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.275-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.275-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.276-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.276-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.277-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.277-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.277-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.277-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.278-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.278-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.278-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.279-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.279-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.280-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.280-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.280-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.280-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.281-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.281-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.281-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.281-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.282-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.282-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.282-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.282-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.283-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.283-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.283-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.283-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.283-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.284-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.284-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.284-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.285-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.285-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.285-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.286-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.286-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.286-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.286-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update tratamiento set descripcion=?,droga_id=?,fecha=?,veterinario_id=? where id=?
+2024-10-08T02:41:32.287-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update tratamiento set descripcion=?,droga_id=?,fecha=?,veterinario_id=? where id=?
+2024-10-08T02:41:32.287-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update tratamiento set descripcion=?,droga_id=?,fecha=?,veterinario_id=? where id=?
+2024-10-08T02:41:32.287-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update tratamiento set descripcion=?,droga_id=?,fecha=?,veterinario_id=? where id=?
+2024-10-08T02:41:32.287-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update tratamiento set descripcion=?,droga_id=?,fecha=?,veterinario_id=? where id=?
+2024-10-08T02:41:32.287-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update tratamiento set descripcion=?,droga_id=?,fecha=?,veterinario_id=? where id=?
+2024-10-08T02:41:32.287-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update tratamiento set descripcion=?,droga_id=?,fecha=?,veterinario_id=? where id=?
+2024-10-08T02:41:32.288-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update tratamiento set descripcion=?,droga_id=?,fecha=?,veterinario_id=? where id=?
+2024-10-08T02:41:32.288-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update tratamiento set descripcion=?,droga_id=?,fecha=?,veterinario_id=? where id=?
+2024-10-08T02:41:32.289-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update tratamiento set descripcion=?,droga_id=?,fecha=?,veterinario_id=? where id=?
+2024-10-08T02:41:32.290-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : select m1_0.id,m1_0.cliente_id,m1_0.edad,m1_0.enfermedad,m1_0.estado,m1_0.imagen,m1_0.nombre,m1_0.peso,m1_0.raza,m1_0.tratamiento_id from mascota m1_0
+2024-10-08T02:41:32.302-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.303-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.303-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.303-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.304-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.304-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.304-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.305-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.305-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.305-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.305-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.305-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.305-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.305-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.305-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.306-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.306-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.306-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.307-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.307-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.307-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.307-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.308-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.308-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.308-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.308-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.308-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.309-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.309-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.309-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.309-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.310-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.310-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.310-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.310-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.310-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.311-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.311-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.311-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.311-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.311-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.312-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.312-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.312-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.312-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.312-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.312-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.313-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.313-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.313-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.313-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.313-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.313-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.314-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.314-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.314-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.314-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.314-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.314-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.315-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.315-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.315-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.315-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.315-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.315-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.316-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.316-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.316-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.316-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.316-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.316-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.317-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.317-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.317-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.317-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.318-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.318-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.318-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.319-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.319-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.320-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.320-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.321-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.321-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.321-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.321-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.322-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.322-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.322-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.323-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.323-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.323-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.324-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.324-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.324-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.325-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.325-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.325-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.326-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.326-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.327-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : select m1_0.id,m1_0.cliente_id,m1_0.edad,m1_0.enfermedad,m1_0.estado,m1_0.imagen,m1_0.nombre,m1_0.peso,m1_0.raza,m1_0.tratamiento_id from mascota m1_0
+ID MASCOTA REVISADA: 1
+NUMERO RANDOM: 11DE: 1
+SEARCH: 11
+NUMERO RANDOM: 27DE: 1
+SEARCH: 27
+ID MASCOTA REVISADA: 2
+NUMERO RANDOM: 43DE: 2
+SEARCH: 43
+NUMERO RANDOM: 26DE: 2
+SEARCH: 26
+ID MASCOTA REVISADA: 3
+NUMERO RANDOM: 6DE: 3
+SEARCH: 6
+NUMERO RANDOM: 18DE: 3
+SEARCH: 18
+ID MASCOTA REVISADA: 4
+NUMERO RANDOM: 40DE: 4
+SEARCH: 40
+NUMERO RANDOM: 45DE: 4
+SEARCH: 45
+ID MASCOTA REVISADA: 5
+NUMERO RANDOM: 15DE: 5
+SEARCH: 15
+NUMERO RANDOM: 9DE: 5
+SEARCH: 9
+ID MASCOTA REVISADA: 6
+NUMERO RANDOM: 39DE: 6
+SEARCH: 39
+NUMERO RANDOM: 31DE: 6
+SEARCH: 31
+ID MASCOTA REVISADA: 7
+NUMERO RANDOM: 41DE: 7
+SEARCH: 41
+NUMERO RANDOM: 27DE: 7
+SEARCH: 27
+ID MASCOTA REVISADA: 8
+NUMERO RANDOM: 46DE: 8
+SEARCH: 46
+NUMERO RANDOM: 18DE: 8
+SEARCH: 18
+ID MASCOTA REVISADA: 9
+NUMERO RANDOM: 16DE: 9
+SEARCH: 16
+NUMERO RANDOM: 5DE: 9
+SEARCH: 5
+ID MASCOTA REVISADA: 10
+NUMERO RANDOM: 10DE: 10
+SEARCH: 10
+NUMERO RANDOM: 20DE: 10
+SEARCH: 20
+ID MASCOTA REVISADA: 11
+NUMERO RANDOM: 49DE: 11
+SEARCH: 49
+NUMERO RANDOM: 19DE: 11
+SEARCH: 19
+ID MASCOTA REVISADA: 12
+NUMERO RANDOM: 8DE: 12
+SEARCH: 8
+NUMERO RANDOM: 28DE: 12
+SEARCH: 28
+ID MASCOTA REVISADA: 13
+NUMERO RANDOM: 19DE: 13
+SEARCH: 19
+NUMERO RANDOM: 1DE: 13
+SEARCH: 1
+ID MASCOTA REVISADA: 14
+NUMERO RANDOM: 45DE: 14
+SEARCH: 45
+NUMERO RANDOM: 47DE: 14
+SEARCH: 47
+ID MASCOTA REVISADA: 15
+NUMERO RANDOM: 1DE: 15
+SEARCH: 1
+NUMERO RANDOM: 18DE: 15
+SEARCH: 18
+ID MASCOTA REVISADA: 16
+NUMERO RANDOM: 13DE: 16
+SEARCH: 13
+NUMERO RANDOM: 7DE: 16
+SEARCH: 7
+ID MASCOTA REVISADA: 17
+NUMERO RANDOM: 30DE: 17
+SEARCH: 30
+NUMERO RANDOM: 38DE: 17
+SEARCH: 38
+ID MASCOTA REVISADA: 18
+NUMERO RANDOM: 4DE: 18
+SEARCH: 4
+NUMERO RANDOM: 13DE: 18
+SEARCH: 13
+ID MASCOTA REVISADA: 19
+NUMERO RANDOM: 47DE: 19
+SEARCH: 47
+NUMERO RANDOM: 29DE: 19
+SEARCH: 29
+ID MASCOTA REVISADA: 20
+NUMERO RANDOM: 7DE: 20
+SEARCH: 7
+NUMERO RANDOM: 6DE: 20
+SEARCH: 6
+ID MASCOTA REVISADA: 21
+NUMERO RANDOM: 39DE: 21
+SEARCH: 39
+NUMERO RANDOM: 30DE: 21
+SEARCH: 30
+ID MASCOTA REVISADA: 22
+NUMERO RANDOM: 46DE: 22
+SEARCH: 46
+NUMERO RANDOM: 11DE: 22
+SEARCH: 11
+ID MASCOTA REVISADA: 23
+NUMERO RANDOM: 46DE: 23
+SEARCH: 46
+NUMERO RANDOM: 17DE: 23
+SEARCH: 17
+ID MASCOTA REVISADA: 24
+NUMERO RANDOM: 27DE: 24
+SEARCH: 27
+NUMERO RANDOM: 48DE: 24
+SEARCH: 48
+ID MASCOTA REVISADA: 25
+NUMERO RANDOM: 41DE: 25
+SEARCH: 41
+NUMERO RANDOM: 13DE: 25
+SEARCH: 13
+ID MASCOTA REVISADA: 26
+NUMERO RANDOM: 15DE: 26
+SEARCH: 15
+NUMERO RANDOM: 3DE: 26
+SEARCH: 3
+ID MASCOTA REVISADA: 27
+NUMERO RANDOM: 17DE: 27
+SEARCH: 17
+NUMERO RANDOM: 28DE: 27
+SEARCH: 28
+ID MASCOTA REVISADA: 28
+NUMERO RANDOM: 46DE: 28
+SEARCH: 46
+NUMERO RANDOM: 20DE: 28
+SEARCH: 20
+ID MASCOTA REVISADA: 29
+NUMERO RANDOM: 19DE: 29
+SEARCH: 19
+NUMERO RANDOM: 17DE: 29
+SEARCH: 17
+ID MASCOTA REVISADA: 30
+NUMERO RANDOM: 47DE: 30
+SEARCH: 47
+NUMERO RANDOM: 1DE: 30
+SEARCH: 1
+ID MASCOTA REVISADA: 31
+NUMERO RANDOM: 50DE: 31
+SEARCH: 50
+NUMERO RANDOM: 34DE: 31
+SEARCH: 34
+ID MASCOTA REVISADA: 32
+NUMERO RANDOM: 26DE: 32
+SEARCH: 26
+NUMERO RANDOM: 46DE: 32
+SEARCH: 46
+ID MASCOTA REVISADA: 33
+NUMERO RANDOM: 16DE: 33
+SEARCH: 16
+NUMERO RANDOM: 17DE: 33
+SEARCH: 17
+ID MASCOTA REVISADA: 34
+NUMERO RANDOM: 29DE: 34
+SEARCH: 29
+NUMERO RANDOM: 12DE: 34
+SEARCH: 12
+ID MASCOTA REVISADA: 35
+NUMERO RANDOM: 9DE: 35
+SEARCH: 9
+NUMERO RANDOM: 19DE: 35
+SEARCH: 19
+ID MASCOTA REVISADA: 36
+NUMERO RANDOM: 29DE: 36
+SEARCH: 29
+NUMERO RANDOM: 16DE: 36
+SEARCH: 16
+ID MASCOTA REVISADA: 37
+NUMERO RANDOM: 50DE: 37
+SEARCH: 50
+NUMERO RANDOM: 7DE: 37
+SEARCH: 7
+ID MASCOTA REVISADA: 38
+NUMERO RANDOM: 36DE: 38
+SEARCH: 36
+NUMERO RANDOM: 15DE: 38
+SEARCH: 15
+ID MASCOTA REVISADA: 39
+NUMERO RANDOM: 14DE: 39
+SEARCH: 14
+NUMERO RANDOM: 28DE: 39
+SEARCH: 28
+ID MASCOTA REVISADA: 40
+NUMERO RANDOM: 45DE: 40
+SEARCH: 45
+NUMERO RANDOM: 13DE: 40
+SEARCH: 13
+ID MASCOTA REVISADA: 41
+NUMERO RANDOM: 48DE: 41
+SEARCH: 48
+NUMERO RANDOM: 24DE: 41
+SEARCH: 24
+ID MASCOTA REVISADA: 42
+NUMERO RANDOM: 38DE: 42
+SEARCH: 38
+NUMERO RANDOM: 24DE: 42
+SEARCH: 24
+ID MASCOTA REVISADA: 43
+NUMERO RANDOM: 22DE: 43
+SEARCH: 22
+NUMERO RANDOM: 6DE: 43
+SEARCH: 6
+ID MASCOTA REVISADA: 44
+NUMERO RANDOM: 48DE: 44
+SEARCH: 48
+NUMERO RANDOM: 44DE: 44
+SEARCH: 44
+ID MASCOTA REVISADA: 45
+NUMERO RANDOM: 2DE: 45
+SEARCH: 2
+NUMERO RANDOM: 39DE: 45
+SEARCH: 39
+ID MASCOTA REVISADA: 46
+NUMERO RANDOM: 11DE: 46
+SEARCH: 11
+NUMERO RANDOM: 32DE: 46
+SEARCH: 32
+ID MASCOTA REVISADA: 47
+NUMERO RANDOM: 25DE: 47
+SEARCH: 25
+NUMERO RANDOM: 15DE: 47
+SEARCH: 15
+ID MASCOTA REVISADA: 48
+NUMERO RANDOM: 1DE: 48
+SEARCH: 1
+NUMERO RANDOM: 25DE: 48
+SEARCH: 25
+ID MASCOTA REVISADA: 49
+NUMERO RANDOM: 7DE: 49
+SEARCH: 7
+NUMERO RANDOM: 18DE: 49
+SEARCH: 18
+ID MASCOTA REVISADA: 50
+NUMERO RANDOM: 41DE: 50
+SEARCH: 41
+NUMERO RANDOM: 6DE: 50
+SEARCH: 6
+ID MASCOTA REVISADA: 51
+NUMERO RANDOM: 32DE: 51
+SEARCH: 32
+NUMERO RANDOM: 12DE: 51
+SEARCH: 12
+ID MASCOTA REVISADA: 52
+NUMERO RANDOM: 40DE: 52
+SEARCH: 40
+NUMERO RANDOM: 37DE: 52
+SEARCH: 37
+ID MASCOTA REVISADA: 53
+NUMERO RANDOM: 48DE: 53
+SEARCH: 48
+NUMERO RANDOM: 38DE: 53
+SEARCH: 38
+ID MASCOTA REVISADA: 54
+NUMERO RANDOM: 21DE: 54
+SEARCH: 21
+NUMERO RANDOM: 12DE: 54
+SEARCH: 12
+ID MASCOTA REVISADA: 55
+NUMERO RANDOM: 35DE: 55
+SEARCH: 35
+NUMERO RANDOM: 1DE: 55
+SEARCH: 1
+ID MASCOTA REVISADA: 56
+NUMERO RANDOM: 30DE: 56
+SEARCH: 30
+NUMERO RANDOM: 31DE: 56
+SEARCH: 31
+ID MASCOTA REVISADA: 57
+NUMERO RANDOM: 21DE: 57
+SEARCH: 21
+NUMERO RANDOM: 1DE: 57
+SEARCH: 1
+ID MASCOTA REVISADA: 58
+NUMERO RANDOM: 37DE: 58
+SEARCH: 37
+NUMERO RANDOM: 32DE: 58
+SEARCH: 32
+ID MASCOTA REVISADA: 59
+NUMERO RANDOM: 18DE: 59
+SEARCH: 18
+NUMERO RANDOM: 18DE: 59
+SEARCH: 18
+ID MASCOTA REVISADA: 60
+NUMERO RANDOM: 47DE: 60
+SEARCH: 47
+NUMERO RANDOM: 36DE: 60
+SEARCH: 36
+ID MASCOTA REVISADA: 61
+NUMERO RANDOM: 14DE: 61
+SEARCH: 14
+NUMERO RANDOM: 30DE: 61
+SEARCH: 30
+ID MASCOTA REVISADA: 62
+NUMERO RANDOM: 13DE: 62
+SEARCH: 13
+NUMERO RANDOM: 28DE: 62
+SEARCH: 28
+ID MASCOTA REVISADA: 63
+NUMERO RANDOM: 45DE: 63
+SEARCH: 45
+NUMERO RANDOM: 11DE: 63
+SEARCH: 11
+ID MASCOTA REVISADA: 64
+NUMERO RANDOM: 36DE: 64
+SEARCH: 36
+NUMERO RANDOM: 49DE: 64
+SEARCH: 49
+ID MASCOTA REVISADA: 65
+NUMERO RANDOM: 7DE: 65
+SEARCH: 7
+NUMERO RANDOM: 45DE: 65
+SEARCH: 45
+ID MASCOTA REVISADA: 66
+NUMERO RANDOM: 23DE: 66
+SEARCH: 23
+NUMERO RANDOM: 37DE: 66
+SEARCH: 37
+ID MASCOTA REVISADA: 67
+NUMERO RANDOM: 45DE: 67
+SEARCH: 45
+NUMERO RANDOM: 3DE: 67
+SEARCH: 3
+ID MASCOTA REVISADA: 68
+NUMERO RANDOM: 47DE: 68
+SEARCH: 47
+NUMERO RANDOM: 20DE: 68
+SEARCH: 20
+ID MASCOTA REVISADA: 69
+NUMERO RANDOM: 21DE: 69
+SEARCH: 21
+NUMERO RANDOM: 37DE: 69
+SEARCH: 37
+ID MASCOTA REVISADA: 70
+NUMERO RANDOM: 28DE: 70
+SEARCH: 28
+NUMERO RANDOM: 29DE: 70
+SEARCH: 29
+ID MASCOTA REVISADA: 71
+NUMERO RANDOM: 50DE: 71
+SEARCH: 50
+NUMERO RANDOM: 41DE: 71
+SEARCH: 41
+ID MASCOTA REVISADA: 72
+NUMERO RANDOM: 38DE: 72
+SEARCH: 38
+NUMERO RANDOM: 30DE: 72
+SEARCH: 30
+ID MASCOTA REVISADA: 73
+NUMERO RANDOM: 43DE: 73
+SEARCH: 43
+NUMERO RANDOM: 33DE: 73
+SEARCH: 33
+ID MASCOTA REVISADA: 74
+NUMERO RANDOM: 22DE: 74
+SEARCH: 22
+NUMERO RANDOM: 36DE: 74
+SEARCH: 36
+ID MASCOTA REVISADA: 75
+NUMERO RANDOM: 43DE: 75
+SEARCH: 43
+NUMERO RANDOM: 23DE: 75
+SEARCH: 23
+ID MASCOTA REVISADA: 76
+NUMERO RANDOM: 1DE: 76
+SEARCH: 1
+NUMERO RANDOM: 48DE: 76
+SEARCH: 48
+ID MASCOTA REVISADA: 77
+NUMERO RANDOM: 19DE: 77
+SEARCH: 19
+NUMERO RANDOM: 5DE: 77
+SEARCH: 5
+ID MASCOTA REVISADA: 78
+NUMERO RANDOM: 3DE: 78
+SEARCH: 3
+NUMERO RANDOM: 6DE: 78
+SEARCH: 6
+ID MASCOTA REVISADA: 79
+NUMERO RANDOM: 21DE: 79
+SEARCH: 21
+NUMERO RANDOM: 2DE: 79
+SEARCH: 2
+ID MASCOTA REVISADA: 80
+NUMERO RANDOM: 2DE: 80
+SEARCH: 2
+NUMERO RANDOM: 35DE: 80
+SEARCH: 35
+ID MASCOTA REVISADA: 81
+NUMERO RANDOM: 27DE: 81
+SEARCH: 27
+NUMERO RANDOM: 20DE: 81
+SEARCH: 20
+ID MASCOTA REVISADA: 82
+NUMERO RANDOM: 20DE: 82
+SEARCH: 20
+NUMERO RANDOM: 27DE: 82
+SEARCH: 27
+ID MASCOTA REVISADA: 83
+NUMERO RANDOM: 28DE: 83
+SEARCH: 28
+NUMERO RANDOM: 26DE: 83
+SEARCH: 26
+ID MASCOTA REVISADA: 84
+NUMERO RANDOM: 16DE: 84
+SEARCH: 16
+NUMERO RANDOM: 10DE: 84
+SEARCH: 10
+ID MASCOTA REVISADA: 85
+NUMERO RANDOM: 28DE: 85
+SEARCH: 28
+NUMERO RANDOM: 27DE: 85
+SEARCH: 27
+ID MASCOTA REVISADA: 86
+NUMERO RANDOM: 42DE: 86
+SEARCH: 42
+NUMERO RANDOM: 16DE: 86
+SEARCH: 16
+ID MASCOTA REVISADA: 87
+NUMERO RANDOM: 43DE: 87
+SEARCH: 43
+NUMERO RANDOM: 3DE: 87
+SEARCH: 3
+ID MASCOTA REVISADA: 88
+NUMERO RANDOM: 33DE: 88
+SEARCH: 33
+NUMERO RANDOM: 43DE: 88
+SEARCH: 43
+ID MASCOTA REVISADA: 89
+NUMERO RANDOM: 48DE: 89
+SEARCH: 48
+NUMERO RANDOM: 41DE: 89
+SEARCH: 41
+ID MASCOTA REVISADA: 90
+NUMERO RANDOM: 26DE: 90
+SEARCH: 26
+NUMERO RANDOM: 29DE: 90
+SEARCH: 29
+ID MASCOTA REVISADA: 91
+NUMERO RANDOM: 40DE: 91
+SEARCH: 40
+NUMERO RANDOM: 25DE: 91
+SEARCH: 25
+ID MASCOTA REVISADA: 92
+NUMERO RANDOM: 12DE: 92
+SEARCH: 12
+NUMERO RANDOM: 5DE: 92
+SEARCH: 5
+ID MASCOTA REVISADA: 93
+NUMERO RANDOM: 2DE: 93
+SEARCH: 2
+NUMERO RANDOM: 43DE: 93
+SEARCH: 43
+ID MASCOTA REVISADA: 94
+NUMERO RANDOM: 24DE: 94
+SEARCH: 24
+NUMERO RANDOM: 26DE: 94
+SEARCH: 26
+ID MASCOTA REVISADA: 95
+NUMERO RANDOM: 1DE: 95
+SEARCH: 1
+NUMERO RANDOM: 8DE: 95
+SEARCH: 8
+ID MASCOTA REVISADA: 96
+NUMERO RANDOM: 35DE: 96
+SEARCH: 35
+NUMERO RANDOM: 24DE: 96
+SEARCH: 24
+ID MASCOTA REVISADA: 97
+NUMERO RANDOM: 3DE: 97
+SEARCH: 3
+NUMERO RANDOM: 37DE: 97
+SEARCH: 37
+ID MASCOTA REVISADA: 98
+NUMERO RANDOM: 40DE: 98
+SEARCH: 40
+NUMERO RANDOM: 42DE: 98
+SEARCH: 42
+ID MASCOTA REVISADA: 99
+NUMERO RANDOM: 21DE: 99
+SEARCH: 21
+NUMERO RANDOM: 43DE: 99
+SEARCH: 43
+ID MASCOTA REVISADA: 100
+NUMERO RANDOM: 29DE: 100
+SEARCH: 29
+NUMERO RANDOM: 32DE: 100
+SEARCH: 32
+2024-10-08T02:41:32.364-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.365-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.365-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.366-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.366-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.366-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.367-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.367-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.368-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.368-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.368-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.368-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.368-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.369-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.369-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.369-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.369-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.369-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.369-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.370-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.370-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.370-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.370-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.370-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.371-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.371-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.371-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.371-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.371-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.372-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.372-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.372-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.372-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.373-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.373-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.374-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.374-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.374-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.374-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.374-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.375-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.375-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.375-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.375-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.375-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.376-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.376-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.376-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.376-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.377-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.377-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.377-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.377-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.378-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.378-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.378-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.378-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.379-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.379-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.379-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.379-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.380-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.380-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.380-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.380-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.381-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.381-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.381-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.381-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.381-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.381-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.381-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.382-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.382-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.382-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.382-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.382-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.382-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.382-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.383-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.383-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.383-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.383-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.383-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.383-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.384-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.384-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.384-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.406-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.406-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.406-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.407-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.407-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.407-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.407-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+2024-10-08T02:41:32.408-05:00 DEBUG 20080 --- [           main] org.hibernate.SQL                        : update mascota set cliente_id=?,edad=?,enfermedad=?,estado=?,imagen=?,nombre=?,peso=?,raza=?,tratamiento_id=? where id=?
+]]></system-out>
+    <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\quiro\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.18\byte-buddy-agent-1.14.18.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+  </testcase>
+</testsuite>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paw Care</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" th:href="@{/css/styles-general.css}" />
+    <link rel="stylesheet" th:href="@{/css/styles-modificar.css}" />
+
+
+    <script src="../js/form-validation.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <div class="logo">
+          <img th:src="@{/img/LogoClaro.png}" class="logoHeader" />
+          <h1>PAW CARE</h1>
+        </div>
+        <nav>
+          <a th:href="@{/admin/mascotas}" >MASCOTAS</a>
+          <a th:href="@{/admin/clientes}">CLIENTES</a>
+            <div class="btn-container">
+                <a class="btnlogin" href="/admin/login">Perfil</a>
+                <a class="btnCerrar" href="/clinica"
+              onclick="return confirm('¿Estás seguro de que deseas cerrar sesion?');">
+              Cerrar Sesion
+          </a>
+        </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="content">
+      <div class="formulario">
+        <section class="modificarMascota">
+          <h1 class="titulo">Editar datos</h1>
+          <form th:object="${mascota}" th:action="@{/mascota/modificar/{id}(id=${mascota.id})}" method="POST">
+
+            <input type="hidden" th:field="*{cliente.id}" />
+            
+            <label for="nombre">Nombre</label>
+            <input th:field="*{nombre}" type="text" id="nombre" name="nombre" required/>
+        
+            <label for="peso">Peso (kg)</label>
+            <input th:field="*{peso}" type="text" id="peso" name="peso" placeholder="Ej: 10kg" required />
+
+            <label for="raza">Raza</label>
+            <input th:field="*{raza}" type="text" id="raza" name="raza" pattern="[A-Za-z]+" title="Ingrese solo letras" required />
+        
+            <label for="enfermedad">Enfermedad</label>
+            <input th:field="*{enfermedad}" type="text" id="enfermedad" name="enfermedad" required />
+
+            <label for="estado">Estado</label>
+            <select th:field="*{estado}" type="text" id="estado" name="estado" required>
+                <option value="En tratamiento">En tratamiento</option>
+                <option value="En observación">En observación</option>
+                <option value="Recuperado">Recuperado</option>
+            </select>
+            <label for="edad">Edad</label>
+            <input th:field="*{edad}" type="number" id="edad" name="edad" min="1" max="99" required/>
+
+            <label for="imagen">Imagen (Link)</label>
+            <input th:field="*{imagen}" type="text" id="imagen" name="imagen" required />
+        
+            <button type="submit">Guardar cambios</button>
+          </form>
+  
+</section>
+      </div>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-info">
+        <p class="foorterPC">PAW CARE</p>
+        <p>Dirección: Calle Ejemplo #123, Bogotá, Colombia</p>
+        <p>Teléfono: +57 123 456 789</p>
+        <p>Email: contacto@pawcare.com</p>
+      </div>
+      <div class="footer-social">
+        <a
+          class="iconoFooter"
+          href="https://www.facebook.com/tuempresa"
+          target="_blank"
+          title="Facebook"
+        >
+          <img class="iconoFooter" th:src="@{/img/facebookIcon.png}" height="50" />
+        </a>
+        <a
+          class="iconoFooter"
+          href="https://www.instagram.com/tuempresa"
+          target="_blank"
+          title="Instagram"
+        >
+          <img class="iconoFooter" th:src="@{/img/instagramIcon.png}" height="50" />
+        </a>
+        <a
+          class="iconoFooter"
+          href="https://www.twitter.com/tuempresa"
+          target="_blank"
+          title="X"
+        >
+          <img class="iconoFooter" th:src="@{/img/twitterIcon.png}" height="50" />
+        </a>
+      </div>
+      <div class="footer-credits">
+        <p>&copy; 2024 PAW CARE. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paw Care</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles-general.css" />
+    <link rel="stylesheet" href="../css/styles-galeria.css" />
+    <script src="../js/form-validation.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <div class="logo">
+          <img src="../img/LogoClaro.png" class="logoHeader" />
+          <h1>PAW CARE</h1>
+        </div>
+        <nav>
+          <a href="/index">INICIO</a>
+          <a href="/servicios">SERVICIOS</a>
+          <a href="/galeria">GALERIA DE PERROS</a>
+          <a href="/contacto">CONTACTANOS</a>
+          <div class="btn-container">
+            <a class="btnlogin" href="/clinica">Iniciar Sesión</button></a>
+            <a class="btnsignup" th:href="@{/cliente/registro}">Registrarse</button></a>
+          </div>
+      </nav>
+      </div>
+    </header>
+    <main class="content">
+
+      <section class="gallery">
+        <h1>Galería de Nuestros Amigos Peludos</h1>
+        <section id="slider">
+          <input type="radio" name="slider" id="s1">
+          <input type="radio" name="slider" id="s2">
+          <input type="radio" name="slider" id="s3" checked>
+          <input type="radio" name="slider" id="s4">
+          <input type="radio" name="slider" id="s5">
+          <label for="s1" id="slide1"></label>
+          <label for="s2" id="slide2"></label>
+          <label for="s3" id="slide3"></label>
+          <label for="s4" id="slide4"></label>
+          <label for="s5" id="slide5"></label>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-info">
+          <p class="foorterPC">PAW CARE</p>
+          <p>Dirección: Calle Ejemplo #123, Bogotá, Colombia</p>
+          <p>Teléfono: +57 123 456 789</p>
+          <p>Email: contacto@pawcare.com</p>
+        </div>
+        <div class="footer-social">
+          <a
+            class="iconoFooter"
+            href="https://www.facebook.com/tuempresa"
+            target="_blank"
+            title="Facebook"
+          >
+            <img class="iconoFooter" src="../img/facebookIcon.png" height="50" />
+          </a>
+          <a
+            class="iconoFooter"
+            href="https://www.instagram.com/tuempresa"
+            target="_blank"
+            title="Instagram"
+          >
+            <img class="iconoFooter" src="../img/instagramIcon.png" height="50" />
+          </a>
+          <a
+            class="iconoFooter"
+            href="https://www.twitter.com/tuempresa"
+            target="_blank"
+            title="X"
+          >
+            <img class="iconoFooter" src="../img/twitterIcon.png" height="50" />
+          </a>
+        </div>
+        <div class="footer-credits">
+          <p>&copy; 2024 PAW CARE. Todos los derechos reservados.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
