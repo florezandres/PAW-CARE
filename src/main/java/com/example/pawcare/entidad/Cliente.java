@@ -3,9 +3,6 @@ package com.example.pawcare.entidad;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
-import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -16,31 +13,34 @@ public class Cliente {
     @Id
     @GeneratedValue
     private Long id;
+
     private String nombre;
     private String correo;
     private int cedula;
     private int celular;
+    private String clave;
 
-    @JsonIgnore
-    @OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "cliente")
     private List<Mascota> mascotas = new ArrayList<>();
 
-    public Cliente(Long id, String nombre, String correo, int cedula, int celular) {
+    public Cliente(Long id, String nombre, String correo, int cedula, int celular, String clave) {
         this.id = id;
         this.nombre = nombre;
         this.correo = correo;
         this.cedula = cedula;
         this.celular = celular;
+        this.clave = clave;
     }
 
     public Cliente() {
     }
 
-    public Cliente(String nombre, String correo, int cedula, int celular) {
+    public Cliente(String nombre, String correo, int cedula, int celular, String clave) {
         this.nombre = nombre;
         this.correo = correo;
         this.cedula = cedula;
         this.celular = celular;
+        this.clave = clave;
     }
 
     // Getters y Setters para los campos existentes
@@ -92,4 +92,13 @@ public class Cliente {
     public void setMascotas(List<Mascota> mascotas) {
         this.mascotas = mascotas;
     }
+
+    public String getClave() {
+        return clave;
+    }
+
+    public void setClave(String clave) {
+        this.clave = clave;
+    }
+
 }

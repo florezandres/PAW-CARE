@@ -44,59 +44,61 @@ public class DatabaseInit implements ApplicationRunner {
     public void run(ApplicationArguments args) throws Exception {
         
         //Admin
-        administradorRepository.save(new Administrador(777));
+        administradorRepository.save(new Administrador(777, "clave777"));
 
         //Clientes
-        clienteRepository.save(new Cliente("Juan Pérez", "juan.perez@example.com", 12345678, 87654321));
-        clienteRepository.save(new Cliente("María Gómez", "maria.gomez@example.com", 23456789, 98765432));
-        clienteRepository.save(new Cliente("Carlos López", "carlos.lopez@example.com", 34567890, 19876543));
-        clienteRepository.save(new Cliente("Ana Martínez", "ana.martinez@example.com", 45678901, 21987654));
-        clienteRepository.save(new Cliente("Luis Rodríguez", "luis.rodriguez@example.com", 56789012, 32198765));
-        clienteRepository.save(new Cliente("Laura Fernández", "laura.fernandez@example.com", 67890123, 43219876));
-        clienteRepository.save(new Cliente("Pedro Ramírez", "pedro.ramirez@example.com", 78901234, 54321987));
-        clienteRepository.save(new Cliente("Lucía Sánchez", "lucia.sanchez@example.com", 89012345, 65432198));
-        clienteRepository.save(new Cliente("Miguel Torres", "miguel.torres@example.com", 90123456, 76543219));
-        clienteRepository.save(new Cliente("Andrea Morales", "andrea.morales@example.com", 12345679, 87654320));
-        clienteRepository.save(new Cliente("Santiago Ortiz", "santiago.ortiz@example.com", 23456780, 98765421));
-        clienteRepository.save(new Cliente("Isabella Herrera", "isabella.herrera@example.com", 34567891, 19876542));
-        clienteRepository.save(new Cliente("Daniel Vargas", "daniel.vargas@example.com", 45678902, 21987653));
-        clienteRepository.save(new Cliente("Valentina Ríos", "valentina.rios@example.com", 56789013, 32198764));
-        clienteRepository.save(new Cliente("Sebastián Castro", "sebastian.castro@example.com", 67890124, 43219875));
-        clienteRepository.save(new Cliente("Camila Mendoza", "camila.mendoza@example.com", 78901235, 54321986));
-        clienteRepository.save(new Cliente("Mateo Jiménez", "mateo.jimenez@example.com", 89012346, 65432197));
-        clienteRepository.save(new Cliente("Sofía Romero", "sofia.romero@example.com", 90123457, 76543210));
-        clienteRepository.save(new Cliente("Nicolás Vargas", "nicolas.vargas@example.com", 12345680, 87654322));
-        clienteRepository.save(new Cliente("Gabriela Pineda", "gabriela.pineda@example.com", 23456781, 98765433));
-        clienteRepository.save(new Cliente("Diego Suárez", "diego.suarez@example.com", 34567892, 19876544));
-        clienteRepository.save(new Cliente("Valeria Rivera", "valeria.rivera@example.com", 45678903, 21987655));
-        clienteRepository.save(new Cliente("Martín Gutiérrez", "martin.gutierrez@example.com", 56789014, 32198766));
-        clienteRepository.save(new Cliente("Mariana Castillo", "mariana.castillo@example.com", 67890125, 43219877));
-        clienteRepository.save(new Cliente("Lucas Silva", "lucas.silva@example.com", 78901236, 54321988));
-        clienteRepository.save(new Cliente("Antonella Vargas", "antonella.vargas@example.com", 89012347, 65432199));
-        clienteRepository.save(new Cliente("Tomás Díaz", "tomas.diaz@example.com", 90123458, 76543211));
-        clienteRepository.save(new Cliente("Julieta Reyes", "julieta.reyes@example.com", 12345681, 87654323));
-        clienteRepository.save(new Cliente("David Moreno", "david.moreno@example.com", 23456782, 98765434));
-        clienteRepository.save(new Cliente("Paula Soto", "paula.soto@example.com", 34567893, 19876545));
-        clienteRepository.save(new Cliente("Joaquín Rojas", "joaquin.rojas@example.com", 45678904, 21987656));
-        clienteRepository.save(new Cliente("Catalina Álvarez", "catalina.alvarez@example.com", 56789015, 32198767));
-        clienteRepository.save(new Cliente("Emiliano Ruiz", "emiliano.ruiz@example.com", 67890126, 43219878));
-        clienteRepository.save(new Cliente("Valentina Ramírez", "valentina.ramirez@example.com", 78901237, 54321989));
-        clienteRepository.save(new Cliente("Pablo Acosta", "pablo.acosta@example.com", 89012348, 65432100));
-        clienteRepository.save(new Cliente("Emilia Luna", "emilia.luna@example.com", 90123459, 76543212));
-        clienteRepository.save(new Cliente("Agustín Pérez", "agustin.perez@example.com", 12345682, 87654324));
-        clienteRepository.save(new Cliente("Mía Gómez", "mia.gomez@example.com", 23456783, 98765435));
-        clienteRepository.save(new Cliente("Alejandro Torres", "alejandro.torres@example.com", 34567894, 19876546));
-        clienteRepository.save(new Cliente("Victoria Ortiz", "victoria.ortiz@example.com", 45678905, 21987657));
-        clienteRepository.save(new Cliente("Iván Gutiérrez", "ivan.gutierrez@example.com", 56789016, 32198768));
-        clienteRepository.save(new Cliente("Renata Vargas", "renata.vargas@example.com", 67890127, 43219879));
-        clienteRepository.save(new Cliente("Bruno Morales", "bruno.morales@example.com", 78901238, 54321990));
-        clienteRepository.save(new Cliente("Natalia Rivera", "natalia.rivera@example.com", 89012349, 65432101));
-        clienteRepository.save(new Cliente("Facundo Herrera", "facundo.herrera@example.com", 90123460, 76543213));
-        clienteRepository.save(new Cliente("Amanda Sánchez", "amanda.sanchez@example.com", 12345683, 87654325));
-        clienteRepository.save(new Cliente("Benjamín Ramírez", "benjamin.ramirez@example.com", 23456784, 98765436));
-        clienteRepository.save(new Cliente("Florencia Pineda", "florencia.pineda@example.com", 34567895, 19876547));
-        clienteRepository.save(new Cliente("Luciano Jiménez", "luciano.jimenez@example.com", 45678906, 21987658));
-        clienteRepository.save(new Cliente("Martina Castillo", "martina.castillo@example.com", 56789017, 32198769));
+        clienteRepository.save(new Cliente("Juan Pérez", "juan.perez@example.com", 12345678, 87654321, "clave123"));
+        clienteRepository.save(new Cliente("María Gómez", "maria.gomez@example.com", 23456789, 98765432, "clave234"));
+        clienteRepository.save(new Cliente("Carlos López", "carlos.lopez@example.com", 34567890, 19876543, "clave345"));
+        clienteRepository.save(new Cliente("Ana Martínez", "ana.martinez@example.com", 45678901, 21987654, "clave456"));
+        clienteRepository.save(new Cliente("Luis Rodríguez", "luis.rodriguez@example.com", 56789012, 32198765, "clave567"));
+        clienteRepository.save(new Cliente("Laura Fernández", "laura.fernandez@example.com", 67890123, 43219876, "clave678"));
+        clienteRepository.save(new Cliente("Pedro Ramírez", "pedro.ramirez@example.com", 78901234, 54321987, "clave789"));
+        clienteRepository.save(new Cliente("Lucía Sánchez", "lucia.sanchez@example.com", 89012345, 65432198, "clave890"));
+        clienteRepository.save(new Cliente("Miguel Torres", "miguel.torres@example.com", 90123456, 76543219, "clave901"));
+        clienteRepository.save(new Cliente("Andrea Morales", "andrea.morales@example.com", 12345679, 87654320, "clave123"));
+        clienteRepository.save(new Cliente("Santiago Ortiz", "santiago.ortiz@example.com", 23456780, 98765421, "clave234"));
+        clienteRepository.save(new Cliente("Isabella Herrera", "isabella.herrera@example.com", 34567891, 19876542, "clave345"));
+        clienteRepository.save(new Cliente("Daniel Vargas", "daniel.vargas@example.com", 45678902, 21987653, "clave456"));
+        clienteRepository.save(new Cliente("Valentina Ríos", "valentina.rios@example.com", 56789013, 32198764, "clave567"));
+        clienteRepository.save(new Cliente("Sebastián Castro", "sebastian.castro@example.com", 67890124, 43219875, "clave678"));
+        clienteRepository.save(new Cliente("Camila Mendoza", "camila.mendoza@example.com", 78901235, 54321986, "clave789"));
+        clienteRepository.save(new Cliente("Mateo Jiménez", "mateo.jimenez@example.com", 89012346, 65432197, "clave890"));
+        clienteRepository.save(new Cliente("Sofía Romero", "sofia.romero@example.com", 90123457, 76543210, "clave901"));
+        clienteRepository.save(new Cliente("Nicolás Vargas", "nicolas.vargas@example.com", 12345680, 87654322, "clave123"));
+        clienteRepository.save(new Cliente("Gabriela Pineda", "gabriela.pineda@example.com", 23456781, 98765433, "clave234"));
+        clienteRepository.save(new Cliente("Diego Suárez", "diego.suarez@example.com", 34567892, 19876544, "clave345"));
+        clienteRepository.save(new Cliente("Valeria Rivera", "valeria.rivera@example.com", 45678903, 21987655, "clave456"));
+        clienteRepository.save(new Cliente("Martín Gutiérrez", "martin.gutierrez@example.com", 56789014, 32198766, "clave567"));
+        clienteRepository.save(new Cliente("Mariana Castillo", "mariana.castillo@example.com", 67890125, 43219877, "clave678"));
+        clienteRepository.save(new Cliente("Lucas Silva", "lucas.silva@example.com", 78901236, 54321988, "clave789"));
+        clienteRepository.save(new Cliente("Antonella Vargas", "antonella.vargas@example.com", 89012347, 65432199, "clave890"));
+        clienteRepository.save(new Cliente("Tomás Díaz", "tomas.diaz@example.com", 90123458, 76543211, "clave901"));
+        clienteRepository.save(new Cliente("Julieta Reyes", "julieta.reyes@example.com", 12345681, 87654323, "clave123"));
+        clienteRepository.save(new Cliente("David Moreno", "david.moreno@example.com", 23456782, 98765434, "clave234"));
+        clienteRepository.save(new Cliente("Paula Soto", "paula.soto@example.com", 34567893, 19876545, "clave345"));
+        clienteRepository.save(new Cliente("Joaquín Rojas", "joaquin.rojas@example.com", 45678904, 21987656, "clave456"));
+        clienteRepository.save(new Cliente("Catalina Álvarez", "catalina.alvarez@example.com", 56789015, 32198767, "clave567"));
+        clienteRepository.save(new Cliente("Emiliano Ruiz", "emiliano.ruiz@example.com", 67890126, 43219878, "clave678"));
+        clienteRepository.save(new Cliente("Valentina Ramírez", "valentina.ramirez@example.com", 78901237, 54321989, "clave789"));
+        clienteRepository.save(new Cliente("Pablo Acosta", "pablo.acosta@example.com", 89012348, 65432100, "clave890"));
+        clienteRepository.save(new Cliente("Emilia Luna", "emilia.luna@example.com", 90123459, 76543212, "clave901"));
+        clienteRepository.save(new Cliente("Agustín Pérez", "agustin.perez@example.com", 12345682, 87654324, "clave123"));
+        clienteRepository.save(new Cliente("Mía Gómez", "mia.gomez@example.com", 23456783, 98765435, "clave234"));
+        clienteRepository.save(new Cliente("Alejandro Torres", "alejandro.torres@example.com", 34567894, 19876546, "clave345"));
+        clienteRepository.save(new Cliente("Victoria Ortiz", "victoria.ortiz@example.com", 45678905, 21987657, "clave456"));
+        clienteRepository.save(new Cliente("Iván Gutiérrez", "ivan.gutierrez@example.com", 56789016, 32198768, "clave567"));
+        clienteRepository.save(new Cliente("Renata Vargas", "renata.vargas@example.com", 67890127, 43219879, "clave678"));
+        clienteRepository.save(new Cliente("Bruno Morales", "bruno.morales@example.com", 78901238, 54321990, "clave789"));
+        clienteRepository.save(new Cliente("Natalia Rivera", "natalia.rivera@example.com", 89012349, 65432101, "clave890"));
+        clienteRepository.save(new Cliente("Facundo Herrera", "facundo.herrera@example.com", 90123460, 76543213, "clave901"));
+        clienteRepository.save(new Cliente("Amanda Sánchez", "amanda.sanchez@example.com", 12345683, 87654325, "clave123"));
+        clienteRepository.save(new Cliente("Benjamín Ramírez", "benjamin.ramirez@example.com", 23456784, 98765436, "clave234"));
+        clienteRepository.save(new Cliente("Florencia Pineda", "florencia.pineda@example.com", 34567895, 19876547, "clave345"));
+        clienteRepository.save(new Cliente("Luciano Jiménez", "luciano.jimenez@example.com", 45678906, 21987658, "clave456"));
+        clienteRepository.save(new Cliente("Martina Castillo", "martina.castillo@example.com", 56789017, 32198769, "clave567"));
+
+        
         
         //Mascotas
         mascotaRepository.save(new Mascota("Lucas", "15", "Labrador", "Displasia de cadera", "En tratamiento", 5, "assets/img/lucas.jpg"));
@@ -201,27 +203,28 @@ public class DatabaseInit implements ApplicationRunner {
         mascotaRepository.save(new Mascota("Daisy", "5", "Dachshund", "Problemas dentales", "Recuperado", 4, "assets/img/perroGenerico.png"));
 
         //Veterinarios
-        veterinarioRepository.save(new Veterinario("Dr. House", 998888888, "Tratamientos Oculares", "assets/img/veterinarioGenerico.png", 3));
-        veterinarioRepository.save(new Veterinario("Dra. Lisa Cuddy", 998888889, "Medicina Interna", "assets/img/veterinarioGenerico.png", 5));
-        veterinarioRepository.save(new Veterinario("Dr. James Wilson", 998888890, "Oncología", "assets/img/veterinarioGenerico.png", 4));
-        veterinarioRepository.save(new Veterinario("Dr. Robert Chase", 998888891, "Cirugía", "assets/img/veterinarioGenerico.png", 7));
-        veterinarioRepository.save(new Veterinario("Dra. Allison Cameron", 998888892, "Diagnóstico General", "assets/img/veterinarioGenerico.png", 6));
-        veterinarioRepository.save(new Veterinario("Dr. Eric Foreman", 998888893, "Neurología", "assets/img/veterinarioGenerico.png", 8));
-        veterinarioRepository.save(new Veterinario("Dr. Chris Taub", 998888894, "Cardiología", "assets/img/veterinarioGenerico.png", 5));
-        veterinarioRepository.save(new Veterinario("Dra. Remy Hadley", 998888895, "Genética", "assets/img/veterinarioGenerico.png", 3));
-        veterinarioRepository.save(new Veterinario("Dr. Lawrence Kutner", 998888896, "Psiquiatría", "assets/img/veterinarioGenerico.png", 4));
-        veterinarioRepository.save(new Veterinario("Dr. Jeffrey Cole", 998888897, "Medicina General", "assets/img/veterinarioGenerico.png", 2));
-        veterinarioRepository.save(new Veterinario("Dr. Henry Dobson", 998888898, "Dermatología", "assets/img/veterinarioGenerico.png", 6));
-        veterinarioRepository.save(new Veterinario("Dra. Amber Volakis", 998888899, "Anestesiología", "assets/img/veterinarioGenerico.png", 3));
-        veterinarioRepository.save(new Veterinario("Dra. Jessica Adams", 998888900, "Medicina de Urgencias", "assets/img/veterinarioGenerico.png", 4));
-        veterinarioRepository.save(new Veterinario("Dra. Chi Park", 998888901, "Neurocirugía", "assets/img/veterinarioGenerico.png", 5));
-        veterinarioRepository.save(new Veterinario("Dr. Gregory House", 998888902, "Nefrología", "assets/img/veterinarioGenerico.png", 9));
-        veterinarioRepository.save(new Veterinario("Dr. John Carter", 998888903, "Infectología", "assets/img/veterinarioGenerico.png", 7));
-        veterinarioRepository.save(new Veterinario("Dr. Peter Benton", 998888904, "Gastroenterología", "assets/img/veterinarioGenerico.png", 8));
-        veterinarioRepository.save(new Veterinario("Dra. Susan Lewis", 998888905, "Reumatología", "assets/img/veterinarioGenerico.png", 3));
-        veterinarioRepository.save(new Veterinario("Dr. Mark Greene", 998888906, "Pediatría", "assets/img/veterinarioGenerico.png", 6));
-        veterinarioRepository.save(new Veterinario("Dr. James Johnson", 998888907, "Cirugía Plastica", "assets/img/veterinarioGenerico.png", 7));        
+        veterinarioRepository.save(new Veterinario("Dr. House", 9990123, "Tratamientos Oculares", "/img/veterinarioGenerico.png", 3, "clave123"));
+        veterinarioRepository.save(new Veterinario("Dra. Lisa Cuddy", 9994567, "Medicina Interna", "/img/veterinarioGenerico.png", 5, "clave567"));
+        veterinarioRepository.save(new Veterinario("Dr. James Wilson", 9998901, "Oncología", "/img/veterinarioGenerico.png", 4, "clave901"));
+        veterinarioRepository.save(new Veterinario("Dr. Robert Chase", 9993456, "Cirugía", "/img/veterinarioGenerico.png", 7, "clave456"));
+        veterinarioRepository.save(new Veterinario("Dra. Allison Cameron", 9997890, "Diagnóstico General", "/img/veterinarioGenerico.png", 6, "clave890"));
+        veterinarioRepository.save(new Veterinario("Dr. Eric Foreman", 9992345, "Neurología", "/img/veterinarioGenerico.png", 8, "clave345"));
+        veterinarioRepository.save(new Veterinario("Dr. Chris Taub", 9996789, "Cardiología", "/img/veterinarioGenerico.png", 5, "clave789"));
+        veterinarioRepository.save(new Veterinario("Dra. Remy Hadley", 9990123, "Genética", "/img/veterinarioGenerico.png", 3, "clave123"));
+        veterinarioRepository.save(new Veterinario("Dr. Lawrence Kutner", 9994567, "Psiquiatría", "/img/veterinarioGenerico.png", 4, "clave567"));
+        veterinarioRepository.save(new Veterinario("Dr. Jeffrey Cole", 9998901, "Medicina General", "/img/veterinarioGenerico.png", 2, "clave901"));
+        veterinarioRepository.save(new Veterinario("Dr. Henry Dobson", 9992346, "Dermatología", "/img/veterinarioGenerico.png", 6, "clave346"));
+        veterinarioRepository.save(new Veterinario("Dra. Amber Volakis", 9995679, "Anestesiología", "/img/veterinarioGenerico.png", 3, "clave679"));
+        veterinarioRepository.save(new Veterinario("Dra. Jessica Adams", 9998912, "Medicina de Urgencias", "/img/veterinarioGenerico.png", 4, "clave912"));
+        veterinarioRepository.save(new Veterinario("Dra. Chi Park", 9993457, "Neurocirugía", "/img/veterinarioGenerico.png", 5, "clave457"));
+        veterinarioRepository.save(new Veterinario("Dr. Gregory House", 9997891, "Nefrología", "/img/veterinarioGenerico.png", 9, "clave891"));
+        veterinarioRepository.save(new Veterinario("Dr. John Carter", 9992348, "Infectología", "/img/veterinarioGenerico.png", 7, "clave348"));
+        veterinarioRepository.save(new Veterinario("Dr. Peter Benton", 9995670, "Gastroenterología", "/img/veterinarioGenerico.png", 8, "clave670"));
+        veterinarioRepository.save(new Veterinario("Dra. Susan Lewis", 9998913, "Reumatología", "/img/veterinarioGenerico.png", 3, "clave913"));
+        veterinarioRepository.save(new Veterinario("Dr. Mark Greene", 9993458, "Pediatría", "/img/veterinarioGenerico.png", 6, "clave458"));
+        veterinarioRepository.save(new Veterinario("Dr. James Johnson", 9997892, "Cirugía Plástica", "/img/veterinarioGenerico.png", 7, "clave892"));
         
+
         //Tratamientos
         tratamientoRepository.save(new Tratamiento("10/20/2024", "Desparasitación interna y externa"));
         tratamientoRepository.save(new Tratamiento("10/21/2024", "Vacunación contra la rabia"));

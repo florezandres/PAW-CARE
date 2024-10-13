@@ -24,7 +24,7 @@ public class Mascota {
 
     @JsonIgnore
     @ManyToOne
-    @JoinColumn(name = "cliente_id")
+    @JoinColumn(name = "cliente_id", nullable = true)
     private Cliente cliente;
 
     @ManyToOne

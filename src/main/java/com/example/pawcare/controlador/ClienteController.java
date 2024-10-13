@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.pawcare.entidad.Cliente;
+import com.example.pawcare.entidad.Mascota;
 import com.example.pawcare.errorHandling.UserAlreadyExistsException;
 import com.example.pawcare.servicio.AdministradorService;
 import com.example.pawcare.servicio.ClienteService;
@@ -55,7 +56,7 @@ public class ClienteController {
 
     @GetMapping("/add")
     public String mostrarFormularioRegistro(Model model) {
-        Cliente cliente = new Cliente("","",1,1);
+        Cliente cliente = new Cliente("","",1,1,"");
         model.addAttribute("cliente", cliente);
         return "registro";
     }
@@ -70,6 +71,12 @@ public class ClienteController {
             throw new UserAlreadyExistsException(cliente.getCedula());
         }
         clienteService.add(cliente);
+    }
+
+    //intento de agregar mascota a cliente XDD
+    @PostMapping("/add/mascota")
+    public void ClienteMascota(@RequestBody Mascota mascota, Cliente cliente) {
+        
     }
     
     

@@ -18,6 +18,7 @@ public class Veterinario {
     private String nombre;
     private int cedula;
     private String especialidad;
+    private String clave;
 
     private String imagen;
 
@@ -26,24 +27,26 @@ public class Veterinario {
     @OneToMany(mappedBy = "veterinario", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Tratamiento> tratamientos = new ArrayList<>();
 
-    public Veterinario(Long id, String nombre, int cedula, String especialidad, String imagen, int numAtenciones) {
+    public Veterinario(Long id, String nombre, int cedula, String especialidad, String imagen, int numAtenciones, String clave) {
         this.id = id;
         this.nombre = nombre;
         this.cedula = cedula;
         this.especialidad = especialidad;
         this.imagen = imagen;
         this.numAtenciones = numAtenciones;
+        this.clave = clave;
     }
 
     public Veterinario() {
     }
 
-    public Veterinario(String nombre, int cedula, String especialidad, String imagen, int numAtenciones) {
+    public Veterinario(String nombre, int cedula, String especialidad, String imagen, int numAtenciones, String clave) {
         this.nombre = nombre;
         this.cedula = cedula;
         this.especialidad = especialidad;
         this.imagen = imagen;
         this.numAtenciones = numAtenciones;
+        this.clave = clave;
     }
 
     public Long getId() {
@@ -102,5 +105,12 @@ public class Veterinario {
         this.tratamientos = tratamientos;
     }
 
+    public String getClave() {
+        return clave;
+    }
+
+    public void setClave(String clave) {
+        this.clave = clave;
+    }
     
 }

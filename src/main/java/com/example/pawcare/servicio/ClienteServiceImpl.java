@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.pawcare.entidad.Cliente;
+import com.example.pawcare.entidad.Mascota;
 import com.example.pawcare.repositorio.ClienteRepository;
 
 @Service
@@ -43,4 +44,12 @@ public class ClienteServiceImpl implements ClienteService {
     public Cliente SearchByCedula(int cedula) {
         return clienteRepository.findByCedula(cedula);
     }
+
+    @Override
+    public void addMascota(Mascota mascota) {
+    //    clienteRepository.findByCedula(0).addMascota(mascota);
+        //Intento x2 de agregar masocta a cliente XDDD
+}
+
+
 }

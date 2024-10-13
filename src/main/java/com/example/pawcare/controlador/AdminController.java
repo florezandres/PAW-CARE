@@ -41,7 +41,7 @@ public class AdminController {
 
     @GetMapping("/registro")
     public String mostrarFormularioRegistro(Model model) {
-        Cliente cliente = new Cliente("","",1,1);
+        Cliente cliente = new Cliente("","",1,1,"");
         model.addAttribute("cliente", cliente);
         return "registroAdmin";
     }
