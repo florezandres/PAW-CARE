@@ -48,7 +48,7 @@ public class ClienteServiceImpl implements ClienteService {
     @Override
     public void addMascota(Mascota mascota) {
     //    clienteRepository.findByCedula(0).addMascota(mascota);
-        //Intento x2 de agregar masocta a cliente XDDD
+        //Intento x2 de agregar masocta a cliente XDD
 }
 
 
